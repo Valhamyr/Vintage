@@ -3,11 +3,164 @@
         "op": "add",
         "path": "/landforms/-",
         "value": {
-            "code": "sheercliffcanyon",
-            "baseHeight": 0.02,
+            "code": "canyons",
+            "baseHeight": 0.05,
             "noiseScale": 0.0015,
             "threshold": 0.92,
-            "heightOffset": 0.78,
+            "heightOffset": 0.88,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            }
+        }
+    }
+,
+    {
+        "op": "add",
+        "path": "/landforms/-",
+        "value": {
+            "code": "flatlands",
+            "baseHeight": 0.03,
+            "noiseScale": 0.002,
+            "threshold": 0.5,
+            "heightOffset": 0.75,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/landforms/-",
+        "value": {
+            "code": "sheercliffs",
+            "baseHeight": 0.06,
+            "noiseScale": 0.001,
+            "threshold": 0.95,
+            "heightOffset": 0.9,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/landforms/-",
+        "value": {
+            "code": "towercliffs",
+            "baseHeight": 0.04,
+            "noiseScale": 0.001,
+            "threshold": 0.97,
+            "heightOffset": 0.92,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/landforms/-",
+        "value": {
+            "code": "riceplateaus",
+            "baseHeight": 0.05,
+            "noiseScale": 0.002,
+            "threshold": 0.6,
+            "heightOffset": 0.85,
             "genClimate": true,
             "genRockStrata": true,
             "genStructures": false,

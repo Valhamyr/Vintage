@@ -3,8 +3,40 @@
     "op": "add",
     "path": "/landforms/-",
     "value": {
-      "code": "sheercliffcanyon",
-      "weight": 40
+      "code": "flatlands",
+      "weight": 30
+    }
+  },
+  {
+    "op": "add",
+    "path": "/landforms/-",
+    "value": {
+      "code": "sheercliffs",
+      "weight": 25
+    }
+  },
+  {
+    "op": "add",
+    "path": "/landforms/-",
+    "value": {
+      "code": "canyons",
+      "weight": 50
+    }
+  },
+  {
+    "op": "add",
+    "path": "/landforms/-",
+    "value": {
+      "code": "towercliffs",
+      "weight": 15
+    }
+  },
+  {
+    "op": "add",
+    "path": "/landforms/-",
+    "value": {
+      "code": "riceplateaus",
+      "weight": 50
     }
   }
 ]

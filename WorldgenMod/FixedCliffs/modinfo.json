@@ -1,10 +1,10 @@
 {
   "type": "content",
   "modid": "fixedcliffs",
-  "name": "Fixed Sheer Cliffs",
+  "name": "Fixed Cliffs Landforms",
   "version": "1.0.0",
   "authors": ["sapje16"],
-  "description": "Adds a shear cliff canyon landform with correct patching.",
+  "description": "Adds several custom landforms including flatlands, sheer cliffs, canyons, tower cliffs and rice plateaus.",
   "dependencies": {
     "game": "1.20.12"
   }
