@@ -2,6 +2,10 @@
 
 This repository is a starting place for creating mods for the sandbox game [Vintage Story](https://www.vintagestory.at/). Below is a short overview of the modding workflow, file structure and useful resources based on the official wiki.
 
+## Working in this repository
+
+When starting a new mod from scratch, first create a dedicated folder inside this repository and keep all of the mod's files there. Avoid placing mod files directly in the repository root so that different mods do not overwrite one another.
+
 ## Supported Vintage Story version
 
 According to the [Vintage Story wiki main page](https://wiki.vintagestory.at/Main_Page), the latest stable release is **version 1.20.12** (June 8, 2025) `Purely stable performance`.
