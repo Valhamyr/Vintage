@@ -1,0 +1,123 @@
+16.6.2025 19:32:00 [Notification] Client logger started.
+16.6.2025 19:32:00 [Notification] Game Version: v1.20.12 (Stable)
+16.6.2025 19:32:00 [Notification] Process path: D:\Vintagestory\Vintagestory.exe
+16.6.2025 19:32:00 [Notification] Operating System: Windows 10.0.19045.0
+16.6.2025 19:32:00 [Notification] CPU Cores: 8
+16.6.2025 19:32:00 [Notification] Available RAM: 28652 MB
+16.6.2025 19:32:02 [Notification] OpenAL Initialized. Available Mono/Stereo Sources: 255/1
+16.6.2025 19:32:02 [Notification] Graphics Card Vendor: NVIDIA Corporation
+16.6.2025 19:32:02 [Notification] Graphics Card Version: 3.3.0 NVIDIA 565.90
+16.6.2025 19:32:02 [Notification] Graphics Card Renderer: NVIDIA RTX A4500/PCIe/SSE2
+16.6.2025 19:32:02 [Notification] Graphics Card ShadingLanguageVersion: 3.30 NVIDIA via Cg compiler
+16.6.2025 19:32:02 [Notification] GL.MaxVertexUniformComponents: 4096
+16.6.2025 19:32:02 [Notification] GL.MaxUniformBlockSize: 65536
+16.6.2025 19:32:02 [Notification] C# Framework: .net 7.0.10
+16.6.2025 19:32:02 [Notification] Cairo Graphics Version: 1.17.3
+16.6.2025 19:32:02 [Notification] OpenAL Version: 1.1 ALSOFT 1.23.0
+16.6.2025 19:32:02 [Notification] Zstd Version: 1.5.5
+16.6.2025 19:32:02 [Notification] Start discovering assets
+16.6.2025 19:32:02 [Notification] Found 29 base assets in category lang
+16.6.2025 19:32:02 [Notification] Found 0 base assets in category patches
+16.6.2025 19:32:02 [Notification] (Re-)loaded frame buffers
+16.6.2025 19:32:02 [Notification] Loaded Shaderprogramm for render pass .
+16.6.2025 19:32:02 [Notification] Found 24 base assets in category config
+16.6.2025 19:32:02 [Notification] Found 0 base assets in category worldproperties
+16.6.2025 19:32:02 [Notification] Found 49 base assets in category sounds
+16.6.2025 19:32:02 [Notification] Found 95 base assets in category shapes
+16.6.2025 19:32:02 [Notification] Waiting for async sound loading...
+16.6.2025 19:32:02 [Notification] Found 80 base assets in category shaders
+16.6.2025 19:32:02 [Notification] Found 18 base assets in category shaderincludes
+16.6.2025 19:32:02 [Notification] Found 140 base assets in category textures
+16.6.2025 19:32:02 [Notification] Found 4 base assets in category music
+16.6.2025 19:32:02 [Notification] Found 0 base assets in category dialog
+16.6.2025 19:32:02 [Notification] Found 439 base assets in total
+16.6.2025 19:32:02 [Notification] Loading sounds
+16.6.2025 19:32:02 [Notification] Sounds loaded
+16.6.2025 19:32:02 [Notification] Begin loading shaders
+16.6.2025 19:32:02 [Notification] Load shaders now
+16.6.2025 19:32:02 [Notification] Loading shaders...
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass standard.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass particlescube.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass particlesquad.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass sky.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass nightsky.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass woittest.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass transparentcompose.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass debugdepthbuffer.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass helditem.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass chunkopaque.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass chunkliquid.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass decals.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass final.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass gui.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass blur.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass chunktransparent.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass findbright.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass chunktopsoil.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass godrays.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass autocamera.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass blockhighlights.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass wireframe.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass entityanimated.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass luma.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass blit.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass particlesquad2d.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass shadowmapentityanimated.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass shadowmapgeneric.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass texture2texture.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass celestialobject.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass guitopsoil.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass colorgrade.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass guigear.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass ssao.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass bilateralblur.
+16.6.2025 19:32:03 [Notification] Loaded Shaderprogramm for render pass chunkliquiddepth.
+16.6.2025 19:32:03 [Notification] Cached session key is valid, validating with server
+16.6.2025 19:32:04 [Notification] Server validation response: Good
+16.6.2025 19:32:04 [Notification] Will search the following paths for mods:
+16.6.2025 19:32:04 [Notification]     D:\Vintagestory\Mods
+16.6.2025 19:32:04 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
+16.6.2025 19:32:04 [Warning] [awearablelight] Dependency 'game': Failed parsing version string '1.20.*' at index 5: Expected PATCH version number, found '*' (best guess: 1.20.0)
+16.6.2025 19:32:06 [Warning] [spearexpantion] Dependency 'game': Failed parsing version string '1.20.*' at index 5: Expected PATCH version number, found '*' (best guess: 1.20.0)
+16.6.2025 19:32:06 [Warning] [realloy] Dependency 'game': Failed parsing version string '1.20.*' at index 5: Expected PATCH version number, found '*' (best guess: 1.20.0)
+16.6.2025 19:33:04 [Notification] Initialized GUI Manager
+16.6.2025 19:33:04 [Notification] Initialized Server Connection
+16.6.2025 19:33:04 [Notification] Server args parsed
+16.6.2025 19:33:04 [Notification] Server main instantiated
+16.6.2025 19:33:21 [Notification] Processed server identification
+16.6.2025 19:33:21 [Notification] Map initialized
+16.6.2025 19:33:21 [Notification] Received server assets
+16.6.2025 19:33:21 [Notification] Loading and pre-starting client side mods...
+16.6.2025 19:33:21 [Notification] Will search the following paths for mods:
+16.6.2025 19:33:21 [Notification]     D:\Vintagestory\Mods
+16.6.2025 19:33:21 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
+16.6.2025 19:33:21 [Warning] [awearablelight] Dependency 'game': Failed parsing version string '1.20.*' at index 5: Expected PATCH version number, found '*' (best guess: 1.20.0)
+16.6.2025 19:33:21 [Warning] [spearexpantion] Dependency 'game': Failed parsing version string '1.20.*' at index 5: Expected PATCH version number, found '*' (best guess: 1.20.0)
+16.6.2025 19:33:21 [Warning] [realloy] Dependency 'game': Failed parsing version string '1.20.*' at index 5: Expected PATCH version number, found '*' (best guess: 1.20.0)
+16.6.2025 19:33:22 [Notification] Found 4 mods (0 disabled)
+16.6.2025 19:33:22 [Notification] Mods, sorted by dependency: game, plainsandvalleys, creative, survival
+16.6.2025 19:33:22 [Notification] Instantiated 128 mod systems from 4 enabled mods
+16.6.2025 19:33:22 [Notification] Done loading and pre-starting client side mods.
+16.6.2025 19:33:22 [Notification] External Origins in load order: modorigin@D:\Vintagestory\assets\creative\, modorigin@D:\Vintagestory\assets\survival\, mod@SheerCliffWorldgen.zip
+16.6.2025 19:33:22 [Notification] Found 0 external assets in category lang
+16.6.2025 19:33:22 [Notification] Found 10 external assets in category patches
+16.6.2025 19:33:22 [Notification] Found 109 external assets in category config
+16.6.2025 19:33:22 [Notification] Found 25 external assets in category worldproperties
+16.6.2025 19:33:22 [Notification] Found 547 external assets in category sounds
+16.6.2025 19:33:22 [Notification] Found 5140 external assets in category shapes
+16.6.2025 19:33:22 [Notification] Found 7 external assets in category shaders
+16.6.2025 19:33:22 [Notification] Found 0 external assets in category shaderincludes
+16.6.2025 19:33:22 [Notification] Found 7066 external assets in category textures
+16.6.2025 19:33:22 [Notification] Found 78 external assets in category music
+16.6.2025 19:33:22 [Notification] Found 18 external assets in category dialog
+16.6.2025 19:33:22 [Notification] Found 0 external assets in category compatibility
+16.6.2025 19:33:23 [Notification] Reloaded lang file now with mod assets
+16.6.2025 19:33:23 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
+16.6.2025 19:33:23 [Notification] JsonPatch Loader: 13 patches total, successfully applied 6 patches, unmet conditions on 24 patches, no errors
+16.6.2025 19:33:23 [Notification] Received 3713 item types from server
+16.6.2025 19:33:23 [Notification] Loaded 12823 block types from server
+16.6.2025 19:33:24 [Notification] Reloaded sounds, now with mod assets
+16.6.2025 19:33:26 [Notification] Server launched
+16.6.2025 19:33:27 [Notification] Composed 1 4096x4096 entities texture atlases from 570 textures
+16.6.2025 19:33:31 [Notification] Collected 2698 shapes to tesselate.
+16.6.2025 19:33:32 [Notification] Destroying game session, waiting up to 200ms for client threads to exit
