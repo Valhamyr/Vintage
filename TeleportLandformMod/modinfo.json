@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "landformtp",
+  "name": "Landform Teleport",
+  "version": "1.0.0",
+  "authors": ["Codex"],
+  "description": "Adds /tpl <landform> command to teleport to nearest specified landform.",
+  "dependencies": {
+    "game": "1.20.12"
+  }
+}
