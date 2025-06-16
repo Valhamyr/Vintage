@@ -2,7 +2,35 @@
   {
     "op": "replace",
     "path": "/structures/0/requireLandform",
-    "value": "sheercliffcanyon",
+    "value": "flatlands",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/1/requireLandform",
+    "value": "canyons",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/2/requireLandform",
+    "value": "riceplateaus",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/3/requireLandform",
+    "value": "sheercliffs",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/4/requireLandform",
+    "value": "towercliffs",
     "file": "game:worldgen/storystructures.json",
     "side": "Server"
   }
