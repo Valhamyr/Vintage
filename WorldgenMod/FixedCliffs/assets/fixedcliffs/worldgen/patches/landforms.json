@@ -1,0 +1,40 @@
+[
+    {
+        "op": "add",
+        "path": "/landforms/-",
+        "value": {
+            "code": "sheercliffcanyon",
+            "baseHeight": 0.02,
+            "noiseScale": 0.0015,
+            "threshold": 0.92,
+            "heightOffset": 0.78,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            }
+        }
+    }
+]

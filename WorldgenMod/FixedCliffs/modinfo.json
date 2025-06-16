@@ -1,0 +1,11 @@
+{
+  "type": "content",
+  "modid": "fixedcliffs",
+  "name": "Fixed Sheer Cliffs",
+  "version": "1.0.0",
+  "authors": ["sapje16"],
+  "description": "Adds a shear cliff canyon landform with correct patching.",
+  "dependencies": {
+    "game": "1.20.12"
+  }
+}

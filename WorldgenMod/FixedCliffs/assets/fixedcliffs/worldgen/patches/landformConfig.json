@@ -1,0 +1,10 @@
+[
+  {
+    "op": "add",
+    "path": "/landforms/-",
+    "value": {
+      "code": "sheercliffcanyon",
+      "weight": 40
+    }
+  }
+]
