@@ -1,5 +1,6 @@
 import json
 import os
+import argparse
 from noise import pnoise2
 from PIL import Image
 
@@ -13,9 +14,20 @@ PATCH_FILE = os.path.join(
     "landforms.json",
 )
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
-SIZE = 256
 WARP_SCALE = 0.01
 WARP_AMPLITUDE = 20.0
+
+parser = argparse.ArgumentParser(
+    description="Render preview noise maps from landform definitions"
+)
+parser.add_argument(
+    "--size",
+    type=int,
+    default=256,
+    help="Width and height of the generated PNG images",
+)
+args = parser.parse_args()
+SIZE = args.size
 
 with open(PATCH_FILE) as f:
     patch_data = json.load(f)
