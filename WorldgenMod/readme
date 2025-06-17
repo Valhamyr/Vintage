@@ -87,7 +87,8 @@ Each landform will generate separately. When a new world is created, approximate
 ## Noise Samples
 
 The `generate_noise_images.py` helper script renders example Perlin noise maps
-using the `noiseScale` values from `landforms.json`. Run the script with
-Python to generate 256×256 PNG images in a local `WorldgenMod/noise_samples/`
-directory. These preview images are not tracked in version control.
+based on the `noiseScale` plus the new octave and height arrays in
+`landforms.json`. Run the script with Python to generate 256×256 PNG images in
+a local `WorldgenMod/noise_samples/` directory. These preview images are not
+tracked in version control.
 
