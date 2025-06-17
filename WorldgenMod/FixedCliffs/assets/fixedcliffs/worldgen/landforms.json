@@ -1,0 +1,130 @@
+{
+  "replace": false,
+  "landforms": [
+    {
+      "code": "canyons",
+      "baseHeight": 0.2,
+      "noiseScale": 0.00075,
+      "threshold": 0.92,
+      "heightOffset": 0.65,
+      "genClimate": true,
+      "genRockStrata": true,
+      "genStructures": false,
+      "genVegetation": false,
+      "climate": {
+        "minRain": 0.2,
+        "maxRain": 0.8,
+        "minTemp": 0.1,
+        "maxTemp": 0.9
+      },
+      "rockStrata": {
+        "variant": "cliff",
+        "strata": [
+          { "rock": "granite", "thickness": 4 },
+          { "rock": "andesite", "thickness": 3 },
+          { "rock": "basalt", "thickness": 3 }
+        ]
+      }
+    },
+    {
+      "code": "flatlands",
+      "baseHeight": 0.2,
+      "noiseScale": 0.001,
+      "threshold": 0.5,
+      "heightOffset": 0.55,
+      "genClimate": true,
+      "genRockStrata": true,
+      "genStructures": false,
+      "genVegetation": false,
+      "climate": {
+        "minRain": 0.2,
+        "maxRain": 0.8,
+        "minTemp": 0.1,
+        "maxTemp": 0.9
+      },
+      "rockStrata": {
+        "variant": "cliff",
+        "strata": [
+          { "rock": "granite", "thickness": 4 },
+          { "rock": "andesite", "thickness": 3 },
+          { "rock": "basalt", "thickness": 3 }
+        ]
+      }
+    },
+    {
+      "code": "sheercliffs",
+      "baseHeight": 0.25,
+      "noiseScale": 0.0005,
+      "threshold": 0.95,
+      "heightOffset": 0.55,
+      "genClimate": true,
+      "genRockStrata": true,
+      "genStructures": false,
+      "genVegetation": false,
+      "climate": {
+        "minRain": 0.2,
+        "maxRain": 0.8,
+        "minTemp": 0.1,
+        "maxTemp": 0.9
+      },
+      "rockStrata": {
+        "variant": "cliff",
+        "strata": [
+          { "rock": "granite", "thickness": 4 },
+          { "rock": "andesite", "thickness": 3 },
+          { "rock": "basalt", "thickness": 3 }
+        ]
+      }
+    },
+    {
+      "code": "towercliffs",
+      "baseHeight": 0.25,
+      "noiseScale": 0.0005,
+      "threshold": 0.97,
+      "heightOffset": 0.55,
+      "genClimate": true,
+      "genRockStrata": true,
+      "genStructures": false,
+      "genVegetation": false,
+      "climate": {
+        "minRain": 0.2,
+        "maxRain": 0.8,
+        "minTemp": 0.1,
+        "maxTemp": 0.9
+      },
+      "rockStrata": {
+        "variant": "cliff",
+        "strata": [
+          { "rock": "granite", "thickness": 4 },
+          { "rock": "andesite", "thickness": 3 },
+          { "rock": "basalt", "thickness": 3 }
+        ]
+      }
+    },
+    {
+      "code": "riceplateaus",
+      "baseHeight": 0.25,
+      "noiseScale": 0.00025,
+      "threshold": 0.8,
+      "heightOffset": 0.55,
+      "genClimate": true,
+      "genRockStrata": true,
+      "genStructures": false,
+      "genVegetation": false,
+      "climate": {
+        "minRain": 0.2,
+        "maxRain": 0.8,
+        "minTemp": 0.1,
+        "maxTemp": 0.9
+      },
+      "rockStrata": {
+        "variant": "cliff",
+        "strata": [
+          { "rock": "granite", "thickness": 4 },
+          { "rock": "andesite", "thickness": 3 },
+          { "rock": "basalt", "thickness": 3 }
+        ]
+      }
+    }
+  ]
+}

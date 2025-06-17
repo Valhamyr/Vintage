@@ -15,13 +15,13 @@ Below is a minimal outline on how to structure and configure such a mod.
    A simple layout for world generation looks like:
    ```
    WorldgenMod/
-   ├─ assets/
-   │  └─ worldgenmod/
-   │      └─ worldgen/
-   │          └─ patches/
-   │              ├─ landforms.json
-   │              ├─ landformConfig.json
-   │              └─ survival-worldgen-storystructures.json
+  ├─ assets/
+  │  └─ worldgenmod/
+  │      └─ worldgen/
+  │          ├─ landforms.json
+  │          └─ patches/
+  │              ├─ landformConfig.json
+  │              └─ survival-worldgen-storystructures.json
    ├─ modinfo.json
    └─ modicon.png (optional)
    ```
