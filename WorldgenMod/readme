@@ -91,9 +91,8 @@ based on the `noiseScale` plus the new octave and height arrays in
 `landforms.json`. Run the script with Python to generate PNG images in a local
 `WorldgenMod/noise_samples/` directory. Use `--size <N>` to set the pixel width
 and height (default 256×256) when previewing larger areas. These preview images
-are not tracked in version control.
-Pass the optional `--heightmap` flag to output a top‑down heightmap instead of
-the default vertical preview.
+are not tracked in version control. By default the script outputs a top-down
+heightmap. Use the `--cross-section` flag to render a vertical preview instead.
 
 ### Parameter notes
 
