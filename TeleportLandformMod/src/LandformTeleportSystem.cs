@@ -35,7 +35,7 @@ namespace LandformTeleport
                 return TextCommandResult.Error("Command can only be used by a player.");
             }
 
-            string landformCode = args.PopWord();
+            string landformCode = args[0];
             Vec3d startPos = args.Caller.Entity.Pos.XYZ;
 
             Vec3d target = FindNearestLandform(startPos, landformCode);
@@ -45,7 +45,7 @@ namespace LandformTeleport
                 return TextCommandResult.Error("Landform not found nearby");
             }
 
-            args.Caller.Entity?.TeleportTo(target.X, target.Y, target.Z);
+            args.Caller.Entity?.TeleportTo((int)target.X, (int)target.Y, (int)target.Z);
             return TextCommandResult.Success("Teleported to {0}", landformCode);
         }
 
@@ -87,7 +87,7 @@ namespace LandformTeleport
                         {
                             double x = (cx + 0.5) * chunkSize;
                             double z = (cz + 0.5) * chunkSize;
-                            double y = sapi.World.BlockAccessor.GetTerrainMapheightAt((int)x, (int)z);
+                            double y = sapi.World.BlockAccessor.GetTerrainMapheightAt((int)x, (int)z, false);
                             return new Vec3d(x, y + 1, z);
                         }
                     }
