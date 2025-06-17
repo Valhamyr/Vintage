@@ -3,8 +3,17 @@ import os
 from noise import pnoise2
 from PIL import Image
 
-PATCH_FILE = "WorldgenMod/FixedCliffs/assets/fixedcliffs/worldgen/patches/landforms.json"
-OUTPUT_DIR = "WorldgenMod/noise_samples"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PATCH_FILE = os.path.join(
+    SCRIPT_DIR,
+    "FixedCliffs",
+    "assets",
+    "fixedcliffs",
+    "worldgen",
+    "patches",
+    "landforms.json",
+)
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
 SIZE = 256
 
 with open(PATCH_FILE) as f:
