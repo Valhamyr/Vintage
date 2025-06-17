@@ -33,6 +33,7 @@ namespace LandformTeleport
             api.ChatCommands.Create("tpl")
                 .WithDescription("Teleport to nearest landform")
                 .WithArgs(parsers.Word("landform"))
+                .RequiresPrivilege("tp")
                 .HandleWith(OnTeleportCommand);
         }
 
