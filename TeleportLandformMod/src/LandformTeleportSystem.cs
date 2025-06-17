@@ -4,6 +4,7 @@ using Vintagestory.API.MathTools;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Newtonsoft.Json.Linq;
 
 namespace LandformTeleport
 {
@@ -22,13 +23,13 @@ namespace LandformTeleport
                 var asset = api.Assets.TryGet("worldgen/landforms.json");
                 if (asset != null)
                 {
-                    JsonObject obj = asset.ToObject<JsonObject>();
-                    var arr = obj["landforms"]?.AsArray();
+                    JObject obj = asset.ToObject<JObject>();
+                    var arr = obj["landforms"] as JArray;
                     if (arr != null)
                     {
-                        for (int i = 0; i < arr.Length; i++)
+                        for (int i = 0; i < arr.Count; i++)
                         {
-                            landformCodes[i] = arr[i]["code"].AsString();
+                            landformCodes[i] = (string)arr[i]["code"];
                         }
                     }
                 }
