@@ -4,7 +4,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "flatlands",
-      "weight": 100
+      "weight": 200
     }
   },
   {
@@ -12,7 +12,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "sheercliffs",
-      "weight": 250
+      "weight": 400
     }
   },
   {
@@ -28,7 +28,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "towercliffs",
-      "weight": 50
+      "weight": 300
     }
   },
   {
