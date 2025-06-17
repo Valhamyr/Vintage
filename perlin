@@ -1,0 +1,48 @@
+# Perlin Noise Quick Reference
+
+This document summarizes how to use Perlin noise parameters to replicate the landforms outlined in the Worldgen mod README. Understanding these values makes it easier to design new terrain types.
+
+## Core Parameters
+
+- **baseHeight**: Starting elevation for the landform. Combined with generated noise to determine final block height.
+- **noiseScale**: Controls the horizontal size of noise features. Smaller values create larger, more spread out features, while larger values produce tighter variation.
+- **threshold**: Minimum noise value required for this landform to appear at a point. Higher thresholds make the shape rarer and more isolated.
+- **heightOffset**: Added after noise calculation to raise or lower the entire landform.
+- **terrainOctaves**: Array of amplitude multipliers per octave. Higher entries add more detail at that octave. Set to `0` to disable an octave.
+- **terrainOctaveThresholds**: Optional array of per-octave thresholds. Values near `1` remove most of that octave’s influence. Usually left at `0`.
+- **terrainYKeyPositions**: Normalized vertical positions (0–1) describing important heights within the landform.
+- **terrainYKeyThresholds**: Blending values for the Y key positions. When used with the helper script these shape plateaus, cliffs and other vertical transitions.
+- **mutations**: Optional variations with their own octave/height settings. The `chance` field indicates how frequently the mutation appears.
+
+The `generate_noise_images.py` script reads these fields from `worldgen/landforms.json` and previews the resulting maps.
+
+## Example Landforms
+
+From the README in `WorldgenMod`, five primary landforms are planned:
+
+- **Flatlands** – nearly level terrain.
+- **Sheer Cliffs** – tall vertical faces.
+- **Canyons** – deep ravines with narrow paths.
+- **Tower Cliffs** – isolated pillars rising from flat surroundings.
+- **Multi-level Plateaus** (`riceplateaus`) – tiered shelves at several heights.
+
+The table below lists representative parameter choices from `FixedCliffs/landforms.json` that influence these shapes.
+
+| Code           | noiseScale | threshold | Example notes |
+|---------------|-----------|----------|---------------|
+| `flatlands`    | `0.001`   | `0.5`    | Gentle height changes. Terrain octaves emphasize smooth slopes.
+| `sheercliffs`  | `0.0005`  | `0.95`   | High threshold and strong octaves create abrupt walls.
+| `canyons`      | `0.00075` | `0.92`   | Steep drops with additional mutation for caves.
+| `towercliffs`  | `0.0005`  | `0.97`   | Multiple octaves focus noise near the top to form pillars.
+| `riceplateaus` | `0.00025` | `0.8`    | Low scale with stacked Y keys for terraced levels.
+
+Adjusting these values changes how often a landform appears and how dramatic its features look. Lower the threshold to spread a shape farther across the world. Increase specific octave amplitudes to add jagged details at different sizes.
+
+For new terrain types, start with a base landform and tweak:
+
+1. **noiseScale** to control overall feature size.
+2. **terrainOctaves** to emphasize or suppress detail at each octave.
+3. **terrainYKeyPositions/YKeyThresholds** to introduce plateaus, cliffs, or gentle slopes.
+4. **mutations** for rare variations such as cavern openings or extra noise layers.
+
+Using these settings in combination lets you create terrain that ranges from smooth plains to chaotic spires.
