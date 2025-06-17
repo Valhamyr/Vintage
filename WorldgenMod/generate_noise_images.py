@@ -27,10 +27,12 @@ parser.add_argument(
     help="Width and height of the generated PNG images",
 )
 parser.add_argument(
-    "--heightmap",
-    action="store_true",
-    help="Generate heightmap previews instead of cross-sections",
+    "--cross-section",
+    dest="heightmap",
+    action="store_false",
+    help="Generate vertical cross-sections instead of a top-down heightmap",
 )
+parser.set_defaults(heightmap=True)
 args = parser.parse_args()
 SIZE = args.size
 HEIGHTMAP = args.heightmap
