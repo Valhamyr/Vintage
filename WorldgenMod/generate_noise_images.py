@@ -10,7 +10,6 @@ PATCH_FILE = os.path.join(
     "assets",
     "fixedcliffs",
     "worldgen",
-    "patches",
     "landforms.json",
 )
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
@@ -19,7 +18,7 @@ SIZE = 256
 with open(PATCH_FILE) as f:
     patch_data = json.load(f)
 
-landforms = [entry.get("value") for entry in patch_data if isinstance(entry, dict)]
+landforms = patch_data.get("landforms", [])
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 for lf in landforms:
