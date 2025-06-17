@@ -1,22 +1,29 @@
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.API.MathTools;
-using Vintagestory.API.Common.CommandAbbr;
-using Vintagestory.ServerMods;
 using System;
+using System.IO;
 
 namespace LandformTeleport
 {
     public class LandformTeleportSystem : ModSystem
     {
         ICoreServerAPI sapi;
+        readonly string[] landformCodes = new[] {
+            "flatlands",
+            "sheercliffs",
+            "canyons",
+            "towercliffs",
+            "riceplateaus",
+            "sheercliffcanyon"
+        };
 
         public override void StartServerSide(ICoreServerAPI api)
         {
             this.sapi = api;
             var parsers = api.ChatCommands.Parsers;
             api.ChatCommands.Create("tpl")
-                .WithDesc("Teleport to nearest landform")
+                .WithDescription("Teleport to nearest landform")
                 .WithArgs(parsers.Word("landform"))
                 .HandleWith(OnTeleportCommand);
         }
@@ -28,7 +35,7 @@ namespace LandformTeleport
                 return TextCommandResult.Error("Command can only be used by a player.");
             }
 
-            string landformCode = args[0] as string;
+            string landformCode = args.PopWord();
             Vec3d startPos = args.Caller.Entity.Pos.XYZ;
 
             Vec3d target = FindNearestLandform(startPos, landformCode);
@@ -38,7 +45,7 @@ namespace LandformTeleport
                 return TextCommandResult.Error("Landform not found nearby");
             }
 
-            args.Caller.Entity?.TeleportToDouble(target.X, target.Y, target.Z);
+            args.Caller.Entity?.TeleportTo(target.X, target.Y, target.Z);
             return TextCommandResult.Success("Teleported to {0}", landformCode);
         }
 
@@ -74,13 +81,13 @@ namespace LandformTeleport
                         int lx = cx % chunksPerRegion;
                         int lz = cz % chunksPerRegion;
                         int index = region.LandformMap.GetInt(lx, lz);
-                        string code = NoiseLandforms.landforms.LandFormsByIndex[index].Code.Path;
+                        string code = (index >= 0 && index < landformCodes.Length) ? landformCodes[index] : null;
 
                         if (code == landformCode)
                         {
                             double x = (cx + 0.5) * chunkSize;
                             double z = (cz + 0.5) * chunkSize;
-                            double y = sapi.World.BlockAccessor.GetTerrainMapheightAt(new BlockPos((int)x, 0, (int)z));
+                            double y = sapi.World.BlockAccessor.GetTerrainMapheightAt((int)x, (int)z);
                             return new Vec3d(x, y + 1, z);
                         }
                     }
