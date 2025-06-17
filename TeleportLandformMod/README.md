@@ -1,6 +1,6 @@
 # Landform Teleport Mod
 
-This mod adds a simple chat command `/tpl <landform>` that teleports the player to the nearest chunk containing the specified landform.
+This mod adds a simple chat command `/tpl <landform>` that teleports the player to the nearest chunk containing the specified landform. The `/tplandforms` command lists any landforms detected around your current position.
 
 The implementation scans nearby chunks using the server's landform map and moves the calling player if a match is found.
 
