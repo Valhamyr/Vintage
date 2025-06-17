@@ -46,21 +46,21 @@ Below is a minimal outline on how to structure and configure such a mod.
 
 4. **Configuring Landforms**
    - In `landforms.json`, define each new landform asset.
-   - In `landformConfig.json`, assign weights so roughly 70% of generated chunks use your landforms and 30% use vanilla ones.
+  - In `landformConfig.json`, assign weights so roughly 85% of generated chunks use your landforms and 15% use vanilla ones.
    - Weights are relative, so adjust numbers accordingly. Example snippet:
    ```json
    {
      "replace": false,
      "landforms": {
-       "flatlands": { "weight": 40 },
-       "sheercliffs": { "weight": 30 },
-       "canyons": { "weight": 25 },
-       "towercliffs": { "weight": 20 },
-       "riceplateaus": { "weight": 35 }
-     }
-   }
+       "flatlands": { "weight": 400 },
+       "sheercliffs": { "weight": 300 },
+       "canyons": { "weight": 250 },
+       "towercliffs": { "weight": 200 },
+       "riceplateaus": { "weight": 350 }
+    }
+  }
    ```
-   (Vanilla landforms keep their existing weights, making about 30% of the total.)
+   (Vanilla landforms keep their existing weights, making about 15% of the total.)
 
 5. **Allowing Structures to Spawn**
    - Patch `survival-worldgen-storystructures.json` so structures also target your new landforms.
@@ -79,5 +79,5 @@ The mod aims to implement the following terrain types:
 - **Tower Cliffs** – mostly flat areas punctuated by very tall, closely spaced pillars.
 - **Multi-level Plateaus** – terraced landscape with flat tops at varying heights, similar to oversized rice fields.
 
-Each landform will generate separately. When a new world is created, approximately 70% of terrain should come from these new landforms and the remaining 30% from vanilla ones. Structures from the `story` set will be able to spawn on all new landforms if configured in `survival-worldgen-storystructures.json`.
+Each landform will generate separately. When a new world is created, approximately 85% of terrain should come from these new landforms and the remaining 15% from vanilla ones. Structures from the `story` set will be able to spawn on all new landforms if configured in `survival-worldgen-storystructures.json`.
 

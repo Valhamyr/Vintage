@@ -4,7 +4,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "flatlands",
-      "weight": 40
+      "weight": 400
     }
   },
   {
@@ -12,7 +12,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "sheercliffs",
-      "weight": 30
+      "weight": 300
     }
   },
   {
@@ -20,7 +20,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "canyons",
-      "weight": 25
+      "weight": 250
     }
   },
   {
@@ -28,7 +28,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "towercliffs",
-      "weight": 20
+      "weight": 200
     }
   },
   {
@@ -36,7 +36,7 @@
     "path": "/landforms/-",
     "value": {
       "code": "riceplateaus",
-      "weight": 35
+      "weight": 350
     }
   }
 ]
