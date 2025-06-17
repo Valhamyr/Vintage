@@ -2,7 +2,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.API.MathTools;
 using System;
-using System.IO;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace LandformTeleport
@@ -11,18 +11,29 @@ namespace LandformTeleport
     {
         ICoreServerAPI sapi;
         MethodInfo terrainHeightMethod;
-        readonly string[] landformCodes = new[] {
-            "flatlands",
-            "sheercliffs",
-            "canyons",
-            "towercliffs",
-            "riceplateaus",
-            "sheercliffcanyon"
-        };
+        Dictionary<int, string> landformCodes = new Dictionary<int, string>();
 
         public override void StartServerSide(ICoreServerAPI api)
         {
             this.sapi = api;
+            // Build lookup table for all landforms in the running world
+            try
+            {
+                var asset = api.Assets.TryGet("worldgen/landforms.json");
+                if (asset != null)
+                {
+                    JsonObject obj = asset.ToObject<JsonObject>();
+                    var arr = obj["landforms"]?.AsArray();
+                    if (arr != null)
+                    {
+                        for (int i = 0; i < arr.Length; i++)
+                        {
+                            landformCodes[i] = arr[i]["code"].AsString();
+                        }
+                    }
+                }
+            }
+            catch { }
             // Locate the correct terrain height method at runtime for
             // compatibility with different Vintage Story API versions.
             var accType = sapi.World.BlockAccessor.GetType();
@@ -90,7 +101,7 @@ namespace LandformTeleport
                         int lx = cx % chunksPerRegion;
                         int lz = cz % chunksPerRegion;
                         int index = region.LandformMap.GetInt(lx, lz);
-                        string code = (index >= 0 && index < landformCodes.Length) ? landformCodes[index] : null;
+                        landformCodes.TryGetValue(index, out string code);
 
                         if (code == landformCode)
                         {
