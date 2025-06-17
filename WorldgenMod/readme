@@ -92,6 +92,8 @@ based on the `noiseScale` plus the new octave and height arrays in
 `WorldgenMod/noise_samples/` directory. Use `--size <N>` to set the pixel width
 and height (default 256×256) when previewing larger areas. These preview images
 are not tracked in version control.
+Pass the optional `--heightmap` flag to output a top‑down heightmap instead of
+the default vertical preview.
 
 ### Parameter notes
 
