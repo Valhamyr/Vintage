@@ -87,7 +87,9 @@ namespace LandformTeleport
                         {
                             double x = (cx + 0.5) * chunkSize;
                             double z = (cz + 0.5) * chunkSize;
-                            double y = sapi.World.BlockAccessor.GetTerrainMapheightAt((int)x, (int)z);
+                            // API update in Vintage Story v1.20.12 renamed this method
+                            // from GetTerrainMapheightAt to GetTerrainMapHeightAt
+                            double y = sapi.World.BlockAccessor.GetTerrainMapHeightAt((int)x, (int)z);
                             return new Vec3d(x, y + 1, z);
                         }
                     }
