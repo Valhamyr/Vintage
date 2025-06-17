@@ -3,12 +3,14 @@ using Vintagestory.API.Server;
 using Vintagestory.API.MathTools;
 using System;
 using System.IO;
+using System.Reflection;
 
 namespace LandformTeleport
 {
     public class LandformTeleportSystem : ModSystem
     {
         ICoreServerAPI sapi;
+        MethodInfo terrainHeightMethod;
         readonly string[] landformCodes = new[] {
             "flatlands",
             "sheercliffs",
@@ -21,6 +23,12 @@ namespace LandformTeleport
         public override void StartServerSide(ICoreServerAPI api)
         {
             this.sapi = api;
+            // Locate the correct terrain height method at runtime for
+            // compatibility with different Vintage Story API versions.
+            var accType = sapi.World.BlockAccessor.GetType();
+            terrainHeightMethod = accType.GetMethod("GetTerrainMapHeightAt", new[] { typeof(int), typeof(int) })
+                ?? accType.GetMethod("GetTerrainMapheightAt", new[] { typeof(int), typeof(int) });
+
             var parsers = api.ChatCommands.Parsers;
             api.ChatCommands.Create("tpl")
                 .WithDescription("Teleport to nearest landform")
@@ -87,9 +95,9 @@ namespace LandformTeleport
                         {
                             double x = (cx + 0.5) * chunkSize;
                             double z = (cz + 0.5) * chunkSize;
-                            // API update in Vintage Story v1.20.12 renamed this method
-                            // from GetTerrainMapheightAt to GetTerrainMapHeightAt
-                            double y = sapi.World.BlockAccessor.GetTerrainMapHeightAt((int)x, (int)z);
+                            // API method name varies between versions. Use helper
+                            // to call whichever method is available at runtime.
+                            double y = GetTerrainHeight((int)x, (int)z);
                             return new Vec3d(x, y + 1, z);
                         }
                     }
@@ -97,6 +105,21 @@ namespace LandformTeleport
             }
 
             return null;
+        }
+
+        // Uses reflection to support both GetTerrainMapHeightAt (new name) and
+        // GetTerrainMapheightAt (old name) depending on the installed API
+        // version.
+        private double GetTerrainHeight(int x, int z)
+        {
+            if (terrainHeightMethod != null)
+            {
+                object val = terrainHeightMethod.Invoke(sapi.World.BlockAccessor, new object[] { x, z });
+                return Convert.ToDouble(val);
+            }
+
+            // Should never happen but avoids crash if method not found
+            return 0;
         }
     }
 }
