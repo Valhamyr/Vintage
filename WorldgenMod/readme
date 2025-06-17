@@ -92,3 +92,14 @@ based on the `noiseScale` plus the new octave and height arrays in
 a local `WorldgenMod/noise_samples/` directory. These preview images are not
 tracked in version control.
 
+### Parameter notes
+
+* **terrainOctaves** – amplitude multipliers per Perlin octave. Larger numbers
+  add sharper detail at that scale.
+* **terrainYKeyPositions** – normalized height checkpoints that define where the
+  landform changes vertically.
+* **terrainYKeyThresholds** – blending values tied to each Y key that control
+  how abruptly those changes occur.
+* **threshold** – minimum noise value required for the landform to generate at a
+  given coordinate. Higher values make the feature rarer and more isolated.
+
