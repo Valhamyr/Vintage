@@ -47,6 +47,11 @@ namespace LandformTeleport
                 .WithArgs(parsers.Word("landform"))
                 .RequiresPrivilege("tp")
                 .HandleWith(OnTeleportCommand);
+
+            api.ChatCommands.Create("tplandforms")
+                .WithDescription("List nearby landforms for /tpl")
+                .RequiresPrivilege("tp")
+                .HandleWith(OnListLandformsCommand);
         }
 
         private TextCommandResult OnTeleportCommand(TextCommandCallingArgs args)
@@ -57,6 +62,12 @@ namespace LandformTeleport
             }
 
             string landformCode = (string)args[0];
+
+            if (!landformCodes.ContainsValue(landformCode))
+            {
+                return TextCommandResult.Error("Unknown landform name");
+            }
+
             Vec3d startPos = args.Caller.Entity.Pos.XYZ;
 
             Vec3d target = FindNearestLandform(startPos, landformCode);
@@ -70,12 +81,30 @@ namespace LandformTeleport
             return TextCommandResult.Success("Teleported to {0}", landformCode);
         }
 
+        private TextCommandResult OnListLandformsCommand(TextCommandCallingArgs args)
+        {
+            if (args.Caller.Player == null)
+            {
+                return TextCommandResult.Error("Command can only be used by a player.");
+            }
+
+            Vec3d startPos = args.Caller.Entity.Pos.XYZ;
+            HashSet<string> codes = FindLocalLandforms(startPos);
+
+            if (codes.Count == 0)
+            {
+                return TextCommandResult.Success("No landforms found nearby");
+            }
+
+            return TextCommandResult.Success("Nearby landforms: {0}", string.Join(", ", codes));
+        }
+
         // NOTE: This is a placeholder search using worldgen API. Adjust as needed
         private Vec3d FindNearestLandform(Vec3d startPos, string landformCode)
         {
             // The worldgen API provides access to landform maps via MapRegion and MapChunk.
             // Search nearby chunks (within 20 chunks) for matching landform index.
-            int searchRadiusChunks = 20;
+            int searchRadiusChunks = 50;
             int chunkSize = sapi.WorldManager.ChunkSize;
             int regionSize = sapi.WorldManager.RegionSize;
             int chunksPerRegion = regionSize / chunkSize;
@@ -118,6 +147,45 @@ namespace LandformTeleport
             }
 
             return null;
+        }
+
+        private HashSet<string> FindLocalLandforms(Vec3d startPos)
+        {
+            int searchRadiusChunks = 20;
+            int chunkSize = sapi.WorldManager.ChunkSize;
+            int regionSize = sapi.WorldManager.RegionSize;
+            int chunksPerRegion = regionSize / chunkSize;
+            int originChunkX = (int)startPos.X / chunkSize;
+            int originChunkZ = (int)startPos.Z / chunkSize;
+
+            HashSet<string> codes = new HashSet<string>();
+
+            for (int dx = -searchRadiusChunks; dx <= searchRadiusChunks; dx++)
+            {
+                for (int dz = -searchRadiusChunks; dz <= searchRadiusChunks; dz++)
+                {
+                    int cx = originChunkX + dx;
+                    int cz = originChunkZ + dz;
+
+                    IMapChunk mapChunk = sapi.WorldManager.GetMapChunk(cx, cz);
+                    if (mapChunk == null) continue;
+
+                    int regionX = cx / chunksPerRegion;
+                    int regionZ = cz / chunksPerRegion;
+                    IMapRegion region = sapi.WorldManager.GetMapRegion(regionX, regionZ);
+                    if (region == null) continue;
+
+                    int lx = cx % chunksPerRegion;
+                    int lz = cz % chunksPerRegion;
+                    int index = region.LandformMap.GetInt(lx, lz);
+                    if (landformCodes.TryGetValue(index, out string code))
+                    {
+                        codes.Add(code);
+                    }
+                }
+            }
+
+            return codes;
         }
 
         // Uses reflection to support both GetTerrainMapHeightAt (new name) and
