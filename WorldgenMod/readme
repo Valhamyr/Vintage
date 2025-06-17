@@ -52,15 +52,18 @@ Below is a minimal outline on how to structure and configure such a mod.
    {
      "replace": false,
      "landforms": {
-       "flatlands": { "weight": 400 },
-       "sheercliffs": { "weight": 300 },
-       "canyons": { "weight": 250 },
-       "towercliffs": { "weight": 200 },
-       "riceplateaus": { "weight": 350 }
+       "flatlands": { "weight": 100 },
+       "sheercliffs": { "weight": 250 },
+       "canyons": { "weight": 500 },
+       "towercliffs": { "weight": 50 },
+       "riceplateaus": { "weight": 1100 }
     }
   }
-   ```
-   (Vanilla landforms keep their existing weights, making about 15% of the total.)
+  ```
+  (Vanilla landforms keep their existing weights, making about 15% of the total.)
+
+With these weights, the `riceplateaus` landform now exceeds half of all custom
+terrain generation, followed by `canyons` and `sheercliffs` in relative frequency.
 
 5. **Allowing Structures to Spawn**
    - Patch `survival-worldgen-storystructures.json` so structures also target your new landforms.
