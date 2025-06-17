@@ -84,3 +84,10 @@ The mod aims to implement the following terrain types:
 
 Each landform will generate separately. When a new world is created, approximately 85% of terrain should come from these new landforms and the remaining 15% from vanilla ones. Structures from the `story` set will be able to spawn on all new landforms if configured in `survival-worldgen-storystructures.json`.
 
+## Noise Samples
+
+The `generate_noise_images.py` helper script renders example Perlin noise maps
+using the `noiseScale` values from `landforms.json`. Run the script with
+Python to generate 256×256 PNG images in a local `WorldgenMod/noise_samples/`
+directory. These preview images are not tracked in version control.
+
