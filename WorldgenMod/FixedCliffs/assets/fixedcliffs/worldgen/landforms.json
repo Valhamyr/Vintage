@@ -91,10 +91,10 @@
           { "rock": "basalt", "thickness": 3 }
         ]
       },
-      "terrainOctaves":          [0, 0.2, 0.35, 0.5, 1.2, 0.65, 0.65, 0.8, 0.6],
+      "terrainOctaves":          [0.1, 0.2, 0.4, 0.6, 1.0, 0.6, 0.4, 0.3, 0.2],
       "terrainOctaveThresholds": [0, 0, 0, 0, 0.3, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0, 0.40, 0.44, 0.50, 0.78, 0.83],
-      "terrainYKeyThresholds":   [1, 0.9, 0.7, 0.4, 0.1, 0]
+      "terrainYKeyPositions":    [0.0, 0.35, 0.45, 0.46, 0.6, 0.7],
+      "terrainYKeyThresholds":   [1.0, 1.0, 0.5, 0.5, 0.2, 0.0]
     },
     {
       "code": "towercliffs",

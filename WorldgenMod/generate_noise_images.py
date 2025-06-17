@@ -14,6 +14,8 @@ PATCH_FILE = os.path.join(
 )
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
 SIZE = 256
+WARP_SCALE = 0.01
+WARP_AMPLITUDE = 20.0
 
 with open(PATCH_FILE) as f:
     patch_data = json.load(f)
@@ -52,11 +54,16 @@ for lf in landforms:
                     break
         for x in range(SIZE):
             total = 0.0
+            warp_x = pnoise2(x * WARP_SCALE, y * WARP_SCALE) * WARP_AMPLITUDE
+            warp_z = pnoise2(x * WARP_SCALE + 1000, y * WARP_SCALE + 1000) * WARP_AMPLITUDE
             for i, amp in enumerate(octaves):
                 freq = 2 ** i
                 thr = octave_thresholds[i]
-                n = pnoise2(x * scale * freq * 1000, y * scale * freq * 1000)
-                n = max(0.0, (n + 0.5) - thr)
+                raw = pnoise2((x + warp_x) * scale * freq * 1000,
+                               (y + warp_z) * scale * freq * 1000)
+                n = (raw + 1.0) * 0.5
+                n = max(0.0, n - thr)
+                n = 3 * n * n - 2 * n * n * n
                 total += amp * n
             total = max(0.0, min(total * yfactor, 1.0))
             val = int(total * 255)
