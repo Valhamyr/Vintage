@@ -26,10 +26,10 @@ Start with a content mod if you are new, then progress to code mods for more adv
 
 ## Basic mod structure
 
-Mods should be distributed as zip files. Inside the archive, the following structure is recommended (taken from the wiki page *Mod Packaging*):
+A typical mod folder contains the following layout:
 
 ```
-mod.zip/
+myMod/
 ├─ assets/
 │  └─ <modid>/
 │      └─ … (textures, blocktypes, itemtypes, etc.)
@@ -61,18 +61,6 @@ A minimal `modinfo.json` might look like:
 ```
 
 Important fields include `type` (one of `theme`, `content`, or `code`), `modid` which must be lowercase alphanumerics only, `version` using semantic versioning, and optional dependency entries.
-
-## Creating zip releases for testing
-
-Whenever you start a new mod or make changes to an existing one, create a zip archive so testers can easily try it out. Zip the **contents** of the mod folder, not the folder itself, so the archive contains `assets/`, `modinfo.json`, and any compiled files.
-
-From inside your mod folder run, for example:
-
-```bash
-zip -r mymod-1.0.0.zip assets modinfo.json
-```
-
-Upload the resulting zip with your release or share it directly so players can drop it into their `Mods` directory.
 
 ## Asset system overview
 
