@@ -1,41 +1,36 @@
 [
   {
     "op": "add",
-    "path": "/landforms/-",
+    "path": "/landforms/flatlands",
     "value": {
-      "code": "flatlands",
       "weight": 200
     }
   },
   {
     "op": "add",
-    "path": "/landforms/-",
+    "path": "/landforms/sheercliffs",
     "value": {
-      "code": "sheercliffs",
       "weight": 400
     }
   },
   {
     "op": "add",
-    "path": "/landforms/-",
+    "path": "/landforms/canyons",
     "value": {
-      "code": "canyons",
       "weight": 500
     }
   },
   {
     "op": "add",
-    "path": "/landforms/-",
+    "path": "/landforms/towercliffs",
     "value": {
-      "code": "towercliffs",
       "weight": 300
     }
   },
   {
     "op": "add",
-    "path": "/landforms/-",
+    "path": "/landforms/riceplateaus",
     "value": {
-      "code": "riceplateaus",
       "weight": 1100
     }
   }
