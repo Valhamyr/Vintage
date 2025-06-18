@@ -2,6 +2,8 @@
   {
     "op": "add",
     "path": "/landforms/flatlands",
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server",
     "value": {
       "weight": 1446
     }
@@ -9,6 +11,8 @@
   {
     "op": "add",
     "path": "/landforms/sheercliffs",
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server",
     "value": {
       "weight": 2891
     }
@@ -16,6 +20,8 @@
   {
     "op": "add",
     "path": "/landforms/canyons",
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server",
     "value": {
       "weight": 3614
     }
@@ -23,6 +29,8 @@
   {
     "op": "add",
     "path": "/landforms/towercliffs",
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server",
     "value": {
       "weight": 2168
     }
@@ -30,6 +38,8 @@
   {
     "op": "add",
     "path": "/landforms/riceplateaus",
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server",
     "value": {
       "weight": 7950
     }
