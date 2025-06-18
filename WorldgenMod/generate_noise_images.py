@@ -56,89 +56,76 @@ warp_noise_x = OpenSimplex(SEED + 1)
 warp_noise_z = OpenSimplex(SEED + 2)
 
 
-def render_landform(params, name):
+def sample_height(params, x, z):
+    """Return normalized height value for a coordinate or ``None`` when below
+    the landform threshold.
+    """
     scale = params.get("noiseScale", 0.001)
-    octaves = params.get("terrainOctaves", [])
+    octaves = params.get("terrainOctaves", []) or [1]
     octave_thresholds = params.get("terrainOctaveThresholds", [])
+    if len(octave_thresholds) < len(octaves):
+        octave_thresholds += [0] * (len(octaves) - len(octave_thresholds))
+
     ykeys = params.get("terrainYKeyPositions", [])
     ythresh = params.get("terrainYKeyThresholds", [])
     base_height = params.get("baseHeight", 0.0)
     height_offset = params.get("heightOffset", 0.0)
     threshold = params.get("threshold", 0.0)
 
-    if not octaves:
-        octaves = [1]
-    if len(octave_thresholds) < len(octaves):
-        octave_thresholds += [0] * (len(octaves) - len(octave_thresholds))
+    warp_x = warp_noise_x.noise2(x * WARP_SCALE, z * WARP_SCALE) * WARP_AMPLITUDE
+    warp_z = warp_noise_z.noise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000) * WARP_AMPLITUDE
 
+    total = 0.0
+    for i, amp in enumerate(octaves):
+        freq = 2 ** i
+        thr = octave_thresholds[i]
+        raw = main_noise.noise2((x + warp_x) * scale * freq, (z + warp_z) * scale * freq)
+        n = (raw + 1.0) * 0.5
+        n = max(0.0, n - thr)
+        n = 3 * n * n - 2 * n * n * n
+        total += amp * n
+
+    total = max(0.0, min(total, 1.0))
+    if total < threshold:
+        return None
+
+    yfactor = 1.0
+    if ykeys and ythresh and len(ythresh) >= len(ykeys):
+        yfactor = ythresh[-1]
+        for i in range(len(ykeys) - 1):
+            if total <= ykeys[i + 1]:
+                t1 = ythresh[i]
+                t2 = ythresh[i + 1]
+                p1 = ykeys[i]
+                p2 = ykeys[i + 1]
+                ratio = 0 if p2 == p1 else (total - p1) / (p2 - p1)
+                yfactor = t1 + (t2 - t1) * ratio
+                break
+
+    total = max(0.0, min(total * yfactor, 1.0))
+    return base_height + height_offset * total
+
+
+def render_landform(params, name):
     img = Image.new("L", (SIZE, SIZE))
     pixels = []
 
     if HEIGHTMAP:
         for z in range(SIZE):
             for x in range(SIZE):
-                total = 0.0
-                warp_x = warp_noise_x.noise2(x * WARP_SCALE, z * WARP_SCALE) * WARP_AMPLITUDE
-                warp_z = (
-                    warp_noise_z.noise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000)
-                    * WARP_AMPLITUDE
-                )
-                for i, amp in enumerate(octaves):
-                    freq = 2**i
-                    thr = octave_thresholds[i]
-                    raw = main_noise.noise2(
-                        (x + warp_x) * scale * freq,
-                        (z + warp_z) * scale * freq,
-                    )
-                    n = (raw + 1.0) * 0.5
-                    n = max(0.0, n - thr)
-                    n = 3 * n * n - 2 * n * n * n
-                    total += amp * n
-                total = max(0.0, min(total, 1.0))
-                if total < threshold:
-                    val = 0
-                else:
-                    height = base_height + height_offset * total
+                height = sample_height(params, x, z)
+                val = 0
+                if height is not None:
                     val = int(max(0.0, min(height, 1.0)) * 255)
                 pixels.append(val)
     else:
-        for y in range(SIZE):
-            ynorm = y / (SIZE - 1)
-            yfactor = 1.0
-            if ykeys and ythresh:
-                yfactor = ythresh[-1]
-                for i in range(len(ykeys) - 1):
-                    if ynorm <= ykeys[i + 1]:
-                        t1 = ythresh[i]
-                        t2 = ythresh[i + 1]
-                        p1 = ykeys[i]
-                        p2 = ykeys[i + 1]
-                        ratio = 0 if p2 == p1 else (ynorm - p1) / (p2 - p1)
-                        yfactor = t1 + (t2 - t1) * ratio
-                        break
-            for x in range(SIZE):
-                total = 0.0
-                warp_x = warp_noise_x.noise2(x * WARP_SCALE, y * WARP_SCALE) * WARP_AMPLITUDE
-                warp_z = (
-                    warp_noise_z.noise2(x * WARP_SCALE + 1000, y * WARP_SCALE + 1000)
-                    * WARP_AMPLITUDE
-                )
-                for i, amp in enumerate(octaves):
-                    freq = 2**i
-                    thr = octave_thresholds[i]
-                    raw = main_noise.noise2(
-                        (x + warp_x) * scale * freq,
-                        (y + warp_z) * scale * freq,
-                    )
-                    n = (raw + 1.0) * 0.5
-                    n = max(0.0, n - thr)
-                    n = 3 * n * n - 2 * n * n * n
-                    total += amp * n
-                total = max(0.0, min(total * yfactor, 1.0))
-                if total < threshold:
-                    val = 0
-                else:
-                    val = int(total * 255)
+        for x in range(SIZE):
+            height = sample_height(params, x, 0)
+            hpix = 0
+            if height is not None:
+                hpix = int(max(0.0, min(height, 1.0)) * (SIZE - 1))
+            for y in range(SIZE):
+                val = 255 if SIZE - 1 - y <= hpix else 0
                 pixels.append(val)
     img.putdata(pixels)
     img.save(
