@@ -106,7 +106,31 @@ namespace FixedCliffs
                 }
             };
 
-            sapi.WorldManager.ChunkGen.RegisterChunkColumnModifier(GenChunkColumn);
+            // API version differences require reflection to register our chunk
+            // column callback. Older releases exposed a ChunkGen property while
+            // newer versions provide the registration method directly on the
+            // world manager instance.
+            var wm = sapi.WorldManager;
+            var wmType = wm.GetType();
+            var chunkGenProp = wmType.GetProperty("ChunkGen");
+            if (chunkGenProp != null)
+            {
+                object chunkGen = chunkGenProp.GetValue(wm);
+                var method = chunkGenProp.PropertyType.GetMethod(
+                    "RegisterChunkColumnModifier",
+                    new[] { typeof(Action<IServerChunk[], int, int>) });
+                method?.Invoke(chunkGen, new object[] { (Action<IServerChunk[], int, int>)GenChunkColumn });
+            }
+            else
+            {
+                var method = wmType.GetMethod(
+                    "RegisterChunkColumnModifier",
+                    new[] { typeof(Action<IServerChunk[], int, int>) })
+                    ?? wmType.GetMethod(
+                        "RegisterChunkColumnGeneration",
+                        new[] { typeof(Action<IServerChunk[], int, int>) });
+                method?.Invoke(wm, new object[] { (Action<IServerChunk[], int, int>)GenChunkColumn });
+            }
         }
 
         private void GenChunkColumn(IServerChunk[] chunks, int chunkX, int chunkZ)
