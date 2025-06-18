@@ -3,35 +3,35 @@
     "op": "add",
     "path": "/landforms/flatlands",
     "value": {
-      "weight": 200
+      "weight": 1446
     }
   },
   {
     "op": "add",
     "path": "/landforms/sheercliffs",
     "value": {
-      "weight": 400
+      "weight": 2891
     }
   },
   {
     "op": "add",
     "path": "/landforms/canyons",
     "value": {
-      "weight": 500
+      "weight": 3614
     }
   },
   {
     "op": "add",
     "path": "/landforms/towercliffs",
     "value": {
-      "weight": 300
+      "weight": 2168
     }
   },
   {
     "op": "add",
     "path": "/landforms/riceplateaus",
     "value": {
-      "weight": 1100
+      "weight": 7950
     }
   }
 ]
