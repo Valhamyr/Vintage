@@ -32,9 +32,9 @@ The table below lists representative parameter choices from `FixedCliffs/landfor
 |---------------|-----------|----------|---------------|
 | `flatlands`    | `0.001`   | `0.5`    | Gentle height changes. Terrain octaves emphasize smooth slopes.
 | `sheercliffs`  | `0.0005`  | `0.95`   | High threshold and strong octaves create abrupt walls.
-| `canyons`      | `0.00075` | `0.92`   | Steep drops with additional mutation for caves.
+| `canyons`      | `0.0005`  | `0.2`    | Tall plateaus with narrow low paths.
 | `towercliffs`  | `0.0005`  | `0.97`   | Multiple octaves focus noise near the top to form pillars.
-| `riceplateaus` | `0.00025` | `0.8`    | Low scale with stacked Y keys for terraced levels.
+| `riceplateaus` | `0.0002`  | `0.4`    | Wide terraces forming large flat platforms.
 
 Adjusting these values changes how often a landform appears and how dramatic its features look. Lower the threshold to spread a shape farther across the world. Increase specific octave amplitudes to add jagged details at different sizes.
 

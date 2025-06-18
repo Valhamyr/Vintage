@@ -74,13 +74,13 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     BaseHeight = 0.2f,
-                    NoiseScale = 0.00075f,
-                    Threshold = 0.92f,
-                    HeightOffset = 0.65f,
-                    TerrainOctaves = new float[] {0f,0f,0f,0f,0.2f,1f,1f,0.8f,0.2f},
+                    NoiseScale = 0.0005f,
+                    Threshold = 0.2f,
+                    HeightOffset = 0.75f,
+                    TerrainOctaves = new float[] {0f,0f,0.1f,0.2f,0.4f,1f,1f,0.8f,0.3f},
                     TerrainOctaveThresholds = new float[] {0f,0f,0f,0f,0f,0f,0f,0f,0f},
-                    TerrainYKeyPositions = new float[] {0.35f,0.40f,0.45f,0.50f,0.54f,0.58f,0.62f,0.66f,0.70f},
-                    TerrainYKeyThresholds = new float[] {1f,0.850f,0.840f,0.800f,0.790f,0.750f,0.740f,0.700f,0f}
+                    TerrainYKeyPositions = new float[] {0f,0.35f,0.55f,0.70f,0.80f,0.90f},
+                    TerrainYKeyThresholds = new float[] {0f,0f,0.8f,1f,1f,1f}
                 },
                 new LandformParams
                 {
@@ -95,14 +95,14 @@ namespace FixedCliffs
                 },
                 new LandformParams
                 {
-                    BaseHeight = 0.25f,
-                    NoiseScale = 0.00025f,
-                    Threshold = 0.8f,
-                    HeightOffset = 0.55f,
-                    TerrainOctaves = new float[] {0f,1f,1f,1f,1f,0f,0.3f,0.3f,0.3f},
-                    TerrainOctaveThresholds = new float[] {0f,0f,0f,0.5f,0f,0f,0f,0f,0f},
-                    TerrainYKeyPositions = new float[] {0.430f,0.550f,0.650f,0.750f,0.850f},
-                    TerrainYKeyThresholds = new float[] {1f,0.950f,0.700f,0.650f,0f}
+                    BaseHeight = 0.20f,
+                    NoiseScale = 0.0002f,
+                    Threshold = 0.4f,
+                    HeightOffset = 0.60f,
+                    TerrainOctaves = new float[] {0f,0.8f,0.8f,1f,1f,0.4f,0.2f,0.1f,0.1f},
+                    TerrainOctaveThresholds = new float[] {0f,0f,0f,0.4f,0f,0f,0f,0f,0f},
+                    TerrainYKeyPositions = new float[] {0.40f,0.55f,0.70f,0.85f,1.00f},
+                    TerrainYKeyThresholds = new float[] {1f,1f,0.80f,0.60f,0f}
                 }
             };
 

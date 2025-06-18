@@ -4,9 +4,9 @@
     {
       "code": "canyons",
       "baseHeight": 0.2,
-      "noiseScale": 0.00075,
-      "threshold": 0.92,
-      "heightOffset": 0.65,
+      "noiseScale": 0.0005,
+      "threshold": 0.2,
+      "heightOffset": 0.75,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -25,10 +25,10 @@
           { "rock": "basalt", "thickness": 3 }
         ]
       },
-      "terrainOctaves":          [0, 0, 0, 0, 0.2, 1, 1, 0.8, 0.2],
+      "terrainOctaves":          [0, 0, 0.1, 0.2, 0.4, 1, 1, 0.8, 0.3],
       "terrainOctaveThresholds": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0.35, 0.40, 0.45, 0.50, 0.54, 0.58, 0.62, 0.66, 0.70],
-      "terrainYKeyThresholds":   [1.000, 0.850, 0.840, 0.800, 0.790, 0.750, 0.740, 0.700, 0.000],
+      "terrainYKeyPositions":    [0.00, 0.35, 0.55, 0.70, 0.80, 0.90],
+      "terrainYKeyThresholds":   [0.0, 0.0, 0.8, 1.0, 1.0, 1.0],
       "mutations": [
         {
           "code": "canyon-cavemut",
@@ -127,10 +127,10 @@
     },
     {
       "code": "riceplateaus",
-      "baseHeight": 0.25,
-      "noiseScale": 0.00025,
-      "threshold": 0.8,
-      "heightOffset": 0.55,
+      "baseHeight": 0.20,
+      "noiseScale": 0.0002,
+      "threshold": 0.4,
+      "heightOffset": 0.60,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -149,10 +149,10 @@
           { "rock": "basalt", "thickness": 3 }
         ]
       },
-      "terrainOctaves":          [0, 1, 1, 1, 1, 0, 0.3, 0.3, 0.3],
-      "terrainOctaveThresholds": [0, 0, 0, 0.5, 0, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0.430, 0.550, 0.650, 0.750, 0.850],
-      "terrainYKeyThresholds":   [1.000, 0.950, 0.700, 0.650, 0.000]
+      "terrainOctaves":          [0, 0.8, 0.8, 1, 1, 0.4, 0.2, 0.1, 0.1],
+      "terrainOctaveThresholds": [0, 0, 0, 0.4, 0, 0, 0, 0, 0],
+      "terrainYKeyPositions":    [0.40, 0.55, 0.70, 0.85, 1.00],
+      "terrainYKeyThresholds":   [1.000, 1.000, 0.800, 0.600, 0.000]
     }
   ],
   "replace": false
