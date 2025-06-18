@@ -74,13 +74,13 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     BaseHeight = 0.2f,
-                    NoiseScale = 0.00075f,
-                    Threshold = 0.92f,
-                    HeightOffset = 0.65f,
-                    TerrainOctaves = new float[] {0f,0f,0f,0f,0.2f,1f,1f,0.8f,0.2f},
+                    NoiseScale = 0.0004f,
+                    Threshold = 0.25f,
+                    HeightOffset = 0.80f,
+                    TerrainOctaves = new float[] {0f,0f,0f,0.15f,0.3f,1f,1f,0.6f,0.2f},
                     TerrainOctaveThresholds = new float[] {0f,0f,0f,0f,0f,0f,0f,0f,0f},
-                    TerrainYKeyPositions = new float[] {0.35f,0.40f,0.45f,0.50f,0.54f,0.58f,0.62f,0.66f,0.70f},
-                    TerrainYKeyThresholds = new float[] {1f,0.850f,0.840f,0.800f,0.790f,0.750f,0.740f,0.700f,0f}
+                    TerrainYKeyPositions = new float[] {0f,0.40f,0.60f,0.80f,0.90f,0.95f},
+                    TerrainYKeyThresholds = new float[] {0f,0f,0.85f,1f,1f,1f}
                 },
                 new LandformParams
                 {
@@ -96,13 +96,13 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     BaseHeight = 0.25f,
-                    NoiseScale = 0.00025f,
-                    Threshold = 0.8f,
-                    HeightOffset = 0.55f,
-                    TerrainOctaves = new float[] {0f,1f,1f,1f,1f,0f,0.3f,0.3f,0.3f},
+                    NoiseScale = 0.00015f,
+                    Threshold = 0.5f,
+                    HeightOffset = 0.75f,
+                    TerrainOctaves = new float[] {0f,0.6f,0.6f,1f,1f,0.2f,0.1f,0.1f,0f},
                     TerrainOctaveThresholds = new float[] {0f,0f,0f,0.5f,0f,0f,0f,0f,0f},
-                    TerrainYKeyPositions = new float[] {0.430f,0.550f,0.650f,0.750f,0.850f},
-                    TerrainYKeyThresholds = new float[] {1f,0.950f,0.700f,0.650f,0f}
+                    TerrainYKeyPositions = new float[] {0.35f,0.60f,0.75f,0.90f,1.00f},
+                    TerrainYKeyThresholds = new float[] {1f,1f,1f,0.95f,0f}
                 }
             };
 
