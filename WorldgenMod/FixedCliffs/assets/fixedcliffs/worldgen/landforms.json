@@ -1,6 +1,6 @@
 {
-  "replace": false,
-  "landforms": [
+  "code": "landforms",
+  "variants": [
     {
       "code": "canyons",
       "baseHeight": 0.2,
@@ -154,5 +154,6 @@
       "terrainYKeyPositions":    [0.430, 0.550, 0.650, 0.750, 0.850],
       "terrainYKeyThresholds":   [1.000, 0.950, 0.700, 0.650, 0.000]
     }
-  ]
+  ],
+  "replace": false
 }

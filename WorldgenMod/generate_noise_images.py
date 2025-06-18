@@ -40,7 +40,7 @@ HEIGHTMAP = args.heightmap
 with open(PATCH_FILE) as f:
     patch_data = json.load(f)
 
-landforms = patch_data.get("landforms", [])
+landforms = patch_data.get("variants", [])
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 

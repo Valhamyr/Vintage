@@ -2,6 +2,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Datastructures;
+using Vintagestory.API.Util;
 using System.Collections.Generic;
 
 namespace FixedCliffs
@@ -14,9 +15,9 @@ namespace FixedCliffs
     public class FixedCliffsWorldGen : ModSystem
     {
         ICoreServerAPI sapi;
-        INoise mainNoise;
-        INoise warpNoiseX;
-        INoise warpNoiseZ;
+        FastNoiseLite mainNoise;
+        FastNoiseLite warpNoiseX;
+        FastNoiseLite warpNoiseZ;
 
         public override void StartServerSide(ICoreServerAPI api)
         {
@@ -27,11 +28,11 @@ namespace FixedCliffs
         private void InitWorldGen()
         {
             int seed = sapi.WorldManager.Seed;
-            mainNoise = new PerlinNoise(seed, 3);
-            warpNoiseX = new PerlinNoise(seed + 1, 1);
-            warpNoiseZ = new PerlinNoise(seed + 2, 1);
+            mainNoise = new FastNoiseLite(seed) { NoiseType = FastNoiseLite.NoiseType.OpenSimplex2 }; 
+            warpNoiseX = new FastNoiseLite(seed + 1) { NoiseType = FastNoiseLite.NoiseType.OpenSimplex2 }; 
+            warpNoiseZ = new FastNoiseLite(seed + 2) { NoiseType = FastNoiseLite.NoiseType.OpenSimplex2 }; 
 
-            sapi.WorldManager.ChunkGenerator.RegisterChunkColumnModifier(GenChunkColumn);
+            sapi.WorldManager.ChunkGen.RegisterChunkColumnModifier(GenChunkColumn);
         }
 
         private void GenChunkColumn(IServerChunk[] chunks, int chunkX, int chunkZ)
