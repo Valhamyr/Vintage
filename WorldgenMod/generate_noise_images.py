@@ -87,8 +87,8 @@ def render_landform(params, name):
                     freq = 2**i
                     thr = octave_thresholds[i]
                     raw = main_noise.noise2(
-                        (x + warp_x) * scale * freq * 1000,
-                        (z + warp_z) * scale * freq * 1000,
+                        (x + warp_x) * scale * freq,
+                        (z + warp_z) * scale * freq,
                     )
                     n = (raw + 1.0) * 0.5
                     n = max(0.0, n - thr)
@@ -127,8 +127,8 @@ def render_landform(params, name):
                     freq = 2**i
                     thr = octave_thresholds[i]
                     raw = main_noise.noise2(
-                        (x + warp_x) * scale * freq * 1000,
-                        (y + warp_z) * scale * freq * 1000,
+                        (x + warp_x) * scale * freq,
+                        (y + warp_z) * scale * freq,
                     )
                     n = (raw + 1.0) * 0.5
                     n = max(0.0, n - thr)
