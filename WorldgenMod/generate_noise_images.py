@@ -43,41 +43,51 @@ with open(PATCH_FILE) as f:
 landforms = patch_data.get("landforms", [])
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-for lf in landforms:
-    if not lf:
-        continue
-    code = lf.get("code")
-    scale = lf.get("noiseScale", 0.001)
-    octaves = lf.get("terrainOctaves", [])
-    octave_thresholds = lf.get("terrainOctaveThresholds", [])
-    ykeys = lf.get("terrainYKeyPositions", [])
-    ythresh = lf.get("terrainYKeyThresholds", [])
-    base_height = lf.get("baseHeight", 0.0)
-    height_offset = lf.get("heightOffset", 0.0)
+
+def render_landform(params, name):
+    scale = params.get("noiseScale", 0.001)
+    octaves = params.get("terrainOctaves", [])
+    octave_thresholds = params.get("terrainOctaveThresholds", [])
+    ykeys = params.get("terrainYKeyPositions", [])
+    ythresh = params.get("terrainYKeyThresholds", [])
+    base_height = params.get("baseHeight", 0.0)
+    height_offset = params.get("heightOffset", 0.0)
+    threshold = params.get("threshold", 0.0)
+
     if not octaves:
         octaves = [1]
     if len(octave_thresholds) < len(octaves):
         octave_thresholds += [0] * (len(octaves) - len(octave_thresholds))
+
     img = Image.new("L", (SIZE, SIZE))
     pixels = []
+
     if HEIGHTMAP:
         for z in range(SIZE):
             for x in range(SIZE):
                 total = 0.0
                 warp_x = pnoise2(x * WARP_SCALE, z * WARP_SCALE) * WARP_AMPLITUDE
-                warp_z = pnoise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000) * WARP_AMPLITUDE
+                warp_z = (
+                    pnoise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000)
+                    * WARP_AMPLITUDE
+                )
                 for i, amp in enumerate(octaves):
-                    freq = 2 ** i
+                    freq = 2**i
                     thr = octave_thresholds[i]
-                    raw = pnoise2((x + warp_x) * scale * freq * 1000,
-                                   (z + warp_z) * scale * freq * 1000)
+                    raw = pnoise2(
+                        (x + warp_x) * scale * freq * 1000,
+                        (z + warp_z) * scale * freq * 1000,
+                    )
                     n = (raw + 1.0) * 0.5
                     n = max(0.0, n - thr)
                     n = 3 * n * n - 2 * n * n * n
                     total += amp * n
                 total = max(0.0, min(total, 1.0))
-                height = base_height + height_offset * total
-                val = int(max(0.0, min(height, 1.0)) * 255)
+                if total < threshold:
+                    val = 0
+                else:
+                    height = base_height + height_offset * total
+                    val = int(max(0.0, min(height, 1.0)) * 255)
                 pixels.append(val)
     else:
         for y in range(SIZE):
@@ -97,19 +107,44 @@ for lf in landforms:
             for x in range(SIZE):
                 total = 0.0
                 warp_x = pnoise2(x * WARP_SCALE, y * WARP_SCALE) * WARP_AMPLITUDE
-                warp_z = pnoise2(x * WARP_SCALE + 1000, y * WARP_SCALE + 1000) * WARP_AMPLITUDE
+                warp_z = (
+                    pnoise2(x * WARP_SCALE + 1000, y * WARP_SCALE + 1000)
+                    * WARP_AMPLITUDE
+                )
                 for i, amp in enumerate(octaves):
-                    freq = 2 ** i
+                    freq = 2**i
                     thr = octave_thresholds[i]
-                    raw = pnoise2((x + warp_x) * scale * freq * 1000,
-                                   (y + warp_z) * scale * freq * 1000)
+                    raw = pnoise2(
+                        (x + warp_x) * scale * freq * 1000,
+                        (y + warp_z) * scale * freq * 1000,
+                    )
                     n = (raw + 1.0) * 0.5
                     n = max(0.0, n - thr)
                     n = 3 * n * n - 2 * n * n * n
                     total += amp * n
                 total = max(0.0, min(total * yfactor, 1.0))
-                val = int(total * 255)
+                if total < threshold:
+                    val = 0
+                else:
+                    val = int(total * 255)
                 pixels.append(val)
     img.putdata(pixels)
-    img.save(os.path.join(OUTPUT_DIR, f"{code}_{'heightmap' if HEIGHTMAP else 'preview'}.png"))
-    print("Saved", code, "heightmap" if HEIGHTMAP else "preview")
+    img.save(
+        os.path.join(
+            OUTPUT_DIR, f"{name}_{'heightmap' if HEIGHTMAP else 'preview'}.png"
+        )
+    )
+    print("Saved", name, "heightmap" if HEIGHTMAP else "preview")
+
+
+for lf in landforms:
+    if not lf:
+        continue
+    base_code = lf.get("code", "landform")
+    render_landform(lf, base_code)
+    for mut in lf.get("mutations", []):
+        params = lf.copy()
+        params.update(mut)
+        params.pop("chance", None)
+        mcode = mut.get("code", "mut")
+        render_landform(params, f"{base_code}_{mcode}")
