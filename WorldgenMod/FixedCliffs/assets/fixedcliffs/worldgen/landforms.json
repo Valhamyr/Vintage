@@ -4,7 +4,7 @@
     {
       "code": "canyons",
       "baseHeight": 0.2,
-      "noiseScale": 0.0005,
+      "noiseScale": 0.00025,
       "threshold": 0.2,
       "heightOffset": 0.75,
       "genClimate": true,
@@ -25,10 +25,10 @@
           { "rock": "basalt", "thickness": 3 }
         ]
       },
-      "terrainOctaves":          [0, 0, 0.1, 0.2, 0.4, 1, 1, 0.8, 0.3],
-      "terrainOctaveThresholds": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0.00, 0.35, 0.55, 0.70, 0.80, 0.90],
-      "terrainYKeyThresholds":   [0.0, 0.0, 0.8, 1.0, 1.0, 1.0],
+      "terrainOctaves":          [0.1, 0.2, 0.4, 0.6, 1, 0.8, 0.4],
+      "terrainOctaveThresholds": [0, 0, 0, 0.4, 0.6, 0.8, 1],
+      "terrainYKeyPositions":    [0.00, 0.25, 0.45, 0.65, 0.85, 0.95],
+      "terrainYKeyThresholds":   [0, 0, 0.9, 1, 1, 1],
       "mutations": [
         {
           "code": "canyon-cavemut",
@@ -130,7 +130,7 @@
       "baseHeight": 0.20,
       "noiseScale": 0.0002,
       "threshold": 0.4,
-      "heightOffset": 0.60,
+      "heightOffset": 0.80,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -150,9 +150,9 @@
         ]
       },
       "terrainOctaves":          [0, 0.8, 0.8, 1, 1, 0.4, 0.2, 0.1, 0.1],
-      "terrainOctaveThresholds": [0, 0, 0, 0.4, 0, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0.40, 0.55, 0.70, 0.85, 1.00],
-      "terrainYKeyThresholds":   [1.000, 1.000, 0.800, 0.600, 0.000]
+      "terrainOctaveThresholds": [0, 0, 0, 0.5, 0.3, 0, 0, 0, 0],
+      "terrainYKeyPositions":    [0.45, 0.65, 0.85, 1.05],
+      "terrainYKeyThresholds":   [1, 1, 1, 0]
     }
   ],
   "replace": false

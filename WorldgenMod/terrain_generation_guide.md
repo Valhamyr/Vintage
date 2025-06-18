@@ -91,6 +91,32 @@ Adjust weights in `landformConfig.json` to prioritize dramatic formations:
 
 ---
 
+## 📏 Landform Tuning Guidelines
+
+* **noiseScale** – lower values stretch patterns horizontally, creating wider canyons or plateaus.
+* **terrainOctaves** – early high values keep large, flat platforms while later octaves add detail.
+* **terrainYKeyPositions/Thresholds** – pair together to form vertical steps or gentle slopes.
+
+Example parameters:
+
+```json
+"canyons": {
+  "noiseScale": 0.00025,
+  "terrainOctaves": [0.1, 0.2, 0.4, 0.6, 1, 0.8, 0.4],
+  "terrainYKeyPositions": [0.00, 0.25, 0.45, 0.65, 0.85, 0.95],
+  "terrainYKeyThresholds": [0, 0, 0.9, 1, 1, 1]
+},
+"riceplateaus": {
+  "heightOffset": 0.8,
+  "terrainYKeyPositions": [0.45, 0.65, 0.85, 1.05],
+  "terrainYKeyThresholds": [1, 1, 1, 0]
+}
+```
+
+These tweaks widen canyon floors and raise terrace heights for easier building.
+
+---
+
 ## ✅ Final Notes
 
 - Avoid abrupt vertical jumps without plateaus (makes terrain unplayable)
