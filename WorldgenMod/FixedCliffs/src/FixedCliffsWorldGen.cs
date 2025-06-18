@@ -74,7 +74,7 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     BaseHeight = 0.2f,
-                    NoiseScale = 0.0005f,
+                    NoiseScale = 0.00025f,
                     Threshold = 0.2f,
                     HeightOffset = 0.75f,
                     TerrainOctaves = new float[] {0f,0f,0.1f,0.2f,0.4f,1f,1f,0.8f,0.3f},
@@ -98,7 +98,7 @@ namespace FixedCliffs
                     BaseHeight = 0.20f,
                     NoiseScale = 0.0002f,
                     Threshold = 0.4f,
-                    HeightOffset = 0.60f,
+                    HeightOffset = 0.80f,
                     TerrainOctaves = new float[] {0f,0.8f,0.8f,1f,1f,0.4f,0.2f,0.1f,0.1f},
                     TerrainOctaveThresholds = new float[] {0f,0f,0f,0.4f,0f,0f,0f,0f,0f},
                     TerrainYKeyPositions = new float[] {0.40f,0.55f,0.70f,0.85f,1.00f},
