@@ -1,7 +1,7 @@
 import json
 import os
 import argparse
-from noise import pnoise2
+from opensimplex import OpenSimplex
 from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -32,16 +32,28 @@ parser.add_argument(
     action="store_false",
     help="Generate vertical cross-sections instead of a top-down heightmap",
 )
+parser.add_argument(
+    "--seed",
+    type=int,
+    default=0,
+    help="Noise seed used for generation (default 0)",
+)
 parser.set_defaults(heightmap=True)
 args = parser.parse_args()
 SIZE = args.size
 HEIGHTMAP = args.heightmap
+SEED = args.seed
 
 with open(PATCH_FILE) as f:
     patch_data = json.load(f)
 
 landforms = patch_data.get("variants", [])
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# Set up OpenSimplex noise generators similar to the mod's FastNoiseLite usage
+main_noise = OpenSimplex(SEED)
+warp_noise_x = OpenSimplex(SEED + 1)
+warp_noise_z = OpenSimplex(SEED + 2)
 
 
 def render_landform(params, name):
@@ -66,15 +78,15 @@ def render_landform(params, name):
         for z in range(SIZE):
             for x in range(SIZE):
                 total = 0.0
-                warp_x = pnoise2(x * WARP_SCALE, z * WARP_SCALE) * WARP_AMPLITUDE
+                warp_x = warp_noise_x.noise2(x * WARP_SCALE, z * WARP_SCALE) * WARP_AMPLITUDE
                 warp_z = (
-                    pnoise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000)
+                    warp_noise_z.noise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000)
                     * WARP_AMPLITUDE
                 )
                 for i, amp in enumerate(octaves):
                     freq = 2**i
                     thr = octave_thresholds[i]
-                    raw = pnoise2(
+                    raw = main_noise.noise2(
                         (x + warp_x) * scale * freq * 1000,
                         (z + warp_z) * scale * freq * 1000,
                     )
@@ -106,15 +118,15 @@ def render_landform(params, name):
                         break
             for x in range(SIZE):
                 total = 0.0
-                warp_x = pnoise2(x * WARP_SCALE, y * WARP_SCALE) * WARP_AMPLITUDE
+                warp_x = warp_noise_x.noise2(x * WARP_SCALE, y * WARP_SCALE) * WARP_AMPLITUDE
                 warp_z = (
-                    pnoise2(x * WARP_SCALE + 1000, y * WARP_SCALE + 1000)
+                    warp_noise_z.noise2(x * WARP_SCALE + 1000, y * WARP_SCALE + 1000)
                     * WARP_AMPLITUDE
                 )
                 for i, amp in enumerate(octaves):
                     freq = 2**i
                     thr = octave_thresholds[i]
-                    raw = pnoise2(
+                    raw = main_noise.noise2(
                         (x + warp_x) * scale * freq * 1000,
                         (y + warp_z) * scale * freq * 1000,
                     )
