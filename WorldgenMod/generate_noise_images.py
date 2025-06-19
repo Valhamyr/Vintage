@@ -98,7 +98,6 @@ def sample_height(params, x, z):
         for i in range(plateau_count):
             if dist <= radius:
                 step_factor = (i + 1) / plateau_count
-                break
             radius *= radius_step
         if step_factor == 0.0:
             return None

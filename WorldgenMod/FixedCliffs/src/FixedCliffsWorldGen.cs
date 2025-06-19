@@ -172,7 +172,6 @@ namespace FixedCliffs
                     if (dist <= radius)
                     {
                         stepFactor = (i + 1f) / p.PlateauCount;
-                        break;
                     }
                     radius *= p.RadiusStep;
                 }
