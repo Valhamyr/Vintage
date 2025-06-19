@@ -77,6 +77,32 @@ def sample_height(params, x, z):
     height_offset = params.get("heightOffset", 0.0)
     threshold = params.get("threshold", 0.0)
 
+    plateau_count = params.get("plateauCount", 0)
+    base_radius = params.get("baseRadius", 0.0)
+    radius_step = params.get("radiusStep", 0.6)
+
+    step_factor = 1.0
+    if plateau_count > 0 and base_radius > 0:
+        cell_size = base_radius * 2.0
+        cell_x = int(x // cell_size)
+        cell_z = int(z // cell_size)
+        jitter_x = warp_noise_x.noise2(cell_x * 0.1, cell_z * 0.1) * cell_size * 0.4
+        jitter_z = warp_noise_z.noise2(cell_x * 0.1 + 1000, cell_z * 0.1 + 1000) * cell_size * 0.4
+        center_x = (cell_x + 0.5) * cell_size + jitter_x
+        center_z = (cell_z + 0.5) * cell_size + jitter_z
+        dx = x - center_x
+        dz = z - center_z
+        dist = (dx * dx + dz * dz) ** 0.5
+        radius = base_radius
+        step_factor = 0.0
+        for i in range(plateau_count):
+            if dist <= radius:
+                step_factor = (i + 1) / plateau_count
+                break
+            radius *= radius_step
+        if step_factor == 0.0:
+            return None
+
     warp_x = warp_noise_x.noise2(x * WARP_SCALE, z * WARP_SCALE) * WARP_AMPLITUDE
     warp_z = warp_noise_z.noise2(x * WARP_SCALE + 1000, z * WARP_SCALE + 1000) * WARP_AMPLITUDE
 
@@ -107,7 +133,7 @@ def sample_height(params, x, z):
                 yfactor = t1 + (t2 - t1) * ratio
                 break
 
-    total = max(0.0, min(total * yfactor, 1.0))
+    total = max(0.0, min(total * yfactor * step_factor, 1.0))
     return base_height + height_offset * total
 
 
