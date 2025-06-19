@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "landforms": {
+    "flatlands": { "weight": 1446 },
+    "sheercliffs": { "weight": 2891 },
+    "canyons": { "weight": 3614 },
+    "towercliffs": { "weight": 2168 },
+    "riceplateaus": { "weight": 7950 }
+  }
+}
