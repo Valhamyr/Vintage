@@ -99,7 +99,12 @@ namespace FixedCliffs
                     if (noiseVal < 0) continue;
 
                     int height = (int)(mapHeight * noiseVal);
-                    chunks[0].Blocks[(yindex(height) << 5) | (z << 5) | x] = 1;
+                    int chunkY = height / chunkSize;
+                    if (chunkY < 0 || chunkY >= chunks.Length) continue;
+                    int localY = height % chunkSize;
+                    IServerChunk chunk = chunks[chunkY];
+                    int index = localY * chunkSize * chunkSize + z * chunkSize + x;
+                    chunk.Blocks[index] = 1;
                 }
             }
         }

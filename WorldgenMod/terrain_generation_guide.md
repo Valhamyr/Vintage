@@ -73,6 +73,16 @@ This helps terrain feel less grid-aligned or uniform.
 
 ---
 
+## 🗂 Loading Landform Parameters
+
+`FixedCliffsWorldGen` reads the file `assets/fixedcliffs/worldgen/landforms.json`
+during server startup. Each object in the `variants` array becomes a
+`LandformParams` record used in `GenChunkColumn`. Tweaking values such as
+`terrainOctaves`, `terrainYKeyPositions` and `terrainYKeyThresholds` directly
+changes how sharp the cliffs appear and how terrace levels stack.
+
+---
+
 ## 🌟 Landform Balancing
 
 Adjust weights in `landformConfig.json` to prioritize dramatic formations:
