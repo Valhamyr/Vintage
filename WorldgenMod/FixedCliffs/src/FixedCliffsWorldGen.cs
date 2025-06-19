@@ -151,6 +151,34 @@ namespace FixedCliffs
             float warpX = warpNoiseX.GetNoise(worldX * 0.01f, worldZ * 0.01f) * 20f;
             float warpZ = warpNoiseZ.GetNoise(worldX * 0.01f + 1000, worldZ * 0.01f + 1000) * 20f;
 
+            float stepFactor = 1f;
+            if (p.PlateauCount > 0 && p.BaseRadius > 0f)
+            {
+                float cellSize = p.BaseRadius * 2f;
+                int cellX = GameMath.Floor(worldX / cellSize);
+                int cellZ = GameMath.Floor(worldZ / cellSize);
+                float jitterX = warpNoiseX.GetNoise(cellX * 0.1f, cellZ * 0.1f) * cellSize * 0.4f;
+                float jitterZ = warpNoiseZ.GetNoise(cellX * 0.1f + 1000, cellZ * 0.1f + 1000) * cellSize * 0.4f;
+                float centerX = (cellX + 0.5f) * cellSize + jitterX;
+                float centerZ = (cellZ + 0.5f) * cellSize + jitterZ;
+                float dx = worldX - centerX;
+                float dz = worldZ - centerZ;
+                float dist = GameMath.Sqrt(dx * dx + dz * dz);
+
+                float radius = p.BaseRadius;
+                stepFactor = 0f;
+                for (int i = 0; i < p.PlateauCount; i++)
+                {
+                    if (dist <= radius)
+                    {
+                        stepFactor = (i + 1f) / p.PlateauCount;
+                        break;
+                    }
+                    radius *= p.RadiusStep;
+                }
+                if (stepFactor == 0f) return -1f;
+            }
+
             float total = 0f;
             int octCount = octaves.Length;
             for (int i = 0; i < octCount; i++)
@@ -188,7 +216,7 @@ namespace FixedCliffs
                 }
             }
 
-            total = GameMath.Clamp(total * yFactor, 0f, 1f);
+            total = GameMath.Clamp(total * yFactor * stepFactor, 0f, 1f);
 
             return p.BaseHeight + p.HeightOffset * total;
         }

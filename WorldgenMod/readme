@@ -132,5 +132,9 @@ plateaus:
 Each plateau includes a generous rim before the next step, leaving room for
 large builds.
 
+`FixedCliffsWorldGen` reads `baseRadius`, `plateauCount`, and `radiusStep` to
+create concentric terraces. The `generate_noise_images.py` script mirrors this
+logic so the preview images match in-game terrain.
+
 
 
