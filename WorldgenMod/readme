@@ -89,12 +89,15 @@ Each landform will generate separately. When a new world is created, approximate
 ## Noise Samples
 
 The `generate_noise_images.py` helper script renders example Perlin noise maps
-based on the `noiseScale` plus the new octave and height arrays in
-`landforms.json`. Run the script with Python to generate PNG images in a local
-`WorldgenMod/noise_samples/` directory. Use `--size <N>` to set the pixel width
-and height (default 256×256) when previewing larger areas. These preview images
-are not tracked in version control. By default the script outputs a top-down
-heightmap. Use the `--cross-section` flag to render a vertical preview instead.
+based on the `noiseScale` plus the new octave and height arrays in a
+`landforms.json` file. By default it looks for
+`WorldgenMod/FixedCliffs/assets/fixedcliffs/worldgen/landforms.json`, but you
+can specify another file with `--landforms-file`. Run the script with Python to
+generate PNG images in a local `WorldgenMod/noise_samples/` directory. Use
+`--size <N>` to set the pixel width and height (default 256×256) when previewing
+larger areas. These preview images are not tracked in version control. By
+default the script outputs a top-down heightmap. Use the `--cross-section` flag
+to render a vertical preview instead.
 
 ### Parameter notes
 
