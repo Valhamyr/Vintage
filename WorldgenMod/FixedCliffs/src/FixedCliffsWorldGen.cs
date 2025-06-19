@@ -16,6 +16,16 @@ namespace FixedCliffs
     /// </summary>
     public class FixedCliffsWorldGen : ModSystem
     {
+        class LandformMutation
+        {
+            public string Code = "";
+            public float Chance;
+            public float[] TerrainOctaves = System.Array.Empty<float>();
+            public float[] TerrainOctaveThresholds = System.Array.Empty<float>();
+            public float[] TerrainYKeyPositions = System.Array.Empty<float>();
+            public float[] TerrainYKeyThresholds = System.Array.Empty<float>();
+        }
+
         class LandformParams
         {
             public string Code = "";
@@ -30,6 +40,7 @@ namespace FixedCliffs
             public float[] TerrainOctaveThresholds = System.Array.Empty<float>();
             public float[] TerrainYKeyPositions = System.Array.Empty<float>();
             public float[] TerrainYKeyThresholds = System.Array.Empty<float>();
+            public LandformMutation[] Mutations = System.Array.Empty<LandformMutation>();
         }
 
         ICoreServerAPI sapi;
@@ -115,21 +126,38 @@ namespace FixedCliffs
 
         private float SampleLandform(LandformParams p, int worldX, int worldZ)
         {
-            if (p.Code == "riceplateaus" && p.PlateauCount > 0 && p.BaseRadius > 0f)
+            float[] octaves = p.TerrainOctaves;
+            float[] octaveThr = p.TerrainOctaveThresholds;
+            float[] ykeys = p.TerrainYKeyPositions;
+            float[] ythresh = p.TerrainYKeyThresholds;
+
+            if (p.Mutations.Length > 0)
             {
-                return SampleRicePlateaus(p, worldX, worldZ);
+                float rnd = Rand01(worldX, worldZ);
+                foreach (var m in p.Mutations)
+                {
+                    if (rnd < m.Chance)
+                    {
+                        if (m.TerrainOctaves.Length > 0) octaves = m.TerrainOctaves;
+                        if (m.TerrainOctaveThresholds.Length > 0) octaveThr = m.TerrainOctaveThresholds;
+                        if (m.TerrainYKeyPositions.Length > 0) ykeys = m.TerrainYKeyPositions;
+                        if (m.TerrainYKeyThresholds.Length > 0) ythresh = m.TerrainYKeyThresholds;
+                        break;
+                    }
+                    rnd -= m.Chance;
+                }
             }
 
             float warpX = warpNoiseX.GetNoise(worldX * 0.01f, worldZ * 0.01f) * 20f;
             float warpZ = warpNoiseZ.GetNoise(worldX * 0.01f + 1000, worldZ * 0.01f + 1000) * 20f;
 
             float total = 0f;
-            int octCount = p.TerrainOctaves.Length;
+            int octCount = octaves.Length;
             for (int i = 0; i < octCount; i++)
             {
-                float amp = p.TerrainOctaves[i];
+                float amp = octaves[i];
                 float freq = 1 << i;
-                float thr = (i < p.TerrainOctaveThresholds.Length) ? p.TerrainOctaveThresholds[i] : 0f;
+                float thr = (i < octaveThr.Length) ? octaveThr[i] : 0f;
                 float raw = mainNoise.GetNoise((worldX + warpX) * p.NoiseScale * freq, (worldZ + warpZ) * p.NoiseScale * freq);
                 float n = (raw + 1f) * 0.5f;
                 n = GameMath.Max(0f, n - thr);
@@ -142,17 +170,17 @@ namespace FixedCliffs
             if (total < p.Threshold) return -1f;
 
             float yFactor = 1f;
-            if (p.TerrainYKeyPositions.Length > 1 && p.TerrainYKeyThresholds.Length >= p.TerrainYKeyPositions.Length)
+            if (ykeys.Length > 1 && ythresh.Length >= ykeys.Length)
             {
-                yFactor = p.TerrainYKeyThresholds[p.TerrainYKeyThresholds.Length - 1];
-                for (int i = 0; i < p.TerrainYKeyPositions.Length - 1; i++)
+                yFactor = ythresh[ythresh.Length - 1];
+                for (int i = 0; i < ykeys.Length - 1; i++)
                 {
-                    if (total <= p.TerrainYKeyPositions[i + 1])
+                    if (total <= ykeys[i + 1])
                     {
-                        float p1 = p.TerrainYKeyPositions[i];
-                        float p2 = p.TerrainYKeyPositions[i + 1];
-                        float t1 = p.TerrainYKeyThresholds[i];
-                        float t2 = p.TerrainYKeyThresholds[i + 1];
+                        float p1 = ykeys[i];
+                        float p2 = ykeys[i + 1];
+                        float t1 = ythresh[i];
+                        float t2 = ythresh[i + 1];
                         float ratio = p2 == p1 ? 0f : (total - p1) / (p2 - p1);
                         yFactor = t1 + (t2 - t1) * ratio;
                         break;
@@ -165,34 +193,22 @@ namespace FixedCliffs
             return p.BaseHeight + p.HeightOffset * total;
         }
 
-        private float SampleRicePlateaus(LandformParams p, int worldX, int worldZ)
-        {
-            int regionX = worldX >> 9;
-            int regionZ = worldZ >> 9;
-            float centerX = (regionX << 9) + 256;
-            float centerZ = (regionZ << 9) + 256;
-
-            float dx = worldX - centerX;
-            float dz = worldZ - centerZ;
-            float dist = GameMath.Sqrt(dx * dx + dz * dz);
-
-            float radius = p.BaseRadius;
-            float stepHeight = p.PlateauCount > 1 ? p.HeightOffset / (p.PlateauCount - 1) : 0f;
-            float height = p.BaseHeight;
-
-            for (int i = 0; i < p.PlateauCount; i++)
-            {
-                if (dist <= radius) return GameMath.Clamp(height, 0f, 1f);
-                radius *= p.RadiusStep;
-                height += stepHeight;
-            }
-
-            return -1f;
-        }
 
         private int yindex(int height)
         {
             return GameMath.Clamp(height, 0, sapi.WorldManager.MapSizeY - 1);
+        }
+
+        private float Rand01(int x, int z, int salt = 0)
+        {
+            unchecked
+            {
+                int h = x * 73428767 ^ z * 19349663 ^ (sapi.WorldManager.Seed + salt);
+                h ^= h >> 13;
+                h *= 0x5bd1e995;
+                h ^= h >> 15;
+                return (h & 0x7fffffff) / (float)int.MaxValue;
+            }
         }
 
         private void LoadLandforms()
@@ -222,6 +238,25 @@ namespace FixedCliffs
                             lp.TerrainOctaveThresholds = lf["terrainOctaveThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainYKeyPositions = lf["terrainYKeyPositions"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainYKeyThresholds = lf["terrainYKeyThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
+
+                            var mutArr = lf["mutations"] as JArray;
+                            if (mutArr != null && mutArr.Count > 0)
+                            {
+                                List<LandformMutation> mlist = new List<LandformMutation>();
+                                foreach (JObject mj in mutArr)
+                                {
+                                    LandformMutation mp = new LandformMutation();
+                                    mp.Code = mj.Value<string>("code") ?? "";
+                                    mp.Chance = mj.Value<float?>("chance") ?? 0f;
+                                    mp.TerrainOctaves = mj["terrainOctaves"]?.ToObject<float[]>() ?? Array.Empty<float>();
+                                    mp.TerrainOctaveThresholds = mj["terrainOctaveThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
+                                    mp.TerrainYKeyPositions = mj["terrainYKeyPositions"]?.ToObject<float[]>() ?? Array.Empty<float>();
+                                    mp.TerrainYKeyThresholds = mj["terrainYKeyThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
+                                    mlist.Add(mp);
+                                }
+                                lp.Mutations = mlist.ToArray();
+                            }
+
                             list.Add(lp);
                         }
                         if (list.Count > 0)
