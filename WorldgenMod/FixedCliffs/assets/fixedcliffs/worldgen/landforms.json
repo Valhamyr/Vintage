@@ -136,6 +136,8 @@
       "threshold": 0.4,
       "weight": 7228,
       "heightOffset": 0.55,
+      "baseRadius": 200,
+      "plateauCount": 4,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,

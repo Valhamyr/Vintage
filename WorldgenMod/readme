@@ -115,9 +115,13 @@ to render a vertical preview instead.
 The `riceplateaus` landform forms four wide terraces that rise from low
 ground. With a `baseHeight` of `0.05` and a `heightOffset` of `0.55`, the top
 layer sits around 60 % of world height. A small `noiseScale` (`0.00015`) keeps
-the steps smooth:
+the steps smooth. The shape is generated from stacked disks, each 60 % the
+radius of the one below it. The outermost disk size is set by `baseRadius` and
+`plateauCount` controls how many tiers are created (default 4):
 
 ```json
+"baseRadius": 200,
+"plateauCount": 4,
 "terrainYKeyPositions": [0.15, 0.30, 0.45, 0.60],
 "terrainYKeyThresholds": [1, 0.8, 0.6, 0]
 ```

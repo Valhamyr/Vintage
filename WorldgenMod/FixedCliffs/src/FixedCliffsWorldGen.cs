@@ -18,10 +18,13 @@ namespace FixedCliffs
     {
         class LandformParams
         {
+            public string Code = "";
             public float BaseHeight;
             public float NoiseScale;
             public float Threshold;
             public float HeightOffset;
+            public float BaseRadius;
+            public int PlateauCount;
             public float[] TerrainOctaves = System.Array.Empty<float>();
             public float[] TerrainOctaveThresholds = System.Array.Empty<float>();
             public float[] TerrainYKeyPositions = System.Array.Empty<float>();
@@ -111,6 +114,11 @@ namespace FixedCliffs
 
         private float SampleLandform(LandformParams p, int worldX, int worldZ)
         {
+            if (p.Code == "riceplateaus" && p.PlateauCount > 0 && p.BaseRadius > 0f)
+            {
+                return SampleRicePlateaus(p, worldX, worldZ);
+            }
+
             float warpX = warpNoiseX.GetNoise(worldX * 0.01f, worldZ * 0.01f) * 20f;
             float warpZ = warpNoiseZ.GetNoise(worldX * 0.01f + 1000, worldZ * 0.01f + 1000) * 20f;
 
@@ -156,6 +164,31 @@ namespace FixedCliffs
             return p.BaseHeight + p.HeightOffset * total;
         }
 
+        private float SampleRicePlateaus(LandformParams p, int worldX, int worldZ)
+        {
+            int regionX = worldX >> 9;
+            int regionZ = worldZ >> 9;
+            float centerX = (regionX << 9) + 256;
+            float centerZ = (regionZ << 9) + 256;
+
+            float dx = worldX - centerX;
+            float dz = worldZ - centerZ;
+            float dist = GameMath.Sqrt(dx * dx + dz * dz);
+
+            float radius = p.BaseRadius;
+            float stepHeight = p.PlateauCount > 1 ? p.HeightOffset / (p.PlateauCount - 1) : 0f;
+            float height = p.BaseHeight;
+
+            for (int i = 0; i < p.PlateauCount; i++)
+            {
+                if (dist <= radius) return GameMath.Clamp(height, 0f, 1f);
+                radius *= 0.6f;
+                height += stepHeight;
+            }
+
+            return -1f;
+        }
+
         private int yindex(int height)
         {
             return GameMath.Clamp(height, 0, sapi.WorldManager.MapSizeY - 1);
@@ -176,10 +209,13 @@ namespace FixedCliffs
                         foreach (JObject lf in arr)
                         {
                             LandformParams lp = new LandformParams();
+                            lp.Code = lf.Value<string>("code") ?? "";
                             lp.BaseHeight = lf.Value<float>("baseHeight");
                             lp.NoiseScale = lf.Value<float>("noiseScale");
                             lp.Threshold = lf.Value<float>("threshold");
                             lp.HeightOffset = lf.Value<float>("heightOffset");
+                            lp.BaseRadius = lf.Value<float?>("baseRadius") ?? 0f;
+                            lp.PlateauCount = lf.Value<int?>("plateauCount") ?? 0;
                             lp.TerrainOctaves = lf["terrainOctaves"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainOctaveThresholds = lf["terrainOctaveThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainYKeyPositions = lf["terrainYKeyPositions"]?.ToObject<float[]>() ?? Array.Empty<float>();
@@ -208,6 +244,7 @@ namespace FixedCliffs
             {
                 new LandformParams
                 {
+                    Code = "flatlands",
                     BaseHeight = 0.2f,
                     NoiseScale = 0.001f,
                     Threshold = 0.5f,
@@ -219,6 +256,7 @@ namespace FixedCliffs
                 },
                 new LandformParams
                 {
+                    Code = "sheercliffs",
                     BaseHeight = 0.25f,
                     NoiseScale = 0.0005f,
                     Threshold = 0.95f,
@@ -230,6 +268,7 @@ namespace FixedCliffs
                 },
                 new LandformParams
                 {
+                    Code = "canyons",
                     BaseHeight = 0.2f,
                     NoiseScale = 0.00025f,
                     Threshold = 0.2f,
@@ -241,6 +280,7 @@ namespace FixedCliffs
                 },
                 new LandformParams
                 {
+                    Code = "towercliffs",
                     BaseHeight = 0.25f,
                     NoiseScale = 0.0005f,
                     Threshold = 0.97f,
@@ -252,10 +292,13 @@ namespace FixedCliffs
                 },
                 new LandformParams
                 {
+                    Code = "riceplateaus",
                     BaseHeight = 0.20f,
                     NoiseScale = 0.0002f,
                     Threshold = 0.4f,
                     HeightOffset = 0.80f,
+                    BaseRadius = 200f,
+                    PlateauCount = 4,
                     TerrainOctaves = new float[] {0f,0.8f,0.8f,1f,1f,0.4f,0.2f,0.1f,0.1f},
                     TerrainOctaveThresholds = new float[] {0f,0f,0f,0.4f,0f,0f,0f,0f,0f},
                     TerrainYKeyPositions = new float[] {0.40f,0.55f,0.70f,0.85f,1.00f},
