@@ -155,8 +155,8 @@ namespace FixedCliffs
             if (p.PlateauCount > 0 && p.BaseRadius > 0f)
             {
                 float cellSize = p.BaseRadius * 2f;
-                int cellX = GameMath.Floor(worldX / cellSize);
-                int cellZ = GameMath.Floor(worldZ / cellSize);
+                int cellX = (int)Math.Floor(worldX / cellSize);
+                int cellZ = (int)Math.Floor(worldZ / cellSize);
                 float jitterX = warpNoiseX.GetNoise(cellX * 0.1f, cellZ * 0.1f) * cellSize * 0.4f;
                 float jitterZ = warpNoiseZ.GetNoise(cellX * 0.1f + 1000, cellZ * 0.1f + 1000) * cellSize * 0.4f;
                 float centerX = (cellX + 0.5f) * cellSize + jitterX;
