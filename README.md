@@ -64,6 +64,13 @@ A minimal `modinfo.json` might look like:
 
 Important fields include `type` (one of `theme`, `content`, or `code`), `modid` which must be lowercase alphanumerics only, `version` using semantic versioning, and optional dependency entries.
 
+## Environment setup
+
+Run `./setup_env.sh` to create a Python virtual environment and install the
+dependencies listed in `requirements.txt`. The script will also report whether
+the `dotnet` CLI is available, which is needed for compiling the C# example
+mods.
+
 ## Asset system overview
 
 Most game content is loaded from asset JSON files. The official *Asset System* documentation lists many categories, including:
