@@ -29,6 +29,7 @@ namespace FixedCliffs
         class LandformParams
         {
             public string Code = "";
+            public float Weight = 1f;
             public float BaseHeight;
             public float NoiseScale;
             public float Threshold;
@@ -49,6 +50,10 @@ namespace FixedCliffs
         FastNoiseLite mainNoise;
         FastNoiseLite warpNoiseX;
         FastNoiseLite warpNoiseZ;
+        FastNoiseLite selectionNoise;
+
+        float[] cumulativeWeights = Array.Empty<float>();
+        float totalWeight = 0f;
 
         LandformParams[] landforms;
 
@@ -67,6 +72,23 @@ namespace FixedCliffs
 
 
             LoadLandforms();
+
+            selectionNoise = new FastNoiseLite(seed + 3)
+            {
+                CurrentNoiseType = FastNoiseLite.NoiseType.OpenSimplex2,
+                Frequency = 0.0005f
+            };
+
+            if (landforms != null && landforms.Length > 0)
+            {
+                cumulativeWeights = new float[landforms.Length];
+                totalWeight = 0f;
+                for (int i = 0; i < landforms.Length; i++)
+                {
+                    totalWeight += landforms[i].Weight;
+                    cumulativeWeights[i] = totalWeight;
+                }
+            }
 
             // API version differences require reflection to register our chunk
             // column callback. Older releases exposed a ChunkGen property while
@@ -107,10 +129,15 @@ namespace FixedCliffs
                     int worldX = chunkX * chunkSize + x;
                     int worldZ = chunkZ * chunkSize + z;
 
-                    // Simple region-based selection of landform
-                    int region = ((worldX >> 9) + (worldZ >> 9)) % landforms.Length;
-                    if (region < 0) region += landforms.Length;
-                    LandformParams lp = landforms[region];
+                    // Choose landform using weighted noise value
+                    float sel = (selectionNoise.GetNoise(worldX, worldZ) + 1f) * 0.5f * totalWeight;
+                    int lfIndex = 0;
+                    while (lfIndex < cumulativeWeights.Length && sel > cumulativeWeights[lfIndex])
+                    {
+                        lfIndex++;
+                    }
+                    if (lfIndex >= landforms.Length) lfIndex = landforms.Length - 1;
+                    LandformParams lp = landforms[lfIndex];
 
                     float noiseVal = SampleLandform(lp, worldX, worldZ);
                     if (noiseVal < 0) continue;
@@ -266,6 +293,7 @@ namespace FixedCliffs
                             lp.NoiseScale = lf.Value<float>("noiseScale");
                             lp.Threshold = lf.Value<float>("threshold");
                             lp.HeightOffset = lf.Value<float>("heightOffset");
+                            lp.Weight = lf.Value<float?>("weight") ?? 1f;
                             lp.BaseRadius = lf.Value<float?>("baseRadius") ?? 0f;
                             lp.PlateauCount = lf.Value<int?>("plateauCount") ?? 0;
                             lp.RadiusStep = lf.Value<float?>("radiusStep") ?? 0.6f;
@@ -299,7 +327,6 @@ namespace FixedCliffs
                         if (list.Count > 0)
                         {
                             landforms = list.ToArray();
-                            return;
                         }
                     }
                 }
@@ -309,7 +336,35 @@ namespace FixedCliffs
                 sapi.Logger.Warning("failed loading fixedcliffs landforms.json: {0}", e);
             }
 
-            landforms = GetDefaultLandforms();
+            if (landforms == null || landforms.Length == 0)
+            {
+                landforms = GetDefaultLandforms();
+            }
+
+            // Load weights from patched landformConfig
+            try
+            {
+                var cfgAsset = sapi.Assets.TryGet(new AssetLocation("worldgen/landformConfig.json"));
+                if (cfgAsset != null)
+                {
+                    JObject cfg = cfgAsset.ToObject<JObject>();
+                    var lfobj = cfg["landforms"] as JObject;
+                    if (lfobj != null)
+                    {
+                        foreach (var lp in landforms)
+                        {
+                            if (lfobj.TryGetValue(lp.Code, out JToken wtok))
+                            {
+                                lp.Weight = wtok.Value<float>("weight");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                sapi.Logger.Warning("failed loading landformConfig weights:{0}", e);
+            }
         }
 
         private LandformParams[] GetDefaultLandforms()
@@ -319,6 +374,7 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     Code = "flatlands",
+                    Weight = 6324f,
                     BaseHeight = 0.2f,
                     NoiseScale = 0.001f,
                     Threshold = 0.5f,
@@ -331,6 +387,7 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     Code = "sheercliffs",
+                    Weight = 1084f,
                     BaseHeight = 0.25f,
                     NoiseScale = 0.0005f,
                     Threshold = 0.95f,
@@ -343,6 +400,7 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     Code = "canyons",
+                    Weight = 2710f,
                     BaseHeight = 0.2f,
                     NoiseScale = 0.00025f,
                     Threshold = 0.2f,
@@ -355,6 +413,7 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     Code = "towercliffs",
+                    Weight = 723f,
                     BaseHeight = 0.25f,
                     NoiseScale = 0.0005f,
                     Threshold = 0.97f,
@@ -367,6 +426,7 @@ namespace FixedCliffs
                 new LandformParams
                 {
                     Code = "riceplateaus",
+                    Weight = 7228f,
                     BaseHeight = 0.20f,
                     NoiseScale = 0.0002f,
                     Threshold = 0.4f,

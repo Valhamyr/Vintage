@@ -71,9 +71,20 @@ terrain generation, followed by `canyons` and `sheercliffs` in relative frequenc
    - Patch `survival-worldgen-storystructures.json` so structures also target your new landforms.
    - Reference the landform names you added in `landforms.json`.
 
+
 6. **Packaging**
    - Zip the contents of `WorldgenMod/` (not the folder itself) when distributing.
    - The final archive should contain `assets/`, `modinfo.json`, and optional `modicon.png`.
+
+## Landform selection
+
+`FixedCliffsWorldGen` builds a weighted table from `landformConfig.json` and
+samples a very low frequency noise map to pick the active landform for each
+column. This produces broad, organic regions while respecting the configured
+weights (for example, `riceplateaus` has the highest weight). The `/tpl <name>`
+command from the TeleportLandform mod can teleport you to the nearest region to
+verify which landform is present. Previous versions simply cycled through
+landforms every 512×512 blocks using a modulo expression.
 
 ## Planned Landforms
 The mod aims to implement the following terrain types:
