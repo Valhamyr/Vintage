@@ -25,6 +25,7 @@ namespace FixedCliffs
             public float HeightOffset;
             public float BaseRadius;
             public int PlateauCount;
+            public float RadiusStep = 0.6f;
             public float[] TerrainOctaves = System.Array.Empty<float>();
             public float[] TerrainOctaveThresholds = System.Array.Empty<float>();
             public float[] TerrainYKeyPositions = System.Array.Empty<float>();
@@ -182,7 +183,7 @@ namespace FixedCliffs
             for (int i = 0; i < p.PlateauCount; i++)
             {
                 if (dist <= radius) return GameMath.Clamp(height, 0f, 1f);
-                radius *= 0.6f;
+                radius *= p.RadiusStep;
                 height += stepHeight;
             }
 
@@ -216,6 +217,7 @@ namespace FixedCliffs
                             lp.HeightOffset = lf.Value<float>("heightOffset");
                             lp.BaseRadius = lf.Value<float?>("baseRadius") ?? 0f;
                             lp.PlateauCount = lf.Value<int?>("plateauCount") ?? 0;
+                            lp.RadiusStep = lf.Value<float?>("radiusStep") ?? 0.6f;
                             lp.TerrainOctaves = lf["terrainOctaves"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainOctaveThresholds = lf["terrainOctaveThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainYKeyPositions = lf["terrainYKeyPositions"]?.ToObject<float[]>() ?? Array.Empty<float>();
@@ -299,6 +301,7 @@ namespace FixedCliffs
                     HeightOffset = 0.80f,
                     BaseRadius = 200f,
                     PlateauCount = 4,
+                    RadiusStep = 0.75f,
                     TerrainOctaves = new float[] {0f,0.8f,0.8f,1f,1f,0.4f,0.2f,0.1f,0.1f},
                     TerrainOctaveThresholds = new float[] {0f,0f,0f,0.4f,0f,0f,0f,0f,0f},
                     TerrainYKeyPositions = new float[] {0.40f,0.55f,0.70f,0.85f,1.00f},
