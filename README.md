@@ -67,9 +67,11 @@ Important fields include `type` (one of `theme`, `content`, or `code`), `modid` 
 ## Environment setup
 
 Run `./setup_env.sh` to create a Python virtual environment and install the
-dependencies listed in `requirements.txt`. The script will also report whether
-the `dotnet` CLI is available, which is needed for compiling the C# example
-mods.
+dependencies listed in `requirements.txt`. The script first attempts to fetch
+packages from PyPI. If network access is blocked, you can place pre-downloaded
+wheel files in a `wheels/` directory and the script will install from there.
+The script also reports whether the `dotnet` CLI is available, which is needed
+for compiling the C# example mods.
 
 ## Asset system overview
 
