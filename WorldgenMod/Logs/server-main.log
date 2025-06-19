@@ -1,0 +1,284 @@
+19.6.2025 19:21:59 [Notification] Server logger started.
+19.6.2025 19:21:59 [Notification] Game Version: v1.20.12 (Stable)
+19.6.2025 19:21:59 [Event] It begins...
+19.6.2025 19:21:59 [Event] Launching server...
+19.6.2025 19:21:59 [Event] It senses...
+19.6.2025 19:21:59 [Event] Server v1.20.12, network v1.20.8, api v1.20.0
+19.6.2025 19:21:59 [Notification] Entering runphase Initialization
+19.6.2025 19:21:59 [Event] Loading configuration...
+19.6.2025 19:21:59 [Notification] Entering runphase Configuration
+19.6.2025 19:21:59 [Notification] Loading savegame
+19.6.2025 19:21:59 [Notification] Create new save game data. Playstyle: exploration
+19.6.2025 19:21:59 [Notification] Default spawn was set in serverconfig, resetting for safety.
+19.6.2025 19:21:59 [Notification] Savegame C:\Users\Shadow\AppData\Roaming\VintagestoryData\Saves\awesome village world.vcdbs loaded
+19.6.2025 19:21:59 [Notification] World size = 1024000 256 1024000
+19.6.2025 19:21:59 [Notification] Start discovering assets
+19.6.2025 19:21:59 [Notification] Found 1 base assets in category blocktypes
+19.6.2025 19:21:59 [Notification] Found 0 base assets in category itemtypes
+19.6.2025 19:21:59 [Notification] Found 29 base assets in category lang
+19.6.2025 19:21:59 [Notification] Found 0 base assets in category patches
+19.6.2025 19:21:59 [Notification] Found 24 base assets in category config
+19.6.2025 19:21:59 [Notification] Found 0 base assets in category worldproperties
+19.6.2025 19:21:59 [Notification] Found 49 base assets in category sounds
+19.6.2025 19:21:59 [Notification] Found 95 base assets in category shapes
+19.6.2025 19:21:59 [Notification] Found 140 base assets in category textures
+19.6.2025 19:21:59 [Notification] Found 0 base assets in category recipes
+19.6.2025 19:21:59 [Notification] Found 0 base assets in category worldgen
+19.6.2025 19:21:59 [Notification] Found 3 base assets in category entities
+19.6.2025 19:21:59 [Notification] Found 341 base assets in total
+19.6.2025 19:21:59 [Event] Building assets...
+19.6.2025 19:21:59 [Notification] Entering runphase LoadAssets
+19.6.2025 19:21:59 [Notification] Will search the following paths for mods:
+19.6.2025 19:21:59 [Notification]     D:\Vintagestory\Mods
+19.6.2025 19:21:59 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
+19.6.2025 19:21:59 [Notification] Found 6 mods (2 disabled)
+19.6.2025 19:21:59 [Notification] Mods, sorted by dependency: game, fixedcliffs, creative, survival
+19.6.2025 19:22:00 [Error] [fixedcliffs] CS0117: 'GameMath' does not contain a definition for 'Floor'
+19.6.2025 19:22:00 [Error] [fixedcliffs] CS0117: 'GameMath' does not contain a definition for 'Floor'
+19.6.2025 19:22:00 [Notification] [fixedcliffs] Successfully compiled 2 source files
+19.6.2025 19:22:00 [Notification] Instantiated 128 mod systems from 4 enabled mods
+19.6.2025 19:22:00 [Notification] External Origins in load order: modorigin@D:\Vintagestory\assets\creative\, modorigin@D:\Vintagestory\assets\survival\, mod@FixedCliffs.zip
+19.6.2025 19:22:00 [Notification] Found 478 external assets in category blocktypes
+19.6.2025 19:22:00 [Notification] Found 273 external assets in category itemtypes
+19.6.2025 19:22:00 [Notification] Found 0 external assets in category lang
+19.6.2025 19:22:00 [Notification] Found 13 external assets in category patches
+19.6.2025 19:22:00 [Notification] Found 109 external assets in category config
+19.6.2025 19:22:00 [Notification] Found 25 external assets in category worldproperties
+19.6.2025 19:22:00 [Notification] Found 547 external assets in category sounds
+19.6.2025 19:22:00 [Notification] Found 5140 external assets in category shapes
+19.6.2025 19:22:01 [Notification] Found 7066 external assets in category textures
+19.6.2025 19:22:01 [Notification] Found 385 external assets in category recipes
+19.6.2025 19:22:01 [Notification] Found 580 external assets in category worldgen
+19.6.2025 19:22:01 [Notification] Found 75 external assets in category entities
+19.6.2025 19:22:01 [Notification] Found 0 external assets in category compatibility
+19.6.2025 19:22:01 [Notification] Reloaded lang file with mod assets
+19.6.2025 19:22:01 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
+19.6.2025 19:22:01 [Notification] JsonPatch Loader: 28 patches total, successfully applied 23 patches, missing files on 5 patches, unmet conditions on 24 patches, no errors
+19.6.2025 19:22:01 [Event] It remembers...
+19.6.2025 19:22:02 [Notification] Loaded 3712 unique items
+19.6.2025 19:22:02 [Event] All that came before...
+19.6.2025 19:22:04 [Notification] Loaded 12821 unique blocks
+19.6.2025 19:22:05 [Notification] Loaded 679 unique entities
+19.6.2025 19:22:05 [Notification] BlockLoader: Entities, Blocks and Items loaded
+19.6.2025 19:22:05 [Event] Remapping blocks and items...
+19.6.2025 19:22:05 [Event] 14 cooking recipes loaded
+19.6.2025 19:22:05 [Event] Taste and smell...
+19.6.2025 19:22:05 [Event] 903 crafting recipes loaded from 248 files
+19.6.2025 19:22:05 [Event] Grand inventions...
+19.6.2025 19:22:05 [Event] 9 metal alloys loaded
+19.6.2025 19:22:05 [Event] Glimmers in the soil...
+19.6.2025 19:22:05 [Event] 251 smithing recipes loaded
+19.6.2025 19:22:05 [Event] Burning sparks...
+19.6.2025 19:22:05 [Event] 82 clay forming recipes loaded
+19.6.2025 19:22:05 [Event] Molded forms...
+19.6.2025 19:22:05 [Event] 36 knapping recipes loaded
+19.6.2025 19:22:05 [Event] Simple tools...
+19.6.2025 19:22:05 [Event] 176 barrel recipes loaded
+19.6.2025 19:22:05 [Notification] Entering runphase AssetsFinalize
+19.6.2025 19:22:06 [Event] Server assets loaded, parsed, registered and finalized
+19.6.2025 19:22:06 [Event] Initialising systems...
+19.6.2025 19:22:06 [Notification] Entering runphase LoadGamePre
+19.6.2025 19:22:06 [Notification] Reloaded 19 weather patterns, 5 wind patterns and 5 weather events
+19.6.2025 19:22:06 [Notification] Started 108 systems on Server:
+19.6.2025 19:22:06 [Notification]     Mod 'VSEssentials.dll' (game):
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.Core
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.EntityPartitioning
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ErrorReporter
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.ModCompatiblityUtil
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.NoObf.ModJsonPatchLoader
+19.6.2025 19:22:06 [Notification]         Vintagestory.Essentials.PathfindSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.Essentials.PathFindDebug
+19.6.2025 19:22:06 [Notification]         Vintagestory.Essentials.PathfindingAsync
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.JsonExport
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.ModBasicBlocksLoader
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemDormancyStateChecker
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.AiRuntimeConfig
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemSyncHarvestableDropsToClient
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemEmotes
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.LeafBlockDecay
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.POIRegistry
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.RoomRegistry
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.WeatherSystemCommands
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.WeatherSystemServer
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.WorldMapManager
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.NoObf.ModRegistryObjectTypeLoader
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.LoadColorMaps
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ClothManager
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GridRecipeLoader
+19.6.2025 19:22:06 [Notification]     Mod 'VSSurvivalMod.dll' (survival):
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenTerra
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenSnowLayer
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemControlPoints
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.SurvivalCoreSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenTerraPostProcess
+19.6.2025 19:22:06 [Notification]         Vintagestory.Client.NoObf.StoryGenFailedSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.UpgradeTasks
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.ChiselBlockBulkSetMaterial
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.ModSystemDetailModeSync
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.NpcControl
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.ModSystemTiledDungeonGenerator
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenFromHeightmap
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenMaps
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenRockStrataNew
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenHotSprings
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenCreatures
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.WgenCommands
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemExplosionAffectedStability
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.MyceliumSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModsystemButterflySpawnCondsExtra
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemCatchCreature
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemGliding
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemSwoopDev
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.Timeswitch
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ClutterBookshelfUtil
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ScreenshakeToClientModSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemResoArchiveCommands
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.StoryStructureProtection
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.StoryStructuresSpawnConditions
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemVillagerDebug
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemAuction
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemBlockReinforcement
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.Core
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.CharacterSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.VariablesModSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModsystemElevator
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ActivityModSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ActivityEditorSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.FruitingSystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemCommandHandbook
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemTutorial
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemCorpseReturnTeleporter
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemNightVision
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.TobiasTeleporter
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModJournal
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.LiquidItemStackRenderer
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemStructureLocator
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModLootRandomizer
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemEntityOwnership
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemRifts
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemRiftWeather
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSleeping
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemSupportBeamPlacer
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.TeleporterManager
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModTemperature
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.SystemTemporalStability
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.TemporalStabilityEffects
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemWearableStats
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemEditableBook
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.Mechanics.MechanicalPowerMod
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenDungeons
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenDeposits
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.GenStoryStructures
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenCaves
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenStructures
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenDevastationLayer
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenBlockLayers
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenPonds
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenStructuresPosPass
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenVegetationAndPatches
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.RecipeRegistrySystem
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenRivulets
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenLightSurvival
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.RecipeLoader
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemFireFromLightning
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemOreMap
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemSnowballs
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.HumanoidOutfits
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.ModSystemDevastationEffects
+19.6.2025 19:22:06 [Notification]         Vintagestory.GameContent.DisableRecipeRegisteringSystem
+19.6.2025 19:22:06 [Notification]     Mod 'VSCreativeMod.dll' (creative):
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.Core
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.WorldEdit.WorldEdit
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenBlockLayersFlat
+19.6.2025 19:22:06 [Notification]         Vintagestory.ServerMods.GenLightCreative
+19.6.2025 19:22:07 [Notification] Server map set
+19.6.2025 19:22:07 [Event] A world unbroken...
+19.6.2025 19:22:07 [Notification] Entering runphase LoadGame
+19.6.2025 19:22:07 [Notification] Entering runphase WorldReady
+19.6.2025 19:22:07 [Event] The center unfolding...
+19.6.2025 19:22:07 [Event] Starting world generators...
+19.6.2025 19:22:08 [Notification] Sending server identification with remap False.  Server control privilege is True
+19.6.2025 19:22:09 [Notification] Reloaded 35 tree generators
+19.6.2025 19:22:09 [Event] Loading 7x7x8 spawn chunks...
+19.6.2025 19:22:09 [Event] 0% (49 in queue)
+19.6.2025 19:22:09 [Event] The carved mountains...
+19.6.2025 19:22:17 [Event] 0% (49 in queue)
+19.6.2025 19:22:17 [Event] The rolling hills...
+19.6.2025 19:22:21 [Event] 0% (81 in queue)
+19.6.2025 19:22:21 [Event] The sheer cliffs...
+19.6.2025 19:22:22 [Event] 0% (113 in queue)
+19.6.2025 19:22:22 [Event] The endless plains...
+19.6.2025 19:22:24 [Event] 0% (152 in queue)
+19.6.2025 19:22:24 [Event] The winter snows...
+19.6.2025 19:22:25 [Event] 0% (178 in queue)
+19.6.2025 19:22:25 [Event] And scorching deserts...
+19.6.2025 19:22:26 [Event] Begin game ticking...
+19.6.2025 19:22:26 [Event] ... it calls to you
+19.6.2025 19:22:26 [Notification] Entering runphase RunGame
+19.6.2025 19:22:26 [Notification] Starting server threads
+19.6.2025 19:22:26 [Event] Singleplayer Server now running!
+19.6.2025 19:22:26 [Event] Return again.
+19.6.2025 19:22:26 [Notification] Please be aware that as of 1.20, servers default configurations have changed - servers no longer register themselves to the public servers list and are invite-only (whitelisted) out of the box. If you desire so, you can enable server advertising with '/serverconfig advertise on' and disable the whitelist mode with '/serverconfig whitelistmode off'
+19.6.2025 19:22:26 [Notification] All clients disconnected, pausing game calendar.
+19.6.2025 19:22:26 [Notification] A Client attempts connecting via Dummy connection on 127.0.0.1:0, assigning client id 1
+19.6.2025 19:22:26 [Notification] Client 1 uid MFdMf04c0KtP+43tPbhkJagw attempting identification. Name: Valhamyr
+19.6.2025 19:22:26 [Notification] Upped server view distance because player is locally connected
+19.6.2025 19:22:26 [Notification] Delayed join, attempt random spawn position.
+19.6.2025 19:22:26 [Notification] Placing Valhamyr at 511976.5 121 511991.5
+19.6.2025 19:22:27 [Notification] UDP: Client 1 connected via: 0.0.0.0:0
+19.6.2025 19:22:28 [Event] Valhamyr 127.0.0.1:0 joins.
+19.6.2025 19:22:29 [Error] [fixedcliffs] CS0117: 'GameMath' does not contain a definition for 'Floor'
+19.6.2025 19:22:29 [Error] [fixedcliffs] CS0117: 'GameMath' does not contain a definition for 'Floor'
+19.6.2025 19:22:30 [Notification] Server ticking has been suspended
+19.6.2025 19:22:33 [Notification] Server ticking has been resumed
+19.6.2025 19:22:33 [Notification] A client reconnected, resuming game calendar.
+19.6.2025 19:22:50 [Notification] Server ticking has been suspended
+19.6.2025 19:22:51 [Notification] Client 1 disconnected: Server shutting down - Exit request by client
+19.6.2025 19:22:51 [Notification] Last player disconnected, compacting large object heap...
+19.6.2025 19:22:52 [Notification] UDP: client disconnected Valhamyr
+19.6.2025 19:22:52 [Event] Player Valhamyr got removed. Reason: Server shutting down - Exit request by client
+19.6.2025 19:22:52 [Notification] Server stop requested, begin shutdown sequence. Stop reason: Exit request by client
+19.6.2025 19:22:52 [Notification] Entering runphase Shutdown
+19.6.2025 19:22:52 [Event] Mods and systems notified, now saving everything...
+19.6.2025 19:22:52 [Event] It pauses.
+19.6.2025 19:22:52 [Event] One last gaze...
+19.6.2025 19:22:52 [Event] Saved player world data...
+19.6.2025 19:22:53 [Event] Saved map regions...
+19.6.2025 19:22:53 [Event] Then all goes quiet...
+19.6.2025 19:22:53 [Event] Saved map chunks...
+19.6.2025 19:22:53 [Event] The waters recede...
+19.6.2025 19:22:53 [Event] Saved 300 chunks...
+19.6.2025 19:22:53 [Event] Saved 600 chunks...
+19.6.2025 19:22:53 [Event] Saved 900 chunks...
+19.6.2025 19:22:53 [Event] Saved 1200 chunks...
+19.6.2025 19:22:53 [Event] Saved 1500 chunks...
+19.6.2025 19:22:53 [Event] Saved loaded chunks...
+19.6.2025 19:22:53 [Event] The mountains fade...
+19.6.2025 19:22:53 [Event] The dark settles in.
+19.6.2025 19:22:53 [Event] Saved 300 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 600 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 900 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 1200 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 1500 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 1800 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 2100 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved 2400 generating chunks...
+19.6.2025 19:22:53 [Event] ...
+19.6.2025 19:22:53 [Event] Saved generating chunks...
+19.6.2025 19:22:53 [Event] Saved savegamedata...2
+19.6.2025 19:22:53 [Event] World saved! Saved 4424 chunks, 553 mapchunks, 16 mapregions.
+19.6.2025 19:22:53 [Event] It sighs...
+19.6.2025 19:22:53 [Event] Shutting down 10 server threads... 
+19.6.2025 19:22:53 [Event] Killed console thread
+19.6.2025 19:22:53 [Event] Alone again...
+19.6.2025 19:22:53 [Event] All threads gracefully shut down
+19.6.2025 19:22:53 [Event] Time to rest.
+19.6.2025 19:22:53 [Event] Doing last tick...
+19.6.2025 19:22:53 [Event] Stopped the server!
