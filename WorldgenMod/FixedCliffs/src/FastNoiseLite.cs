@@ -11,6 +11,19 @@ namespace FixedCliffs
     {
         private readonly PermutationTable perm;
 
+        /// <summary>
+        /// Gets or sets a frequency multiplier applied to all noise requests.
+        /// </summary>
+        /// <remarks>
+        /// The official FastNoiseLite library exposes a <c>Frequency</c>
+        /// property. The FixedCliffs worldgen code expects this to exist in
+        /// order to scale the sample coordinates. The minimal implementation
+        /// used in this repository did not include it which caused the mod to
+        /// fail compiling at runtime. The property defaults to <c>1</c> so that
+        /// existing behaviour remains unchanged when not explicitly set.
+        /// </remarks>
+        public float Frequency { get; set; } = 1f;
+
         public FastNoiseLite(int seed)
         {
             perm = new PermutationTable(seed);
@@ -25,6 +38,12 @@ namespace FixedCliffs
 
         public float GetNoise(float x, float y)
         {
+            // Scale input coordinates so callers can control overall noise
+            // frequency. This mirrors the behaviour of the real FastNoiseLite
+            // implementation which exposes a Frequency property.
+            x *= Frequency;
+            y *= Frequency;
+
             int xi = FastFloor(x);
             int yi = FastFloor(y);
 
