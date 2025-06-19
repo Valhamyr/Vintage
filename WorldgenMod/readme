@@ -112,16 +112,18 @@ to render a vertical preview instead.
 
 ### Rice plateau layout
 
-The `riceplateaus` landform forms very large, flat steps. It now uses a small
-`noiseScale` (`0.00015`) and multiple height keys to stack terraces:
+The `riceplateaus` landform forms four wide terraces that rise from low
+ground. With a `baseHeight` of `0.05` and a `heightOffset` of `0.55`, the top
+layer sits around 60 % of world height. A small `noiseScale` (`0.00015`) keeps
+the steps smooth:
 
 ```json
-"terrainYKeyPositions": [0.40, 0.55, 0.70, 0.85, 1.00, 1.20],
-"terrainYKeyThresholds": [1, 0.85, 0.7, 0.55, 0.4, 0]
+"terrainYKeyPositions": [0.15, 0.30, 0.45, 0.60],
+"terrainYKeyThresholds": [1, 0.8, 0.6, 0]
 ```
 
-These values leave plenty of rim space on each level for building large
-structures.
+Each plateau includes a generous rim before the next step, leaving room for
+large builds.
 
 
 

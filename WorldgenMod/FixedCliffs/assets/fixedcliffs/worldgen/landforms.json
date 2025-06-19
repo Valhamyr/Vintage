@@ -131,11 +131,11 @@
     },
     {
       "code": "riceplateaus",
-      "baseHeight": 0.20,
+      "baseHeight": 0.05,
       "noiseScale": 0.00015,
       "threshold": 0.4,
       "weight": 7228,
-      "heightOffset": 0.80,
+      "heightOffset": 0.55,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -156,8 +156,8 @@
       },
       "terrainOctaves":          [0.05, 0.3, 0.3, 0.5, 0.5, 0.3, 0.15, 0.1, 0.05],
       "terrainOctaveThresholds": [0, 0, 0, 0.5, 0.3, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0.38, 0.52, 0.66, 0.80, 0.94, 1.08, 1.20],
-      "terrainYKeyThresholds":   [1, 0.9, 0.8, 0.7, 0.6, 0.4, 0]
+      "terrainYKeyPositions":    [0.15, 0.30, 0.45, 0.60],
+      "terrainYKeyThresholds":   [1, 0.8, 0.6, 0]
     }
   ],
   "replace": false
