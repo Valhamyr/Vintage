@@ -5,7 +5,7 @@ from opensimplex import OpenSimplex
 from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PATCH_FILE = os.path.join(
+DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "FixedCliffs",
     "assets",
@@ -38,13 +38,18 @@ parser.add_argument(
     default=0,
     help="Noise seed used for generation (default 0)",
 )
+parser.add_argument(
+    "--landforms-file",
+    default=DEFAULT_LANDFORMS_FILE,
+    help="Path to landforms JSON (default: %(default)s)",
+)
 parser.set_defaults(heightmap=True)
 args = parser.parse_args()
 SIZE = args.size
 HEIGHTMAP = args.heightmap
 SEED = args.seed
-
-with open(PATCH_FILE) as f:
+LANDFORMS_FILE = args.landforms_file
+with open(LANDFORMS_FILE) as f:
     patch_data = json.load(f)
 
 landforms = patch_data.get("variants", [])
