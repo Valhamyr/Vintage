@@ -107,5 +107,18 @@ heightmap. Use the `--cross-section` flag to render a vertical preview instead.
 * **threshold** – minimum noise value required for the landform to generate at a
   given coordinate. Higher values make the feature rarer and more isolated.
 
+### Rice plateau layout
+
+The `riceplateaus` landform forms very large, flat steps. It now uses a small
+`noiseScale` (`0.00015`) and multiple height keys to stack terraces:
+
+```json
+"terrainYKeyPositions": [0.40, 0.55, 0.70, 0.85, 1.00, 1.20],
+"terrainYKeyThresholds": [1, 0.85, 0.7, 0.55, 0.4, 0]
+```
+
+These values leave plenty of rim space on each level for building large
+structures.
+
 
 
