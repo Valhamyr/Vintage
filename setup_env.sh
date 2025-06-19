@@ -11,7 +11,15 @@ source env/bin/activate
 
 # Upgrade pip and install Python dependencies
 pip install --upgrade pip
-pip install -r requirements.txt
+if ! pip install -r requirements.txt; then
+    if [ -d "wheels" ]; then
+        echo "Network install failed. Attempting offline install from ./wheels" >&2
+        pip install --no-index --find-links ./wheels -r requirements.txt
+    else
+        echo "Package installation failed and no ./wheels directory found" >&2
+        exit 1
+    fi
+fi
 
 echo "Python dependencies installed."
 
