@@ -44,9 +44,9 @@ namespace FixedCliffs
         private void InitWorldGen()
         {
             int seed = sapi.WorldManager.Seed;
-            mainNoise = new FastNoiseLite(seed) { NoiseType = FastNoiseLite.NoiseType.OpenSimplex2 };
-            warpNoiseX = new FastNoiseLite(seed + 1) { NoiseType = FastNoiseLite.NoiseType.OpenSimplex2 };
-            warpNoiseZ = new FastNoiseLite(seed + 2) { NoiseType = FastNoiseLite.NoiseType.OpenSimplex2 };
+            mainNoise = new FastNoiseLite(seed) { CurrentNoiseType = FastNoiseLite.NoiseType.OpenSimplex2 };
+            warpNoiseX = new FastNoiseLite(seed + 1) { CurrentNoiseType = FastNoiseLite.NoiseType.OpenSimplex2 };
+            warpNoiseZ = new FastNoiseLite(seed + 2) { CurrentNoiseType = FastNoiseLite.NoiseType.OpenSimplex2 };
 
 
             LoadLandforms();

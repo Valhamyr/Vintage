@@ -21,7 +21,7 @@ namespace FixedCliffs
             OpenSimplex2
         }
 
-        public NoiseType NoiseType { get; set; }
+        public NoiseType CurrentNoiseType { get; set; }
 
         public float GetNoise(float x, float y)
         {
