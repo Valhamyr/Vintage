@@ -80,6 +80,8 @@ def sample_height(params, x, z):
     plateau_count = params.get("plateauCount", 0)
     base_radius = params.get("baseRadius", 0.0)
     radius_step = params.get("radiusStep", 0.6)
+    radius_noise_scale = params.get("radiusNoiseScale", 0.0)
+    radius_noise_amp = params.get("radiusNoiseAmplitude", 0.0)
 
     step_factor = 1.0
     if plateau_count > 0 and base_radius > 0:
@@ -94,6 +96,11 @@ def sample_height(params, x, z):
         dz = z - center_z
         dist = (dx * dx + dz * dz) ** 0.5
         radius = base_radius
+        if radius_noise_scale > 0:
+            n = warp_noise_x.noise2(cell_x * radius_noise_scale, cell_z * radius_noise_scale)
+            radius *= 1.0 + radius_noise_amp * n
+            if radius < base_radius:
+                radius = base_radius
         step_factor = 0.0
         for i in range(plateau_count):
             if dist <= radius:

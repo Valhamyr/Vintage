@@ -122,7 +122,9 @@ created (default 4). Raising `radiusStep` widens each shelf for clearer layered
 plateaus:
 
 ```json
-"baseRadius": 200,
+"baseRadius": 1000,
+"radiusNoiseScale": 0.05,
+"radiusNoiseAmplitude": 1.0,
 "plateauCount": 4,
 "radiusStep": 0.75,
 "terrainYKeyPositions": [0.15, 0.30, 0.45, 0.60],
@@ -130,12 +132,15 @@ plateaus:
 ```
 
 Each plateau includes a generous rim before the next step, leaving room for
-large builds.
+large builds. With a base radius of 1000 blocks the outer shelf is about
+2000 blocks wide. The optional `radiusNoiseScale` and
+`radiusNoiseAmplitude` values introduce subtle per-cell variation while never
+shrinking the plateau below its base size.
 
-`FixedCliffsWorldGen` reads `baseRadius`, `plateauCount`, and `radiusStep` to
-create concentric terraces. The `generate_noise_images.py` script mirrors this
-logic so the preview images match in-game terrain. Inner plateau tiers now
-override outer ones so the terraces stack correctly.
+`FixedCliffsWorldGen` reads these parameters to create concentric terraces.
+The `generate_noise_images.py` script mirrors this logic so the preview images
+match in-game terrain. Inner plateau tiers now override outer ones so the
+terraces stack correctly.
 
 
 

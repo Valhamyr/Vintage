@@ -36,6 +36,8 @@ namespace FixedCliffs
             public float BaseRadius;
             public int PlateauCount;
             public float RadiusStep = 0.6f;
+            public float RadiusNoiseScale;
+            public float RadiusNoiseAmplitude;
             public float[] TerrainOctaves = System.Array.Empty<float>();
             public float[] TerrainOctaveThresholds = System.Array.Empty<float>();
             public float[] TerrainYKeyPositions = System.Array.Empty<float>();
@@ -166,6 +168,12 @@ namespace FixedCliffs
                 float dist = GameMath.Sqrt(dx * dx + dz * dz);
 
                 float radius = p.BaseRadius;
+                if (p.RadiusNoiseScale > 0f)
+                {
+                    float n = warpNoiseX.GetNoise(cellX * p.RadiusNoiseScale, cellZ * p.RadiusNoiseScale);
+                    radius *= 1f + p.RadiusNoiseAmplitude * n;
+                    if (radius < p.BaseRadius) radius = p.BaseRadius;
+                }
                 stepFactor = 0f;
                 for (int i = 0; i < p.PlateauCount; i++)
                 {
@@ -261,6 +269,8 @@ namespace FixedCliffs
                             lp.BaseRadius = lf.Value<float?>("baseRadius") ?? 0f;
                             lp.PlateauCount = lf.Value<int?>("plateauCount") ?? 0;
                             lp.RadiusStep = lf.Value<float?>("radiusStep") ?? 0.6f;
+                            lp.RadiusNoiseScale = lf.Value<float?>("radiusNoiseScale") ?? 0f;
+                            lp.RadiusNoiseAmplitude = lf.Value<float?>("radiusNoiseAmplitude") ?? 0f;
                             lp.TerrainOctaves = lf["terrainOctaves"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainOctaveThresholds = lf["terrainOctaveThresholds"]?.ToObject<float[]>() ?? Array.Empty<float>();
                             lp.TerrainYKeyPositions = lf["terrainYKeyPositions"]?.ToObject<float[]>() ?? Array.Empty<float>();
@@ -361,7 +371,9 @@ namespace FixedCliffs
                     NoiseScale = 0.0002f,
                     Threshold = 0.4f,
                     HeightOffset = 0.80f,
-                    BaseRadius = 200f,
+                    BaseRadius = 1000f,
+                    RadiusNoiseScale = 0.05f,
+                    RadiusNoiseAmplitude = 1f,
                     PlateauCount = 4,
                     RadiusStep = 0.75f,
                     TerrainOctaves = new float[] {0f,0.8f,0.8f,1f,1f,0.4f,0.2f,0.1f,0.1f},
