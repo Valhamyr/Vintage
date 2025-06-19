@@ -20,12 +20,14 @@ Below is a minimal outline on how to structure and configure such a mod.
   │      └─ worldgen/
   │          ├─ landforms.json
   │          └─ patches/
+  │              ├─ landforms.json
   │              ├─ landformConfig.json
   │              └─ survival-worldgen-storystructures.json
    ├─ modinfo.json
    └─ modicon.png (optional)
    ```
-   - `landforms.json` adds custom landform shapes.
+   - `landforms.json` adds custom landform shapes read by the mod's code.
+   - `patches/worldgen/landforms.json` injects those shapes into the vanilla worldgen list.
    - `landformConfig.json` defines how often each landform appears.
    - `survival-worldgen-storystructures.json` lets structures spawn on the new terrain.
 
@@ -104,4 +106,6 @@ heightmap. Use the `--cross-section` flag to render a vertical preview instead.
   how abruptly those changes occur.
 * **threshold** – minimum noise value required for the landform to generate at a
   given coordinate. Higher values make the feature rarer and more isolated.
+
+
 
