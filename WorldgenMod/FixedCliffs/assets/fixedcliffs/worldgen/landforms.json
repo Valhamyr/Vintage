@@ -138,6 +138,7 @@
       "heightOffset": 0.55,
       "baseRadius": 200,
       "plateauCount": 4,
+      "radiusStep": 0.75,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
