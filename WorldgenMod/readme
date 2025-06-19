@@ -134,7 +134,8 @@ large builds.
 
 `FixedCliffsWorldGen` reads `baseRadius`, `plateauCount`, and `radiusStep` to
 create concentric terraces. The `generate_noise_images.py` script mirrors this
-logic so the preview images match in-game terrain.
+logic so the preview images match in-game terrain. Inner plateau tiers now
+override outer ones so the terraces stack correctly.
 
 
 
