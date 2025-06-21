@@ -101,11 +101,18 @@ def sample_height(params, x, z):
             radius *= 1.0 + radius_noise_amp * n
             if radius < base_radius:
                 radius = base_radius
+
+        inner_radius = radius
+        for _ in range(1, plateau_count):
+            inner_radius *= radius_step
+
         step_factor = 0.0
-        for i in range(plateau_count):
-            if dist <= radius:
+        cur_radius = inner_radius
+        for i in range(plateau_count - 1, -1, -1):
+            if dist <= cur_radius:
                 step_factor = (i + 1) / plateau_count
-            radius *= radius_step
+                break
+            cur_radius /= radius_step
         if step_factor == 0.0:
             return None
 

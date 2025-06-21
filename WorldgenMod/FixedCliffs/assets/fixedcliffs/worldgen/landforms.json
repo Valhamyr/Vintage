@@ -45,7 +45,7 @@
       "noiseScale": 0.001,
       "threshold": 0.5,
       "weight": 6324,
-      "heightOffset": 0.55,
+      "heightOffset": 0.65,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -135,12 +135,12 @@
       "noiseScale": 0.00015,
       "threshold": 0.4,
       "weight": 7228,
-      "heightOffset": 0.55,
+      "heightOffset": 0.65,
       "baseRadius": 1000,
       "radiusNoiseScale": 0.05,
       "radiusNoiseAmplitude": 1.0,
       "plateauCount": 4,
-      "radiusStep": 0.75,
+      "radiusStep": 0.8,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -161,8 +161,8 @@
       },
       "terrainOctaves":          [0.05, 0.3, 0.3, 0.5, 0.5, 0.3, 0.15, 0.1, 0.05],
       "terrainOctaveThresholds": [0, 0, 0, 0.5, 0.3, 0, 0, 0, 0],
-      "terrainYKeyPositions":    [0.15, 0.30, 0.45, 0.60],
-      "terrainYKeyThresholds":   [1, 0.8, 0.6, 0]
+      "terrainYKeyPositions":    [0.20, 0.40, 0.60, 0.80],
+      "terrainYKeyThresholds":   [1, 0.9, 0.7, 0]
     }
   ],
   "replace": false
