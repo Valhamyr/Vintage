@@ -201,14 +201,24 @@ namespace FixedCliffs
                     radius *= 1f + p.RadiusNoiseAmplitude * n;
                     if (radius < p.BaseRadius) radius = p.BaseRadius;
                 }
-                stepFactor = 0f;
-                for (int i = 0; i < p.PlateauCount; i++)
+
+                // Find the innermost radius to begin from the highest plateau
+                float innerRadius = radius;
+                for (int j = 1; j < p.PlateauCount; j++)
                 {
-                    if (dist <= radius)
+                    innerRadius *= p.RadiusStep;
+                }
+
+                stepFactor = 0f;
+                float curRadius = innerRadius;
+                for (int i = p.PlateauCount - 1; i >= 0; i--)
+                {
+                    if (dist <= curRadius)
                     {
                         stepFactor = (i + 1f) / p.PlateauCount;
+                        break;
                     }
-                    radius *= p.RadiusStep;
+                    curRadius /= p.RadiusStep;
                 }
                 if (stepFactor == 0f) return -1f;
             }
