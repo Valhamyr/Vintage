@@ -78,13 +78,10 @@ terrain generation, followed by `canyons` and `sheercliffs` in relative frequenc
 
 ## Landform selection
 
-`FixedCliffsWorldGen` builds a weighted table from `landformConfig.json` and
-samples a very low frequency noise map to pick the active landform for each
-column. This produces broad, organic regions while respecting the configured
-weights (for example, `riceplateaus` has the highest weight). The `/tpl <name>`
-command from the TeleportLandform mod can teleport you to the nearest region to
-verify which landform is present. Previous versions simply cycled through
-landforms every 512×512 blocks using a modulo expression.
+The landforms are mixed using the game's default worldgen, guided by the
+weights defined in `landformConfig.json` (for example, `riceplateaus` has the
+highest weight). The `/tpl <name>` command from the TeleportLandform mod can
+teleport you to the nearest region to verify which landform is present.
 
 ## Planned Landforms
 The mod aims to implement the following terrain types:
@@ -123,35 +120,12 @@ to render a vertical preview instead.
 
 ### Rice plateau layout
 
-The `riceplateaus` landform forms four wide terraces that rise from low
-ground. With a `baseHeight` of `0.05` and a `heightOffset` of `0.55`, the top
-layer sits around 60 % of world height. A small `noiseScale` (`0.00015`) keeps
-the steps smooth. The shape is generated from stacked disks, each reduced by a
-`radiusStep` factor (normally `0.6`) compared to the one below it. The outermost
-disk size is set by `baseRadius` and `plateauCount` controls how many tiers are
-created (default 4). Raising `radiusStep` widens each shelf for clearer layered
-plateaus:
-
-```json
-"baseRadius": 60,
-"radiusNoiseScale": 0.05,
-"radiusNoiseAmplitude": 1.0,
-"plateauCount": 4,
-"radiusStep": 0.75,
-"terrainYKeyPositions": [0.15, 0.30, 0.45, 0.60],
-"terrainYKeyThresholds": [1, 0.8, 0.6, 0]
-```
-
-Each plateau includes a generous rim before the next step, leaving room for
-large builds. With a base radius of 60 blocks the outer shelf is about
-120 blocks wide. The optional `radiusNoiseScale` and
-`radiusNoiseAmplitude` values introduce subtle per-cell variation while never
-shrinking the plateau below its base size.
-
-`FixedCliffsWorldGen` reads these parameters to create concentric terraces.
-The `generate_noise_images.py` script mirrors this logic so the preview images
-match in-game terrain. Inner plateau tiers now override outer ones so the
-terraces stack correctly.
+`riceplateaus` now relies solely on vanilla landform parameters. Using
+`terrainOctaves` along with matching Y key arrays creates four broad terraces
+without any custom radius fields. A `baseHeight` of `0.05` and
+`heightOffset` of `0.65` place the top tier around 70 % of world height while a
+small `noiseScale` (`0.00015`) keeps the steps smooth. The updated octaves and
+Y keys approximate tiered shelves so no extra worldgen code is required.
 
 
 
