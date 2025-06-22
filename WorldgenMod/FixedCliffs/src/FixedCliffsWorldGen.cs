@@ -441,7 +441,7 @@ namespace FixedCliffs
                     NoiseScale = 0.0002f,
                     Threshold = 0.4f,
                     HeightOffset = 0.80f,
-                    BaseRadius = 1000f,
+                    BaseRadius = 60f,
                     RadiusNoiseScale = 0.05f,
                     RadiusNoiseAmplitude = 1f,
                     PlateauCount = 4,
