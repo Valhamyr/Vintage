@@ -18,23 +18,25 @@ The `generate_noise_images.py` script reads these fields from a `landforms.json`
 
 ## Example Landforms
 
-From the README in `WorldgenMod`, five primary landforms are planned:
+From the README in `WorldgenMod`, six primary landforms are now used:
 
-- **Flatlands** – nearly level terrain.
-- **Sheer Cliffs** – tall vertical faces.
-- **Canyons** – deep ravines with narrow paths.
-- **Tower Cliffs** – isolated pillars rising from flat surroundings.
-- **Multi-level Plateaus** (`riceplateaus`) – tiered shelves at several heights.
+- **Sinkhole Plateaus** – stepped depressions with wide flat floors.
+- **Dry Sea Pillars** – tall pillars surrounded by walkable ground.
+- **Wide Pillar Cliffs** – cliff clusters offering broad ledges.
+- **Dry Deep Step Mountains** – massive stepped peaks without water.
+- **Land Step Mountains** – smaller step mountains on land.
+- **Terrace Plateaus** – many stacked terraces creating flat shelves.
 
 The table below lists representative parameter choices from `FixedCliffs/landforms.json` that influence these shapes.
 
-| Code           | noiseScale | threshold | Example notes |
-|---------------|-----------|----------|---------------|
-| `flatlands`    | `0.001`   | `0.5`    | Gentle height changes. Terrain octaves emphasize smooth slopes.
-| `sheercliffs`  | `0.0005`  | `0.95`   | High threshold and strong octaves create abrupt walls.
-| `canyons`      | `0.0005`  | `0.2`    | Tall plateaus with narrow low paths.
-| `towercliffs`  | `0.0005`  | `0.97`   | Multiple octaves focus noise near the top to form pillars.
-| `riceplateaus` | `0.0002`  | `0.4`    | Wide terraces forming large flat platforms.
+| Code                | noiseScale | threshold | Example notes |
+|--------------------|-----------|----------|---------------|
+| `sinkholeplateaus` | `0.0003`  | `0.3`    | Broad depressions with stepped floors.
+| `dryseapillars`    | `0.0004`  | `0.6`    | Land-based pillars with paths between.
+| `widepillarcliffs` | `0.00035` | `0.65`   | Cliffs with wide ledges and pillars.
+| `drydeepstepmountains` | `0.00025` | `0.4` | Large stepped mountains.
+| `landstepmountains`| `0.00025` | `0.5`    | Smaller step mountains above plains.
+| `terraceplateaus`  | `0.00015` | `0.45`   | Repeating high terraces.
 
 Adjusting these values changes how often a landform appears and how dramatic its features look. Lower the threshold to spread a shape farther across the world. Increase specific octave amplitudes to add jagged details at different sizes.
 

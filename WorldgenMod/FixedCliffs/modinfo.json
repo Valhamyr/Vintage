@@ -4,7 +4,7 @@
   "name": "Fixed Cliffs Landforms",
   "version": "1.0.0",
   "authors": ["sapje16"],
-  "description": "Adds several custom landforms including flatlands, sheer cliffs, canyons, tower cliffs and rice plateaus.",
+  "description": "Adds custom landforms derived from vanilla terrain such as sinkhole plateaus, dry sea pillars, wide pillar cliffs, dry deep step mountains, land step mountains and terrace plateaus.",
   "dependencies": {
     "game": "1.20.12"
   }

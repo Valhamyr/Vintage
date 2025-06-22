@@ -54,18 +54,18 @@ Below is a minimal outline on how to structure and configure such a mod.
    {
      "replace": false,
      "landforms": {
-       "flatlands": { "weight": 100 },
-       "sheercliffs": { "weight": 250 },
-       "canyons": { "weight": 500 },
-       "towercliffs": { "weight": 50 },
-       "riceplateaus": { "weight": 1100 }
+       "sinkholeplateaus": { "weight": 2000 },
+       "dryseapillars": { "weight": 1500 },
+       "widepillarcliffs": { "weight": 1200 },
+       "drydeepstepmountains": { "weight": 1000 },
+       "landstepmountains": { "weight": 800 },
+       "terraceplateaus": { "weight": 2000 }
     }
   }
   ```
   (Vanilla landforms keep their existing weights, making about 15% of the total.)
 
-With these weights, the `riceplateaus` landform now exceeds half of all custom
-terrain generation, followed by `canyons` and `sheercliffs` in relative frequency.
+With these weights, `sinkholeplateaus` and `terraceplateaus` appear most often, while the pillar and mountain variants provide rarer dramatic terrain.
 
 5. **Allowing Structures to Spawn**
    - Patch `survival-worldgen-storystructures.json` so structures also target your new landforms.
@@ -79,18 +79,19 @@ terrain generation, followed by `canyons` and `sheercliffs` in relative frequenc
 ## Landform selection
 
 The landforms are mixed using the game's default worldgen, guided by the
-weights defined in `landformConfig.json` (for example, `riceplateaus` has the
+weights defined in `landformConfig.json` (for example, `terraceplateaus` has the
 highest weight). The `/tpl <name>` command from the TeleportLandform mod can
 teleport you to the nearest region to verify which landform is present.
 
 ## Planned Landforms
 The mod aims to implement the following terrain types:
 
-- **Flatlands** – large expanses of almost level ground.
-- **Sheer Cliffs** – abrupt vertical faces that rise sharply from surrounding areas.
-- **Canyons with narrow paths** – deep ravines bordered by tall cliffs.
-- **Tower Cliffs** – mostly flat areas punctuated by very tall, closely spaced pillars.
-- **Multi-level Plateaus** – terraced landscape with flat tops at varying heights, similar to oversized rice fields.
+- **Sinkhole Plateaus** – broad stepped depressions with flat tiers.
+- **Dry Sea Pillars** – pillar formations on land with wide paths between them.
+- **Wide Pillar Cliffs** – clustered cliffs featuring wide, walkable ledges.
+- **Dry Deep Step Mountains** – tall mountains with stacked steps but no water.
+- **Land Step Mountains** – smaller step mountains rising from plains.
+- **Terrace Plateaus** – numerous flat terraces forming high shelves.
 
 Each landform will generate separately. When a new world is created, approximately 85% of terrain should come from these new landforms and the remaining 15% from vanilla ones. Structures from the `story` set will be able to spawn on all new landforms if configured in `survival-worldgen-storystructures.json`.
 
@@ -120,14 +121,13 @@ preview instead.
 * **threshold** – minimum noise value required for the landform to generate at a
   given coordinate. Higher values make the feature rarer and more isolated.
 
-### Rice plateau layout
+### Terrace plateau layout
 
-`riceplateaus` now relies solely on vanilla landform parameters. Using
-`terrainOctaves` along with matching Y key arrays creates four broad terraces
-without any custom radius fields. A `baseHeight` of `0.05` and
-`heightOffset` of `0.65` place the top tier around 70 % of world height while a
-small `noiseScale` (`0.00015`) keeps the steps smooth. The updated octaves and
-Y keys approximate tiered shelves so no extra worldgen code is required.
+`terraceplateaus` is built solely from vanilla-style parameters. Arrays of
+`terrainOctaves` and Y keys create several smooth terraces without additional
+radius fields. A base height of `0.1` with `heightOffset` `0.65` places the top
+layer high above ground while a small `noiseScale` of `0.00015` keeps each step
+wide and flat.
 
 
 

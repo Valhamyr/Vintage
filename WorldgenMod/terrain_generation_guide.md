@@ -16,15 +16,15 @@ This document outlines the goals and technical steps required to improve terrain
 
 Focus landforms to adjust:
 
-- `sheercliffs` (main vertical cliff biome)
-- `towercliffs` (spires/towers)
-- `flatlands` (flat fill-in areas between dramatic terrain)
+- `sinkholeplateaus` (stepped depressions)
+- `dryseapillars` (pillar regions with open paths)
+- `widepillarcliffs` (cliff clusters with wide ledges)
 
 ---
 
 ## ⚖️ Config Adjustments
 
-### For `sheercliffs`:
+### For `widepillarcliffs`:
 
 **1. terrainYKeyThresholds and Positions** Replace with more plateau-friendly transitions:
 
@@ -33,7 +33,7 @@ Focus landforms to adjust:
 "terrainYKeyThresholds":   [1.0, 1.0, 0.5, 0.5, 0.2, 0.0]
 ```
 
-This creates: vertical cliff walls, flat shelves, and transition bands.
+This creates vertical cliff walls with broad shelves between them.
 
 **2. terrainOctaves** Sharpen terrain details:
 
@@ -89,13 +89,13 @@ Adjust weights in `landformConfig.json` to prioritize dramatic formations:
 
 ```json
 {
-  "code": "sheercliffs", "weight": 400
+  "code": "sinkholeplateaus", "weight": 2000
 },
 {
-  "code": "towercliffs", "weight": 300
+  "code": "dryseapillars", "weight": 1500
 },
 {
-  "code": "flatlands", "weight": 200
+  "code": "widepillarcliffs", "weight": 1200
 }
 ```
 
@@ -110,16 +110,16 @@ Adjust weights in `landformConfig.json` to prioritize dramatic formations:
 Example parameters:
 
 ```json
-"canyons": {
-  "noiseScale": 0.00025,
-  "terrainOctaves": [0.1, 0.2, 0.4, 0.6, 1, 0.8, 0.4],
-  "terrainYKeyPositions": [0.00, 0.25, 0.45, 0.65, 0.85, 0.95],
-  "terrainYKeyThresholds": [0, 0, 0.9, 1, 1, 1]
+"sinkholeplateaus": {
+  "noiseScale": 0.0003,
+  "terrainOctaves": [0, 0, 0, 0, 0, 1, 1, 1, 0],
+  "terrainYKeyPositions": [0.40, 0.50, 0.62, 0.65, 0.67],
+  "terrainYKeyThresholds": [1, 0.75, 0.6, 0.55, 0]
 },
-"riceplateaus": {
-  "heightOffset": 0.8,
-  "terrainYKeyPositions": [0.45, 0.65, 0.85, 1.05],
-  "terrainYKeyThresholds": [1, 1, 1, 0]
+"terraceplateaus": {
+  "heightOffset": 0.65,
+  "terrainYKeyPositions": [0.40, 0.55, 0.70, 0.75],
+  "terrainYKeyThresholds": [1, 0.5, 0.2, 0]
 }
 ```
 
