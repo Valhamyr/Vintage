@@ -5,7 +5,7 @@
     "value": {
       "code": "sinkholeplateaus",
       "baseHeight": 0.1,
-      "noiseScale": 0.00012,
+      "noiseScale": 0.0003,
       "threshold": 0.3,
       "weight": 2000,
       "heightOffset": 0.4,
@@ -60,22 +60,14 @@
       ],
       "terrainYKeyPositions": [
         0.4,
-        0.42,
-        0.46,
         0.5,
-        0.54,
-        0.58,
         0.62,
         0.65,
         0.67
       ],
       "terrainYKeyThresholds": [
-        1.0,
-        0.9,
-        0.85,
+        1,
         0.75,
-        0.7,
-        0.65,
         0.6,
         0.55,
         0
@@ -207,50 +199,42 @@
         ]
       },
       "terrainOctaves": [
-        0,
-        0,
-        0,
         0.1,
+        0.2,
+        0.4,
+        0.6,
+        1.0,
+        0.6,
+        0.4,
         0.3,
-        0.5,
-        1,
-        0.8,
-        0.3
+        0.2
       ],
       "terrainOctaveThresholds": [
         0,
         0,
         0,
         0,
+        0.3,
         0,
         0,
         0,
-        0,
-        0.3
+        0
       ],
       "terrainYKeyPositions": [
         0.0,
-        0.48,
-        0.53,
-        0.58,
-        0.63,
-        0.7,
-        0.78,
-        0.84,
-        0.9,
-        0.96
+        0.35,
+        0.45,
+        0.46,
+        0.6,
+        0.7
       ],
       "terrainYKeyThresholds": [
-        1,
-        1,
-        0.45,
-        0.38,
-        0.35,
-        0.3,
-        0.25,
-        0.18,
-        0.15,
-        0
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.2,
+        0.0
       ]
     },
     "file": "game:worldgen/landforms.json",
@@ -405,11 +389,11 @@
     "path": "/variants/-",
     "value": {
       "code": "terraceplateaus",
-      "baseHeight": 0.05,
-      "noiseScale": 0.0001,
+      "baseHeight": 0.1,
+      "noiseScale": 0.00015,
       "threshold": 0.45,
       "weight": 2000,
-      "heightOffset": 0.25,
+      "heightOffset": 0.65,
       "genClimate": true,
       "genRockStrata": true,
       "genStructures": false,
@@ -460,25 +444,15 @@
         0
       ],
       "terrainYKeyPositions": [
-        0.0,
-        0.4,
-        0.45,
-        0.5,
+        0.40,
         0.55,
-        0.6,
-        0.65,
-        0.7,
+        0.70,
         0.75
       ],
       "terrainYKeyThresholds": [
         1,
-        1,
-        0.7,
         0.5,
-        0.4,
-        0.3,
         0.2,
-        0.1,
         0
       ]
     },
