@@ -133,7 +133,7 @@ created (default 4). Raising `radiusStep` widens each shelf for clearer layered
 plateaus:
 
 ```json
-"baseRadius": 1000,
+"baseRadius": 60,
 "radiusNoiseScale": 0.05,
 "radiusNoiseAmplitude": 1.0,
 "plateauCount": 4,
@@ -143,8 +143,8 @@ plateaus:
 ```
 
 Each plateau includes a generous rim before the next step, leaving room for
-large builds. With a base radius of 1000 blocks the outer shelf is about
-2000 blocks wide. The optional `radiusNoiseScale` and
+large builds. With a base radius of 60 blocks the outer shelf is about
+120 blocks wide. The optional `radiusNoiseScale` and
 `radiusNoiseAmplitude` values introduce subtle per-cell variation while never
 shrinking the plateau below its base size.
 
