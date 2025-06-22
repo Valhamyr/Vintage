@@ -184,42 +184,51 @@ namespace FixedCliffs
             if (p.PlateauCount > 0 && p.BaseRadius > 0f)
             {
                 float cellSize = p.BaseRadius * 2f;
-                int cellX = (int)Math.Floor(worldX / cellSize);
-                int cellZ = (int)Math.Floor(worldZ / cellSize);
-                float jitterX = warpNoiseX.GetNoise(cellX * 0.1f, cellZ * 0.1f) * cellSize * 0.4f;
-                float jitterZ = warpNoiseZ.GetNoise(cellX * 0.1f + 1000, cellZ * 0.1f + 1000) * cellSize * 0.4f;
-                float centerX = (cellX + 0.5f) * cellSize + jitterX;
-                float centerZ = (cellZ + 0.5f) * cellSize + jitterZ;
-                float dx = worldX - centerX;
-                float dz = worldZ - centerZ;
-                float dist = GameMath.Sqrt(dx * dx + dz * dz);
-
-                float radius = p.BaseRadius;
-                if (p.RadiusNoiseScale > 0f)
-                {
-                    float n = warpNoiseX.GetNoise(cellX * p.RadiusNoiseScale, cellZ * p.RadiusNoiseScale);
-                    radius *= 1f + p.RadiusNoiseAmplitude * n;
-                    if (radius < p.BaseRadius) radius = p.BaseRadius;
-                }
-
-                // Find the innermost radius to begin from the highest plateau
-                float innerRadius = radius;
-                for (int j = 1; j < p.PlateauCount; j++)
-                {
-                    innerRadius *= p.RadiusStep;
-                }
+                int baseCellX = (int)Math.Floor(worldX / cellSize);
+                int baseCellZ = (int)Math.Floor(worldZ / cellSize);
 
                 stepFactor = 0f;
-                float curRadius = innerRadius;
-                for (int i = p.PlateauCount - 1; i >= 0; i--)
+                for (int cx = baseCellX - 1; cx <= baseCellX + 1; cx++)
                 {
-                    if (dist <= curRadius)
+                    for (int cz = baseCellZ - 1; cz <= baseCellZ + 1; cz++)
                     {
-                        stepFactor = (i + 1f) / p.PlateauCount;
-                        break;
+                        float jitterX = warpNoiseX.GetNoise(cx * 0.1f, cz * 0.1f) * cellSize * 0.4f;
+                        float jitterZ = warpNoiseZ.GetNoise(cx * 0.1f + 1000, cz * 0.1f + 1000) * cellSize * 0.4f;
+                        float centerX = (cx + 0.5f) * cellSize + jitterX;
+                        float centerZ = (cz + 0.5f) * cellSize + jitterZ;
+                        float dx = worldX - centerX;
+                        float dz = worldZ - centerZ;
+                        float dist = GameMath.Sqrt(dx * dx + dz * dz);
+
+                        float radius = p.BaseRadius;
+                        if (p.RadiusNoiseScale > 0f)
+                        {
+                            float n = warpNoiseX.GetNoise(cx * p.RadiusNoiseScale, cz * p.RadiusNoiseScale);
+                            radius *= 1f + p.RadiusNoiseAmplitude * n;
+                            if (radius < p.BaseRadius) radius = p.BaseRadius;
+                        }
+
+                        float innerRadius = radius;
+                        for (int j = 1; j < p.PlateauCount; j++)
+                        {
+                            innerRadius *= p.RadiusStep;
+                        }
+
+                        float curRadius = innerRadius;
+                        for (int i = p.PlateauCount - 1; i >= 0; i--)
+                        {
+                            float shapeNoise = 1f + warpNoiseX.GetNoise((worldX + cx * 100 + i * 50) * 0.02f, (worldZ + cz * 100 + i * 50) * 0.02f) * 0.25f;
+                            if (dist <= curRadius * shapeNoise)
+                            {
+                                float sf = (i + 1f) / p.PlateauCount;
+                                if (sf > stepFactor) stepFactor = sf;
+                                break;
+                            }
+                            curRadius /= p.RadiusStep;
+                        }
                     }
-                    curRadius /= p.RadiusStep;
                 }
+
                 if (stepFactor == 0f) return -1f;
             }
 
