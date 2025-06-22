@@ -86,33 +86,39 @@ def sample_height(params, x, z):
     step_factor = 1.0
     if plateau_count > 0 and base_radius > 0:
         cell_size = base_radius * 2.0
-        cell_x = int(x // cell_size)
-        cell_z = int(z // cell_size)
-        jitter_x = warp_noise_x.noise2(cell_x * 0.1, cell_z * 0.1) * cell_size * 0.4
-        jitter_z = warp_noise_z.noise2(cell_x * 0.1 + 1000, cell_z * 0.1 + 1000) * cell_size * 0.4
-        center_x = (cell_x + 0.5) * cell_size + jitter_x
-        center_z = (cell_z + 0.5) * cell_size + jitter_z
-        dx = x - center_x
-        dz = z - center_z
-        dist = (dx * dx + dz * dz) ** 0.5
-        radius = base_radius
-        if radius_noise_scale > 0:
-            n = warp_noise_x.noise2(cell_x * radius_noise_scale, cell_z * radius_noise_scale)
-            radius *= 1.0 + radius_noise_amp * n
-            if radius < base_radius:
-                radius = base_radius
-
-        inner_radius = radius
-        for _ in range(1, plateau_count):
-            inner_radius *= radius_step
+        base_cell_x = int(x // cell_size)
+        base_cell_z = int(z // cell_size)
 
         step_factor = 0.0
-        cur_radius = inner_radius
-        for i in range(plateau_count - 1, -1, -1):
-            if dist <= cur_radius:
-                step_factor = (i + 1) / plateau_count
-                break
-            cur_radius /= radius_step
+        for cx in range(base_cell_x - 1, base_cell_x + 2):
+            for cz in range(base_cell_z - 1, base_cell_z + 2):
+                jitter_x = warp_noise_x.noise2(cx * 0.1, cz * 0.1) * cell_size * 0.4
+                jitter_z = warp_noise_z.noise2(cx * 0.1 + 1000, cz * 0.1 + 1000) * cell_size * 0.4
+                center_x = (cx + 0.5) * cell_size + jitter_x
+                center_z = (cz + 0.5) * cell_size + jitter_z
+                dx = x - center_x
+                dz = z - center_z
+                dist = (dx * dx + dz * dz) ** 0.5
+                radius = base_radius
+                if radius_noise_scale > 0:
+                    n = warp_noise_x.noise2(cx * radius_noise_scale, cz * radius_noise_scale)
+                    radius *= 1.0 + radius_noise_amp * n
+                    if radius < base_radius:
+                        radius = base_radius
+
+                inner_radius = radius
+                for _ in range(1, plateau_count):
+                    inner_radius *= radius_step
+
+                cur_radius = inner_radius
+                for i in range(plateau_count - 1, -1, -1):
+                    shape_noise = 1.0 + warp_noise_x.noise2((x + cx * 100 + i * 50) * 0.02,
+                                                          (z + cz * 100 + i * 50) * 0.02) * 0.25
+                    if dist <= cur_radius * shape_noise:
+                        step_factor = max(step_factor, (i + 1) / plateau_count)
+                        break
+                    cur_radius /= radius_step
+
         if step_factor == 0.0:
             return None
 
