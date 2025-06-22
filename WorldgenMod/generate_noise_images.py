@@ -43,12 +43,19 @@ parser.add_argument(
     default=DEFAULT_LANDFORMS_FILE,
     help="Path to landforms JSON (default: %(default)s)",
 )
+parser.add_argument(
+    "--zoom",
+    type=float,
+    default=1.0,
+    help="Scale preview coordinates to reveal detail when noiseScale is small",
+)
 parser.set_defaults(heightmap=True)
 args = parser.parse_args()
 SIZE = args.size
 HEIGHTMAP = args.heightmap
 SEED = args.seed
 LANDFORMS_FILE = args.landforms_file
+ZOOM = args.zoom
 with open(LANDFORMS_FILE) as f:
     patch_data = json.load(f)
 
@@ -163,14 +170,17 @@ def render_landform(params, name):
     if HEIGHTMAP:
         for z in range(SIZE):
             for x in range(SIZE):
-                height = sample_height(params, x, z)
+                sx = (x - SIZE / 2) * ZOOM
+                sz = (z - SIZE / 2) * ZOOM
+                height = sample_height(params, sx, sz)
                 val = 0
                 if height is not None:
                     val = int(max(0.0, min(height, 1.0)) * 255)
                 pixels.append(val)
     else:
         for x in range(SIZE):
-            height = sample_height(params, x, 0)
+            sx = (x - SIZE / 2) * ZOOM
+            height = sample_height(params, sx, 0)
             hpix = 0
             if height is not None:
                 hpix = int(max(0.0, min(height, 1.0)) * (SIZE - 1))
@@ -186,14 +196,15 @@ def render_landform(params, name):
     print("Saved", name, "heightmap" if HEIGHTMAP else "preview")
 
 
-for lf in landforms:
-    if not lf:
-        continue
-    base_code = lf.get("code", "landform")
-    render_landform(lf, base_code)
-    for mut in lf.get("mutations", []):
-        params = lf.copy()
-        params.update(mut)
-        params.pop("chance", None)
-        mcode = mut.get("code", "mut")
-        render_landform(params, f"{base_code}_{mcode}")
+if __name__ == "__main__":
+    for lf in landforms:
+        if not lf:
+            continue
+        base_code = lf.get("code", "landform")
+        render_landform(lf, base_code)
+        for mut in lf.get("mutations", []):
+            params = lf.copy()
+            params.update(mut)
+            params.pop("chance", None)
+            mcode = mut.get("code", "mut")
+            render_landform(params, f"{base_code}_{mcode}")
