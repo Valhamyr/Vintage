@@ -126,8 +126,8 @@ preview instead.
 `terraceplateaus` is built solely from vanilla-style parameters. Arrays of
 `terrainOctaves` and Y keys create several smooth terraces without additional
 radius fields. A base height of `0.1` with `heightOffset` `0.65` places the top
-layer high above ground while a small `noiseScale` of `0.00015` keeps each step
-wide and flat.
+layer high above ground while a very small `noiseScale` of `0.00005` now keeps
+each step much wider and flatter.
 
 
 
