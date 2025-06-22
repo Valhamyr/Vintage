@@ -1,7 +1,56 @@
 [
-  {"op":"add","path":"/landforms/flatlands","value":{"weight":6324},"file":"game:worldgen/landformConfig.json","side":"Server"},
-  {"op":"add","path":"/landforms/sheercliffs","value":{"weight":1084},"file":"game:worldgen/landformConfig.json","side":"Server"},
-  {"op":"add","path":"/landforms/canyons","value":{"weight":2710},"file":"game:worldgen/landformConfig.json","side":"Server"},
-  {"op":"add","path":"/landforms/towercliffs","value":{"weight":723},"file":"game:worldgen/landformConfig.json","side":"Server"},
-  {"op":"add","path":"/landforms/riceplateaus","value":{"weight":7228},"file":"game:worldgen/landformConfig.json","side":"Server"}
+    {
+        "op": "add",
+        "path": "/landforms/sinkholeplateaus",
+        "value": {
+            "weight": 2000
+        },
+        "file": "game:worldgen/landformConfig.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/landforms/dryseapillars",
+        "value": {
+            "weight": 1500
+        },
+        "file": "game:worldgen/landformConfig.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/landforms/widepillarcliffs",
+        "value": {
+            "weight": 1200
+        },
+        "file": "game:worldgen/landformConfig.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/landforms/drydeepstepmountains",
+        "value": {
+            "weight": 1000
+        },
+        "file": "game:worldgen/landformConfig.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/landforms/landstepmountains",
+        "value": {
+            "weight": 800
+        },
+        "file": "game:worldgen/landformConfig.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/landforms/terraceplateaus",
+        "value": {
+            "weight": 2000
+        },
+        "file": "game:worldgen/landformConfig.json",
+        "side": "Server"
+    }
 ]

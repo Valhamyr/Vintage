@@ -1,7 +1,488 @@
 [
-  {"op":"add","path":"/variants/-","value":{"code":"canyons","baseHeight":0.2,"noiseScale":0.00025,"threshold":0.2,"weight":2710,"heightOffset":0.75,"genClimate":true,"genRockStrata":true,"genStructures":false,"genVegetation":false,"climate":{"minRain":0.2,"maxRain":0.8,"minTemp":0.1,"maxTemp":0.9},"rockStrata":{"variant":"cliff","strata":[{"rock":"granite","thickness":4},{"rock":"andesite","thickness":3},{"rock":"basalt","thickness":3}]},"terrainOctaves":[0.1,0.2,0.4,0.6,1,0.8,0.4],"terrainOctaveThresholds":[0,0,0,0.4,0.6,0.8,1],"terrainYKeyPositions":[0.00,0.05,0.10,0.25,0.45,0.65,0.85,0.95],"terrainYKeyThresholds":[0,0.2,0.4,0.6,0.9,1,1,1],"mutations":[{"code":"canyon-cavemut","chance":0.15,"terrainYKeyPositions":[0.399,0.419,0.427,0.437,0.457,0.462,0.484,0.489,0.513,0.518,0.525],"terrainYKeyThresholds":[1.000,0.816,0.035,0.808,0.816,0.761,0.760,0.719,0.718,0.688,0.000]}]},"file":"game:worldgen/landforms.json","side":"Server"},
-  {"op":"add","path":"/variants/-","value":{"code":"flatlands","baseHeight":0.2,"noiseScale":0.001,"threshold":0.5,"weight":6324,"heightOffset":0.55,"genClimate":true,"genRockStrata":true,"genStructures":false,"genVegetation":false,"climate":{"minRain":0.2,"maxRain":0.8,"minTemp":0.1,"maxTemp":0.9},"rockStrata":{"variant":"cliff","strata":[{"rock":"granite","thickness":4},{"rock":"andesite","thickness":3},{"rock":"basalt","thickness":3}]},"terrainOctaves":[0,0,0.1,0.15,0.2,0,0.4,0,0],"terrainOctaveThresholds":[0,0,0,0,0,0,0.4,0,0],"terrainYKeyPositions":[0.000,0.440,0.460,0.470],"terrainYKeyThresholds":[1.000,1.000,0.500,0.000]},"file":"game:worldgen/landforms.json","side":"Server"},
-  {"op":"add","path":"/variants/-","value":{"code":"sheercliffs","baseHeight":0.25,"noiseScale":0.0005,"threshold":0.95,"weight":1084,"heightOffset":0.55,"genClimate":true,"genRockStrata":true,"genStructures":false,"genVegetation":false,"climate":{"minRain":0.2,"maxRain":0.8,"minTemp":0.1,"maxTemp":0.9},"rockStrata":{"variant":"cliff","strata":[{"rock":"granite","thickness":4},{"rock":"andesite","thickness":3},{"rock":"basalt","thickness":3}]},"terrainOctaves":[0.1,0.2,0.4,0.6,1.0,0.6,0.4,0.3,0.2],"terrainOctaveThresholds":[0,0,0,0,0.3,0,0,0,0],"terrainYKeyPositions":[0.0,0.35,0.45,0.46,0.6,0.7],"terrainYKeyThresholds":[1.0,1.0,0.5,0.5,0.2,0.0]},"file":"game:worldgen/landforms.json","side":"Server"},
-  {"op":"add","path":"/variants/-","value":{"code":"towercliffs","baseHeight":0.25,"noiseScale":0.0005,"threshold":0.97,"weight":723,"heightOffset":0.55,"genClimate":true,"genRockStrata":true,"genStructures":false,"genVegetation":false,"climate":{"minRain":0.2,"maxRain":0.8,"minTemp":0.1,"maxTemp":0.9},"rockStrata":{"variant":"cliff","strata":[{"rock":"granite","thickness":4},{"rock":"andesite","thickness":3},{"rock":"basalt","thickness":3}]},"terrainOctaves":[0,0,0,0,0.2,0.5,1,0.9,0.4],"terrainOctaveThresholds":[0,0,0,0,0,0,0,0,0.3],"terrainYKeyPositions":[0,0.45,0.48,0.55,0.63,0.70,0.75,0.80,0.86,0.90],"terrainYKeyThresholds":[1,1,0.45,0.30,0.22,0.20,0.18,0.15,0.14,0]},"file":"game:worldgen/landforms.json","side":"Server"},
-  {"op":"add","path":"/variants/-","value":{"code":"riceplateaus","baseHeight":0.05,"noiseScale":0.00015,"threshold":0.4,"weight":7228,"heightOffset":0.65,"baseRadius":60,"radiusNoiseScale":0.05,"radiusNoiseAmplitude":1.0,"plateauCount":4,"radiusStep":0.75,"genClimate":true,"genRockStrata":true,"genStructures":false,"genVegetation":false,"climate":{"minRain":0.2,"maxRain":0.8,"minTemp":0.1,"maxTemp":0.9},"rockStrata":{"variant":"cliff","strata":[{"rock":"granite","thickness":4},{"rock":"andesite","thickness":3},{"rock":"basalt","thickness":3}]},"terrainOctaves":[0.05,0.3,0.3,0.5,0.5,0.3,0.15,0.1,0.05],"terrainOctaveThresholds":[0,0,0,0.5,0.3,0,0,0,0],"terrainYKeyPositions":[0.20,0.40,0.60,0.80],"terrainYKeyThresholds":[1,0.9,0.7,0]},"file":"game:worldgen/landforms.json","side":"Server"}
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "sinkholeplateaus",
+            "baseHeight": 0.2,
+            "noiseScale": 0.0003,
+            "threshold": 0.3,
+            "weight": 2000,
+            "heightOffset": 0.7,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            },
+            "terrainOctaves": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+            ],
+            "terrainOctaveThresholds": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "terrainYKeyPositions": [
+                0.4,
+                0.42,
+                0.46,
+                0.5,
+                0.54,
+                0.58,
+                0.62,
+                0.65,
+                0.67
+            ],
+            "terrainYKeyThresholds": [
+                1.0,
+                0.9,
+                0.85,
+                0.75,
+                0.7,
+                0.65,
+                0.6,
+                0.55,
+                0
+            ]
+        },
+        "file": "game:worldgen/landforms.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "dryseapillars",
+            "baseHeight": 0.25,
+            "noiseScale": 0.0004,
+            "threshold": 0.6,
+            "weight": 1500,
+            "heightOffset": 0.75,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            },
+            "terrainOctaves": [
+                0,
+                0,
+                0,
+                0,
+                0.2,
+                0.6,
+                1,
+                0.7,
+                0.3
+            ],
+            "terrainOctaveThresholds": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.15
+            ],
+            "terrainYKeyPositions": [
+                0.0,
+                0.37,
+                0.44,
+                0.52,
+                0.6,
+                0.7,
+                0.82,
+                0.88,
+                0.95
+            ],
+            "terrainYKeyThresholds": [
+                1,
+                1,
+                0.5,
+                0.3,
+                0.25,
+                0.2,
+                0.15,
+                0.1,
+                0
+            ]
+        },
+        "file": "game:worldgen/landforms.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "widepillarcliffs",
+            "baseHeight": 0.25,
+            "noiseScale": 0.00035,
+            "threshold": 0.65,
+            "weight": 1200,
+            "heightOffset": 0.6,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            },
+            "terrainOctaves": [
+                0,
+                0,
+                0,
+                0.1,
+                0.3,
+                0.5,
+                1,
+                0.8,
+                0.3
+            ],
+            "terrainOctaveThresholds": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.3
+            ],
+            "terrainYKeyPositions": [
+                0.0,
+                0.48,
+                0.53,
+                0.58,
+                0.63,
+                0.7,
+                0.78,
+                0.84,
+                0.9,
+                0.96
+            ],
+            "terrainYKeyThresholds": [
+                1,
+                1,
+                0.45,
+                0.38,
+                0.35,
+                0.3,
+                0.25,
+                0.18,
+                0.15,
+                0
+            ]
+        },
+        "file": "game:worldgen/landforms.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "drydeepstepmountains",
+            "baseHeight": 0.25,
+            "noiseScale": 0.00025,
+            "threshold": 0.4,
+            "weight": 1000,
+            "heightOffset": 0.8,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            },
+            "terrainOctaves": [
+                0,
+                0.81,
+                0.729,
+                0.6561,
+                0.59049,
+                0.531441,
+                0.4,
+                0.2,
+                0
+            ],
+            "terrainYKeyPositions": [
+                0.0,
+                0.45,
+                0.55,
+                0.62,
+                0.7,
+                0.78,
+                0.86
+            ],
+            "terrainYKeyThresholds": [
+                1,
+                0.7,
+                0.5,
+                0.35,
+                0.25,
+                0.1,
+                0
+            ]
+        },
+        "file": "game:worldgen/landforms.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "landstepmountains",
+            "baseHeight": 0.25,
+            "noiseScale": 0.00025,
+            "threshold": 0.5,
+            "weight": 800,
+            "heightOffset": 0.8,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            },
+            "terrainOctaves": [
+                0,
+                0.81,
+                0.729,
+                0.6561,
+                0,
+                0.531441,
+                0.4,
+                0.2,
+                0
+            ],
+            "terrainYKeyPositions": [
+                0.0,
+                0.43,
+                0.53,
+                0.6,
+                0.7,
+                0.78,
+                0.86,
+                0.92,
+                0.97
+            ],
+            "terrainYKeyThresholds": [
+                1,
+                1,
+                0.5,
+                0.4,
+                0.3,
+                0.2,
+                0.15,
+                0.1,
+                0
+            ]
+        },
+        "file": "game:worldgen/landforms.json",
+        "side": "Server"
+    },
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "terraceplateaus",
+            "baseHeight": 0.1,
+            "noiseScale": 0.00015,
+            "threshold": 0.45,
+            "weight": 2000,
+            "heightOffset": 0.65,
+            "genClimate": true,
+            "genRockStrata": true,
+            "genStructures": false,
+            "genVegetation": false,
+            "climate": {
+                "minRain": 0.2,
+                "maxRain": 0.8,
+                "minTemp": 0.1,
+                "maxTemp": 0.9
+            },
+            "rockStrata": {
+                "variant": "cliff",
+                "strata": [
+                    {
+                        "rock": "granite",
+                        "thickness": 4
+                    },
+                    {
+                        "rock": "andesite",
+                        "thickness": 3
+                    },
+                    {
+                        "rock": "basalt",
+                        "thickness": 3
+                    }
+                ]
+            },
+            "terrainOctaves": [
+                0,
+                0,
+                0,
+                0.25,
+                0.3,
+                1,
+                1,
+                0.7,
+                0.15
+            ],
+            "terrainOctaveThresholds": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "terrainYKeyPositions": [
+                0.0,
+                0.4,
+                0.45,
+                0.5,
+                0.55,
+                0.6,
+                0.65,
+                0.7,
+                0.75
+            ],
+            "terrainYKeyThresholds": [
+                1,
+                1,
+                0.7,
+                0.5,
+                0.4,
+                0.3,
+                0.2,
+                0.1,
+                0
+            ]
+        },
+        "file": "game:worldgen/landforms.json",
+        "side": "Server"
+    }
 ]
