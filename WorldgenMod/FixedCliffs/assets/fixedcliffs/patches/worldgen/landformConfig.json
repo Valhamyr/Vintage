@@ -1,42 +1,21 @@
 [
     {
         "op": "add",
-        "path": "/landforms/steppedsinkholes",
-        "value": {"weight": 2000},
+        "path": "/landforms/grandplateaus",
+        "value": {"weight": 3000},
         "file": "game:worldgen/landformConfig.json",
         "side": "Server"
     },
     {
         "op": "add",
-        "path": "/landforms/mediumlandpillars",
-        "value": {"weight": 1500},
+        "path": "/landforms/sinkholeplateaus",
+        "value": {"weight": 2500},
         "file": "game:worldgen/landformConfig.json",
         "side": "Server"
     },
     {
         "op": "add",
-        "path": "/landforms/cliffislands",
-        "value": {"weight": 1200},
-        "file": "game:worldgen/landformConfig.json",
-        "side": "Server"
-    },
-    {
-        "op": "add",
-        "path": "/landforms/step mountains",
-        "value": {"weight": 1000},
-        "file": "game:worldgen/landformConfig.json",
-        "side": "Server"
-    },
-    {
-        "op": "add",
-        "path": "/landforms/shallowmillionstepmountains",
-        "value": {"weight": 800},
-        "file": "game:worldgen/landformConfig.json",
-        "side": "Server"
-    },
-    {
-        "op": "add",
-        "path": "/landforms/smallsealevelplateus",
+        "path": "/landforms/terraceplateaus",
         "value": {"weight": 2000},
         "file": "game:worldgen/landformConfig.json",
         "side": "Server"
