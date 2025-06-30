@@ -1,6 +1,8 @@
 ## Overview
-This folder contains files for a future world generation mod for Vintage Story.
-The mod will introduce new terrain landforms while still mixing with vanilla ones.
+This folder contains files for a world generation mod that simply rebalances
+existing Vanilla Story landforms.
+Instead of defining custom shapes, the mod boosts the weight of a few vanilla
+terrain types so they dominate the landscape.
 
 ## Creating a Worldgen Mod
 Below is a minimal outline on how to structure and configure such a mod.
@@ -18,18 +20,12 @@ Below is a minimal outline on how to structure and configure such a mod.
   ├─ assets/
   │  └─ worldgenmod/
   │      └─ worldgen/
-  │          ├─ landforms.json
   │          └─ patches/
-  │              ├─ landforms.json
-  │              ├─ landformConfig.json
-  │              └─ survival-worldgen-storystructures.json
+  │              └─ landformConfig.json
    ├─ modinfo.json
    └─ modicon.png (optional)
    ```
-   - `landforms.json` adds custom landform shapes read by the mod's code.
-   - `patches/worldgen/landforms.json` injects those shapes into the vanilla worldgen list.
-   - `landformConfig.json` defines how often each landform appears.
-   - `survival-worldgen-storystructures.json` lets structures spawn on the new terrain.
+  - `landformConfig.json` defines how often each vanilla landform appears.
 
 3. **modinfo.json Example**
    ```json
@@ -46,30 +42,7 @@ Below is a minimal outline on how to structure and configure such a mod.
    }
    ```
 
-4. **Configuring Landforms**
-   - In `landforms.json`, define each new landform asset.
-  - In `landformConfig.json`, assign weights so roughly 85% of generated chunks use your landforms and 15% use vanilla ones.
-   - Weights are relative, so adjust numbers accordingly. Example snippet:
-   ```json
-   {
-     "replace": false,
-     "landforms": {
-       "sinkholeplateaus": { "weight": 2000 },
-       "dryseapillars": { "weight": 1500 },
-       "widepillarcliffs": { "weight": 1200 },
-       "drydeepstepmountains": { "weight": 1000 },
-       "landstepmountains": { "weight": 800 },
-       "terraceplateaus": { "weight": 2000 }
-    }
-  }
-  ```
-  (Vanilla landforms keep their existing weights, making about 15% of the total.)
 
-With these weights, `sinkholeplateaus` and `terraceplateaus` appear most often, while the pillar and mountain variants provide rarer dramatic terrain.
-
-5. **Allowing Structures to Spawn**
-   - Patch `survival-worldgen-storystructures.json` so structures also target your new landforms.
-   - Reference the landform names you added in `landforms.json`.
 
 
 6. **Packaging**
@@ -78,37 +51,12 @@ With these weights, `sinkholeplateaus` and `terraceplateaus` appear most often, 
 
 ## Landform selection
 
-The landforms are mixed using the game's default worldgen, guided by the
-weights defined in `landformConfig.json` (for example, `terraceplateaus` has the
-highest weight). The `/tpl <name>` command from the TeleportLandform mod can
-teleport you to the nearest region to verify which landform is present.
-
-## Planned Landforms
-The mod aims to implement the following terrain types:
-
-- **Sinkhole Plateaus** – broad stepped depressions with flat tiers.
-- **Dry Sea Pillars** – pillar formations on land with wide paths between them.
-- **Wide Pillar Cliffs** – clustered cliffs featuring wide, walkable ledges.
-- **Dry Deep Step Mountains** – tall mountains with stacked steps but no water.
-- **Land Step Mountains** – smaller step mountains rising from plains.
-- **Terrace Plateaus** – numerous flat terraces forming high shelves.
-
-Each landform will generate separately. When a new world is created, approximately 85% of terrain should come from these new landforms and the remaining 15% from vanilla ones. Structures from the `story` set will be able to spawn on all new landforms if configured in `survival-worldgen-storystructures.json`.
+This mod greatly increases the weight of a few vanilla landforms so they appear in roughly 99% of world generation. Edit `patches/worldgen/landformConfig.json` to adjust which ones are favoured.
 
 ## Noise Samples
 
-The `generate_noise_images.py` helper script renders example Perlin noise maps
-based on the `noiseScale` plus the new octave and height arrays in a
-`landforms.json` file. By default it looks for
-`WorldgenMod/FixedCliffs/assets/fixedcliffs/worldgen/landforms.json`, but you
-can specify another file with `--landforms-file`. Run the script with Python to
-generate PNG images in a local `WorldgenMod/noise_samples/` directory. Use
-`--size <N>` to set the pixel width and height (default 256×256) when previewing
-larger areas. When the landform `noiseScale` is very small, pass `--zoom <factor>`
-to magnify the coordinate range so terrain features become visible. These
-preview images are not tracked in version control. By default the script outputs
-a top-down heightmap. Use the `--cross-section` flag to render a vertical
-preview instead.
+The `generate_noise_images.py` helper script renders example Perlin maps based on the noise settings in `patches/worldgen/landformConfig.json`. Use `--landforms-file` to test another file.
+`--size <N>` sets the map resolution and `--zoom <factor>` magnifies features when needed.
 
 ### Parameter notes
 
@@ -120,14 +68,4 @@ preview instead.
   how abruptly those changes occur.
 * **threshold** – minimum noise value required for the landform to generate at a
   given coordinate. Higher values make the feature rarer and more isolated.
-
-### Terrace plateau layout
-
-`terraceplateaus` is built solely from vanilla-style parameters. Arrays of
-`terrainOctaves` and Y keys create several smooth terraces without additional
-radius fields. A base height of `0.1` with `heightOffset` `0.65` places the top
-layer high above ground while a very small `noiseScale` of `0.00005` now keeps
-each step much wider and flatter.
-
-
 
