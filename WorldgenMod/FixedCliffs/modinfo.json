@@ -1,10 +1,10 @@
 {
   "type": "code",
   "modid": "fixedcliffs",
-  "name": "Fixed Cliffs Landforms",
-  "version": "1.0.0",
+  "name": "Weighted Vanilla Landforms",
+  "version": "2.0.0",
   "authors": ["sapje16"],
-  "description": "Adds custom landforms derived from vanilla terrain such as sinkhole plateaus, dry sea pillars, wide pillar cliffs, dry deep step mountains, land step mountains and terrace plateaus.",
+  "description": "Rebalances world generation to heavily favor a handful of vanilla landforms that resemble dramatic cliffs and plateaus.",
   "dependencies": {
     "game": "1.20.12"
   }
