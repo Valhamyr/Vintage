@@ -1,8 +1,9 @@
 ## Overview
-This folder contains files for a world generation mod that simply rebalances
-existing Vanilla Story landforms.
-Instead of defining custom shapes, the mod boosts the weight of a few vanilla
-terrain types so they dominate the landscape.
+This folder contains files for a world generation mod that emphasizes broad
+terraced cliffs. It defines new plateau landforms and assigns them a high
+weight so the world mostly consists of wide, flat steps separated by vertical
+walls. The mod configuration files can be used as a starting point for your own
+worldgen tweaks.
 
 ## Creating a Worldgen Mod
 Below is a minimal outline on how to structure and configure such a mod.
@@ -51,7 +52,7 @@ Below is a minimal outline on how to structure and configure such a mod.
 
 ## Landform selection
 
-This mod greatly increases the weight of a few vanilla landforms so they appear in roughly 99% of world generation. Edit `patches/worldgen/landformConfig.json` to adjust which ones are favoured.
+This mod assigns very high weight to three plateau-focused landforms defined in `assets/fixedcliffs/worldgen/landforms.json`. The `landformConfig.json` patch makes `grandplateaus`, `sinkholeplateaus` and `terraceplateaus` dominate world generation so large, buildable terraces are common. Edit that file to tweak the balance or add your own landforms.
 
 ## Noise Samples
 
