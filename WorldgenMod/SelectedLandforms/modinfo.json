@@ -2,9 +2,9 @@
   "type": "content",
   "modid": "selectedlandforms",
   "name": "Selected Landforms",
-  "description": "Worldgen with a curated subset of plains and valleys landforms.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "authors": ["Unknown"],
+  "description": "Worldgen focusing almost entirely on stepped sinkhole landforms with larger multi-tier variants.",
   "dependencies": {
     "game": "1.20.12"
   }

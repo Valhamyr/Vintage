@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/landforms/p&vsteppedsinkholes",
+    "value": {"weight": 8000},
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/landforms/p&vsteppedsinkholes-large",
+    "value": {"weight": 8000},
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/landforms/p&vsteppedsinkholes-mega",
+    "value": {"weight": 8000},
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server"
+  }
+]
