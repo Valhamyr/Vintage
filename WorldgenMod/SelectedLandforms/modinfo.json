@@ -2,9 +2,9 @@
   "type": "content",
   "modid": "selectedlandforms",
   "name": "Selected Landforms",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "authors": ["Unknown"],
-  "description": "Worldgen focusing almost entirely on stepped sinkhole landforms with larger multi-tier variants.",
+  "description": "Worldgen that overwhelmingly favors sinkhole and realistic mountain landforms.",
   "dependencies": {
     "game": "1.20.12"
   }
