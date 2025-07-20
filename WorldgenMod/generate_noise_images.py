@@ -99,8 +99,8 @@ def sample_height(params, x, z):
         step_factor = 0.0
         for cx in range(base_cell_x - 1, base_cell_x + 2):
             for cz in range(base_cell_z - 1, base_cell_z + 2):
-                jitter_x = warp_noise_x.noise2(cx * 0.1, cz * 0.1) * cell_size * 0.4
-                jitter_z = warp_noise_z.noise2(cx * 0.1 + 1000, cz * 0.1 + 1000) * cell_size * 0.4
+                jitter_x = warp_noise_x.noise2(cx * 0.1, cz * 0.1) * cell_size * 0.2
+                jitter_z = warp_noise_z.noise2(cx * 0.1 + 1000, cz * 0.1 + 1000) * cell_size * 0.2
                 center_x = (cx + 0.5) * cell_size + jitter_x
                 center_z = (cz + 0.5) * cell_size + jitter_z
                 dx = x - center_x

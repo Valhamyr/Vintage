@@ -65,9 +65,9 @@
         "terrainYKeyThresholds": [1.0, 0.90, 0.86, 0.82, 0.80, 0.0],
         "plateauCount": 5,
         "baseRadius": 400,
-        "radiusStep": 0.90,
-        "radiusNoiseScale": 0.25,
-        "radiusNoiseAmplitude": 0.4
+        "radiusStep": 0.95,
+        "radiusNoiseScale": 0.15,
+        "radiusNoiseAmplitude": 0.2
       },
       {
         "code": "p&vsteppedsinkholes-mega",
@@ -81,9 +81,9 @@
         "terrainYKeyThresholds": [1.0, 0.92, 0.88, 0.84, 0.80, 0.76, 0.0],
         "plateauCount": 6,
         "baseRadius": 600,
-        "radiusStep": 0.92,
-        "radiusNoiseScale": 0.25,
-        "radiusNoiseAmplitude": 0.35
+        "radiusStep": 0.96,
+        "radiusNoiseScale": 0.15,
+        "radiusNoiseAmplitude": 0.2
       }
     ],
     "file": "game:worldgen/landforms.json",
