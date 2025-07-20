@@ -58,24 +58,24 @@
         "comment": "Large stepped sink holes",
         "hexcolor": "#CCAA00",
         "weight": 8000,
-        "noiseScale": 0.0002,
-        "terrainOctaves": [0.1, 0.1, 0, 0, 0, 1, 1, 1, 0],
+        "noiseScale": 0.00018,
+        "terrainOctaves": [0.15, 0.15, 0, 0, 0, 0.9, 0.9, 0.9, 0],
         "terrainOctaveThresholds": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        "terrainYKeyPositions": [0.40, 0.44, 0.48, 0.52, 0.56, 0.60],
-        "terrainYKeyThresholds": [1.0, 0.86, 0.82, 0.78, 0.74, 0.0],
-        "plateauCount": 3
+        "terrainYKeyPositions": [0.40, 0.46, 0.52, 0.58, 0.64, 0.70],
+        "terrainYKeyThresholds": [1.0, 0.90, 0.86, 0.82, 0.78, 0.0],
+        "plateauCount": 4
       },
       {
         "code": "p&vsteppedsinkholes-mega",
         "comment": "Huge multi-tiered sink holes",
         "hexcolor": "#DDCC00",
         "weight": 8000,
-        "noiseScale": 0.00015,
-        "terrainOctaves": [0.1, 0.1, 0, 0, 0, 1, 1, 1, 0],
+        "noiseScale": 0.00012,
+        "terrainOctaves": [0.15, 0.15, 0, 0, 0, 0.9, 0.9, 0.9, 0],
         "terrainOctaveThresholds": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        "terrainYKeyPositions": [0.38, 0.42, 0.46, 0.50, 0.55, 0.60, 0.65],
-        "terrainYKeyThresholds": [1.0, 0.86, 0.82, 0.78, 0.74, 0.70, 0.0],
-        "plateauCount": 4
+        "terrainYKeyPositions": [0.38, 0.44, 0.50, 0.56, 0.62, 0.68, 0.74],
+        "terrainYKeyThresholds": [1.0, 0.90, 0.86, 0.82, 0.78, 0.74, 0.0],
+        "plateauCount": 5
       }
     ],
     "file": "game:worldgen/landforms.json",
