@@ -2,21 +2,35 @@
   {
     "op": "add",
     "path": "/landforms/p&vsteppedsinkholes",
-    "value": {"weight": 8000},
+    "value": {"weight": 40},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   },
   {
     "op": "add",
-    "path": "/landforms/p&vsteppedsinkholes-large",
-    "value": {"weight": 8000},
+    "path": "/landforms/p&vflat lowlands",
+    "value": {"weight": 5},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   },
   {
     "op": "add",
-    "path": "/landforms/p&vsteppedsinkholes-mega",
-    "value": {"weight": 8000},
+    "path": "/landforms/p&vflat midlands",
+    "value": {"weight": 5},
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/landforms/p&vflat highlands",
+    "value": {"weight": 5},
+    "file": "game:worldgen/landformConfig.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/landforms/p&vcliffislands",
+    "value": {"weight": 44},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   }

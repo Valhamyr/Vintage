@@ -8,6 +8,34 @@
   },
   {
     "op": "replace",
+    "path": "/variants/*[code='p&vsteppedsinkholes']/weight",
+    "value": 40.0,
+    "file": "game:worldgen/landforms.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/variants/*[code='p&vflat lowlands']/weight",
+    "value": 5.0,
+    "file": "game:worldgen/landforms.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/variants/*[code='p&vflat midlands']/weight",
+    "value": 5.0,
+    "file": "game:worldgen/landforms.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
+    "path": "/variants/*[code='p&vflat highlands']/weight",
+    "value": 5.0,
+    "file": "game:worldgen/landforms.json",
+    "side": "server"
+  },
+  {
+    "op": "replace",
     "path": "/variants/*[code='p&vcold mountain range']/weight",
     "value": 11.0,
     "file": "game:worldgen/landforms.json",
@@ -156,14 +184,7 @@
   {
     "op": "replace",
     "path": "/variants/*[code='p&vcliffislands']/weight",
-    "value": 0.011,
-    "file": "game:worldgen/landforms.json",
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/variants/*[code='p&vcliffislands']/weight",
-    "value": 0.011,
+    "value": 44.0,
     "file": "game:worldgen/landforms.json",
     "side": "server"
   },
@@ -198,13 +219,6 @@
   {
     "op": "replace",
     "path": "/variants/*[code='p&vroughflatlands']/weight",
-    "value": 0.011,
-    "file": "game:worldgen/landforms.json",
-    "side": "server"
-  },
-  {
-    "op": "replace",
-    "path": "/variants/*[code='p&vcliffislands']/weight",
     "value": 0.011,
     "file": "game:worldgen/landforms.json",
     "side": "server"
