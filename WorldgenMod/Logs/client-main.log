@@ -1,288 +1,122 @@
-19.6.2025 22:20:49 [Notification] Client logger started.
-19.6.2025 22:20:49 [Notification] Game Version: v1.20.12 (Stable)
-19.6.2025 22:20:49 [Notification] Process path: D:\Vintagestory\Vintagestory.exe
-19.6.2025 22:20:49 [Notification] Operating System: Windows 10.0.19045.0
-19.6.2025 22:20:49 [Notification] CPU Cores: 8
-19.6.2025 22:20:49 [Notification] Available RAM: 28652 MB
-19.6.2025 22:20:50 [Notification] OpenAL Initialized. Available Mono/Stereo Sources: 255/1
-19.6.2025 22:20:50 [Notification] Graphics Card Vendor: NVIDIA Corporation
-19.6.2025 22:20:50 [Notification] Graphics Card Version: 3.3.0 NVIDIA 565.90
-19.6.2025 22:20:50 [Notification] Graphics Card Renderer: NVIDIA RTX A4500/PCIe/SSE2
-19.6.2025 22:20:50 [Notification] Graphics Card ShadingLanguageVersion: 3.30 NVIDIA via Cg compiler
-19.6.2025 22:20:50 [Notification] GL.MaxVertexUniformComponents: 4096
-19.6.2025 22:20:50 [Notification] GL.MaxUniformBlockSize: 65536
-19.6.2025 22:20:50 [Notification] C# Framework: .net 7.0.10
-19.6.2025 22:20:50 [Notification] Cairo Graphics Version: 1.17.3
-19.6.2025 22:20:50 [Notification] OpenAL Version: 1.1 ALSOFT 1.23.0
-19.6.2025 22:20:50 [Notification] Zstd Version: 1.5.5
-19.6.2025 22:20:50 [Notification] Start discovering assets
-19.6.2025 22:20:50 [Notification] Found 29 base assets in category lang
-19.6.2025 22:20:50 [Notification] Found 0 base assets in category patches
-19.6.2025 22:20:50 [Notification] Found 24 base assets in category config
-19.6.2025 22:20:50 [Notification] Found 0 base assets in category worldproperties
-19.6.2025 22:20:50 [Notification] Found 49 base assets in category sounds
-19.6.2025 22:20:50 [Notification] Found 95 base assets in category shapes
-19.6.2025 22:20:50 [Notification] Found 80 base assets in category shaders
-19.6.2025 22:20:50 [Notification] Found 18 base assets in category shaderincludes
-19.6.2025 22:20:50 [Notification] Found 140 base assets in category textures
-19.6.2025 22:20:50 [Notification] Found 4 base assets in category music
-19.6.2025 22:20:50 [Notification] Found 0 base assets in category dialog
-19.6.2025 22:20:50 [Notification] Found 439 base assets in total
-19.6.2025 22:20:50 [Notification] Loading sounds
-19.6.2025 22:20:50 [Notification] (Re-)loaded frame buffers
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass .
-19.6.2025 22:20:50 [Notification] Sounds loaded
-19.6.2025 22:20:50 [Notification] Begin loading shaders
-19.6.2025 22:20:50 [Notification] Load shaders now
-19.6.2025 22:20:50 [Notification] Loading shaders...
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass standard.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass particlescube.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass particlesquad.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass sky.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass nightsky.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass woittest.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass transparentcompose.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass debugdepthbuffer.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass helditem.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass chunkopaque.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass chunkliquid.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass decals.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass final.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass gui.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass blur.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass chunktransparent.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass findbright.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass chunktopsoil.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass godrays.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass autocamera.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass blockhighlights.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass wireframe.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass entityanimated.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass luma.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass blit.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass particlesquad2d.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass shadowmapentityanimated.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass shadowmapgeneric.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass texture2texture.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass celestialobject.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass guitopsoil.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass colorgrade.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass guigear.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass ssao.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass bilateralblur.
-19.6.2025 22:20:50 [Notification] Loaded Shaderprogramm for render pass chunkliquiddepth.
-19.6.2025 22:20:50 [Notification] Cached session key is valid, validating with server
-19.6.2025 22:20:51 [Notification] Server validation response: Good
-19.6.2025 22:20:51 [Notification] Will search the following paths for mods:
-19.6.2025 22:20:51 [Notification]     D:\Vintagestory\Mods
-19.6.2025 22:20:51 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
-19.6.2025 22:21:22 [Notification] Initialized GUI Manager
-19.6.2025 22:21:22 [Notification] Initialized Server Connection
-19.6.2025 22:21:22 [Notification] Server args parsed
-19.6.2025 22:21:22 [Notification] Server main instantiated
-19.6.2025 22:21:32 [Notification] Processed server identification
-19.6.2025 22:21:32 [Notification] Map initialized
-19.6.2025 22:21:32 [Notification] Received server assets
-19.6.2025 22:21:32 [Notification] Loading and pre-starting client side mods...
-19.6.2025 22:21:32 [Notification] Will search the following paths for mods:
-19.6.2025 22:21:32 [Notification]     D:\Vintagestory\Mods
-19.6.2025 22:21:32 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
-19.6.2025 22:21:32 [Notification] Found 4 mods (0 disabled)
-19.6.2025 22:21:32 [Notification] Mods, sorted by dependency: game, fixedcliffs, creative, survival
-19.6.2025 22:21:32 [Error] [fixedcliffs] CS0117: 'FastNoiseLite' does not contain a definition for 'Frequency'
-19.6.2025 22:21:32 [Notification] [fixedcliffs] Successfully compiled 2 source files
-19.6.2025 22:21:33 [Notification] Instantiated 128 mod systems from 4 enabled mods
-19.6.2025 22:21:33 [Notification] Done loading and pre-starting client side mods.
-19.6.2025 22:21:33 [Notification] External Origins in load order: modorigin@D:\Vintagestory\assets\creative\, modorigin@D:\Vintagestory\assets\survival\, mod@FixedCliffs.zip
-19.6.2025 22:21:33 [Notification] Found 0 external assets in category lang
-19.6.2025 22:21:33 [Notification] Found 13 external assets in category patches
-19.6.2025 22:21:33 [Notification] Found 109 external assets in category config
-19.6.2025 22:21:33 [Notification] Found 25 external assets in category worldproperties
-19.6.2025 22:21:33 [Notification] Found 547 external assets in category sounds
-19.6.2025 22:21:33 [Notification] Found 5140 external assets in category shapes
-19.6.2025 22:21:33 [Notification] Found 7 external assets in category shaders
-19.6.2025 22:21:33 [Notification] Found 0 external assets in category shaderincludes
-19.6.2025 22:21:34 [Notification] Found 7066 external assets in category textures
-19.6.2025 22:21:34 [Notification] Found 78 external assets in category music
-19.6.2025 22:21:34 [Notification] Found 18 external assets in category dialog
-19.6.2025 22:21:34 [Notification] Found 0 external assets in category compatibility
-19.6.2025 22:21:34 [Notification] Reloaded lang file now with mod assets
-19.6.2025 22:21:34 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
-19.6.2025 22:21:34 [Notification] JsonPatch Loader: 28 patches total, successfully applied 6 patches, unmet conditions on 24 patches, no errors
-19.6.2025 22:21:34 [Notification] Received 3713 item types from server
-19.6.2025 22:21:34 [Notification] Loaded 12823 block types from server
-19.6.2025 22:21:35 [Notification] Reloaded sounds, now with mod assets
-19.6.2025 22:21:35 [Notification] Composed 1 4096x4096 entities texture atlases from 570 textures
-19.6.2025 22:21:36 [Notification] Collected 2698 shapes to tesselate.
-19.6.2025 22:21:37 [Notification] Composed 1 4096x4096 items texture atlases from 1943 textures
-19.6.2025 22:21:39 [Notification] Composed 1 4096x4096 blocks texture atlases from 5947 textures
-19.6.2025 22:21:40 [Notification] Server assets loaded
-19.6.2025 22:21:43 [Notification] Blocks tesselated
-19.6.2025 22:21:49 [Notification] Server launched
-19.6.2025 22:21:49 [Notification] UDP: sending connection requests
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass anvilworkitem.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass standard.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass entityanimated.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass lines.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass aurora.
-19.6.2025 22:21:50 [Notification] Initialised WeatherSystemClient. simLightning is loaded.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass rift.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass sleepoverlay.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass machinegear.
-19.6.2025 22:21:50 [Notification] Started 85 systems on Client:
-19.6.2025 22:21:50 [Notification]     Mod 'VSEssentials.dll' (game):
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.Core
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.EntityPartitioning
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ErrorReporter
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.ModCompatiblityUtil
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.NoObf.ModJsonPatchLoader
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemDormancyStateChecker
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemItemRendererOptimizer
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemFpHands
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.FallingBlockParticlesModSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.CharacterExtraDialogs
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.EntityNameTagRendererRegistry
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemAmbientParticles
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.EntityParticleSpawner
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.EntityParticleSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.POIRegistry
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.RoomRegistry
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.WeatherSystemCommands
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.WeatherSystemClient
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.WorldMapManager
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.LoadColorMaps
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ClothManager
-19.6.2025 22:21:50 [Notification]     Mod 'VSSurvivalMod.dll' (survival):
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemControlPoints
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.SurvivalCoreSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.Client.NoObf.StoryGenFailedSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.Client.NoObf.ModSystemBossHealthBars
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.UpgradeTasks
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.ModSystemDetailModeSync
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.ModSystemTiledDungeonGenerator
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.GenFromHeightmap
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.GenMaps
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.MSShapeFromAttrCacheHelper
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.MyceliumSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemLabelMeshCache
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemCatchCreature
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemGliding
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemMeasuringRope
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemStopRaiseShieldAnim
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.Timeswitch
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ScreenshakeToClientModSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.StoryStructureProtection
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.StoryStructuresSpawnConditions
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemVillagerDebug
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemAuction
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemBlockReinforcement
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.Core
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemBoatingSound
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemShipConstructionSitePreview
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.CharacterSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.MealMeshCache
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.VariablesModSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModsystemElevator
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ActivityModSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ActivityEditorSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.FruitingSystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemCommandHandbook
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemSurvivalHandbook
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemTutorial
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemNightVision
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.TobiasTeleporter
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModJournal
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.LiquidItemStackRenderer
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemStructureLocator
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModLootRandomizer
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.MicroBlockModelCache
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemEntityOwnership
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemRifts
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemRiftWeather
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSleeping
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemSupportBeamPlacer
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.TeleporterManager
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModTemperature
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.SystemTemporalStability
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.TemporalStabilityEffects
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemWearableStats
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemEditableBook
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.Mechanics.MechanicalPowerMod
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.TradeHandbookInfo
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.GenDevastationLayer
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.RecipeRegistrySystem
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemOreMap
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemSnowballs
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.HumanoidOutfits
-19.6.2025 22:21:50 [Notification]         Vintagestory.GameContent.ModSystemDevastationEffects
-19.6.2025 22:21:50 [Notification]     Mod 'VSCreativeMod.dll' (creative):
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.Core
-19.6.2025 22:21:50 [Notification]         Vintagestory.ServerMods.WorldEdit.WorldEdit
-19.6.2025 22:21:50 [Notification] Loading shaders...
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass standard.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass particlescube.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass particlesquad.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass sky.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass nightsky.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass woittest.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass transparentcompose.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass debugdepthbuffer.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass helditem.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass chunkopaque.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass chunkliquid.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass decals.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass final.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass gui.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass blur.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass chunktransparent.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass findbright.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass chunktopsoil.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass godrays.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass autocamera.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass blockhighlights.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass wireframe.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass entityanimated.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass luma.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass blit.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass particlesquad2d.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass shadowmapentityanimated.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass shadowmapgeneric.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass texture2texture.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass celestialobject.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass guitopsoil.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass colorgrade.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass guigear.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass ssao.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass bilateralblur.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass chunkliquiddepth.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass anvilworkitem.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass standard.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass entityanimated.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass lines.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass aurora.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass rift.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass sleepoverlay.
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass machinegear.
-19.6.2025 22:21:50 [Notification] Reloaded shaders now with mod assets
-19.6.2025 22:21:50 [Notification] UDP: Server send DidReceiveUdp
-19.6.2025 22:21:50 [Notification] Received level init
-19.6.2025 22:21:50 [Notification] Loaded Shaderprogramm for render pass instanced.
-19.6.2025 22:21:50 [Notification] Initialized Music Engine
-19.6.2025 22:21:50 [Notification] Texture size is 32 so decal atlas size of 128x128 should suffice
-19.6.2025 22:21:50 [Notification] UDP: Client can receive UDP packets
-19.6.2025 22:21:52 [Notification] Received level finalize
-19.6.2025 22:21:52 [Notification] Loaded Shaderprogramm for render pass clouds.
-19.6.2025 22:21:52 [Notification] Loading world map cache db...
-19.6.2025 22:21:53 [Warning] ===============================================================
-19.6.2025 22:21:53 [Warning] (x_x) Captured 2 issues during startup:
-19.6.2025 22:21:53 [Error] [fixedcliffs] CS0117: 'FastNoiseLite' does not contain a definition for 'Frequency'
-19.6.2025 22:21:53 [Warning] ===============================================================
-19.6.2025 22:21:53 [Notification] Client pause state is now on
-19.6.2025 22:21:59 [Notification] Finished fully loading sounds (async)
-19.6.2025 22:22:04 [Notification] Call to RegisterCallback while game is paused
-19.6.2025 22:22:04 [Notification] Client pause state is now off
-19.6.2025 22:22:10 [Notification] Client pause state is now on
-19.6.2025 22:22:11 [Notification] Destroying game session, waiting up to 200ms for client threads to exit
-19.6.2025 22:22:11 [Notification] Stopping single player server
-19.6.2025 22:22:13 [Notification] Exiting current game to main menu, reason: leave world button pressed
-19.6.2025 22:24:26 [Notification] Exiting game now. Server running=False. Exit reason: Main screen quit button was pressed
+20.7.2025 20:00:11 [Notification] Client logger started.
+20.7.2025 20:00:11 [Notification] Game Version: v1.20.12 (Stable)
+20.7.2025 20:00:11 [Notification] Process path: D:\Vintagestory\Vintagestory.exe
+20.7.2025 20:00:11 [Notification] Operating System: Windows 10.0.19045.0
+20.7.2025 20:00:11 [Notification] CPU Cores: 8
+20.7.2025 20:00:11 [Notification] Available RAM: 28652 MB
+20.7.2025 20:00:12 [Notification] OpenAL Initialized. Available Mono/Stereo Sources: 255/1
+20.7.2025 20:00:12 [Notification] Graphics Card Vendor: NVIDIA Corporation
+20.7.2025 20:00:12 [Notification] Graphics Card Version: 3.3.0 NVIDIA 565.90
+20.7.2025 20:00:12 [Notification] Graphics Card Renderer: NVIDIA RTX A4500/PCIe/SSE2
+20.7.2025 20:00:12 [Notification] Graphics Card ShadingLanguageVersion: 3.30 NVIDIA via Cg compiler
+20.7.2025 20:00:12 [Notification] GL.MaxVertexUniformComponents: 4096
+20.7.2025 20:00:12 [Notification] GL.MaxUniformBlockSize: 65536
+20.7.2025 20:00:12 [Notification] C# Framework: .net 7.0.10
+20.7.2025 20:00:12 [Notification] Cairo Graphics Version: 1.17.3
+20.7.2025 20:00:12 [Notification] OpenAL Version: 1.1 ALSOFT 1.23.0
+20.7.2025 20:00:12 [Notification] Zstd Version: 1.5.5
+20.7.2025 20:00:12 [Notification] Start discovering assets
+20.7.2025 20:00:12 [Notification] Found 29 base assets in category lang
+20.7.2025 20:00:12 [Notification] Found 0 base assets in category patches
+20.7.2025 20:00:12 [Notification] Found 24 base assets in category config
+20.7.2025 20:00:12 [Notification] Found 0 base assets in category worldproperties
+20.7.2025 20:00:12 [Notification] Found 49 base assets in category sounds
+20.7.2025 20:00:12 [Notification] Found 95 base assets in category shapes
+20.7.2025 20:00:12 [Notification] Found 80 base assets in category shaders
+20.7.2025 20:00:12 [Notification] Found 18 base assets in category shaderincludes
+20.7.2025 20:00:12 [Notification] Found 140 base assets in category textures
+20.7.2025 20:00:12 [Notification] Found 4 base assets in category music
+20.7.2025 20:00:12 [Notification] Found 0 base assets in category dialog
+20.7.2025 20:00:12 [Notification] Found 439 base assets in total
+20.7.2025 20:00:12 [Notification] Loading sounds
+20.7.2025 20:00:12 [Notification] (Re-)loaded frame buffers
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass .
+20.7.2025 20:00:12 [Notification] Sounds loaded
+20.7.2025 20:00:12 [Notification] Begin loading shaders
+20.7.2025 20:00:12 [Notification] Load shaders now
+20.7.2025 20:00:12 [Notification] Loading shaders...
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass standard.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass particlescube.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass particlesquad.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass sky.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass nightsky.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass woittest.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass transparentcompose.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass debugdepthbuffer.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass helditem.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass chunkopaque.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass chunkliquid.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass decals.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass final.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass gui.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass blur.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass chunktransparent.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass findbright.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass chunktopsoil.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass godrays.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass autocamera.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass blockhighlights.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass wireframe.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass entityanimated.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass luma.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass blit.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass particlesquad2d.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass shadowmapentityanimated.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass shadowmapgeneric.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass texture2texture.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass celestialobject.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass guitopsoil.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass colorgrade.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass guigear.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass ssao.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass bilateralblur.
+20.7.2025 20:00:12 [Notification] Loaded Shaderprogramm for render pass chunkliquiddepth.
+20.7.2025 20:00:12 [Notification] Cached session key is valid, validating with server
+20.7.2025 20:00:13 [Notification] Server validation response: Good
+20.7.2025 20:00:13 [Notification] Will search the following paths for mods:
+20.7.2025 20:00:13 [Notification]     D:\Vintagestory\Mods
+20.7.2025 20:00:13 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
+20.7.2025 20:00:57 [Notification] Initialized GUI Manager
+20.7.2025 20:00:57 [Notification] Initialized Server Connection
+20.7.2025 20:00:57 [Notification] Server args parsed
+20.7.2025 20:00:57 [Notification] Server main instantiated
+20.7.2025 20:01:05 [Notification] Processed server identification
+20.7.2025 20:01:05 [Notification] Map initialized
+20.7.2025 20:01:05 [Notification] Received server assets
+20.7.2025 20:01:05 [Notification] Loading and pre-starting client side mods...
+20.7.2025 20:01:05 [Notification] Will search the following paths for mods:
+20.7.2025 20:01:05 [Notification]     D:\Vintagestory\Mods
+20.7.2025 20:01:05 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
+20.7.2025 20:01:05 [Notification] Found 4 mods (0 disabled)
+20.7.2025 20:01:05 [Notification] Mods, sorted by dependency: game, selectedlandforms, creative, survival
+20.7.2025 20:01:05 [Notification] Instantiated 128 mod systems from 4 enabled mods
+20.7.2025 20:01:05 [Notification] Done loading and pre-starting client side mods.
+20.7.2025 20:01:05 [Notification] External Origins in load order: modorigin@D:\Vintagestory\assets\creative\, modorigin@D:\Vintagestory\assets\survival\, mod@SelectedLandforms.zip
+20.7.2025 20:01:05 [Notification] Found 0 external assets in category lang
+20.7.2025 20:01:05 [Notification] Found 12 external assets in category patches
+20.7.2025 20:01:05 [Notification] Found 109 external assets in category config
+20.7.2025 20:01:05 [Notification] Found 25 external assets in category worldproperties
+20.7.2025 20:01:06 [Notification] Found 547 external assets in category sounds
+20.7.2025 20:01:06 [Notification] Found 5140 external assets in category shapes
+20.7.2025 20:01:06 [Notification] Found 7 external assets in category shaders
+20.7.2025 20:01:06 [Notification] Found 0 external assets in category shaderincludes
+20.7.2025 20:01:06 [Notification] Found 7066 external assets in category textures
+20.7.2025 20:01:06 [Notification] Found 78 external assets in category music
+20.7.2025 20:01:06 [Notification] Found 18 external assets in category dialog
+20.7.2025 20:01:06 [Notification] Found 0 external assets in category compatibility
+20.7.2025 20:01:06 [Notification] Reloaded lang file now with mod assets
+20.7.2025 20:01:06 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
+20.7.2025 20:01:06 [Notification] JsonPatch Loader: 23 patches total, successfully applied 6 patches, unmet conditions on 24 patches, no errors
+20.7.2025 20:01:07 [Notification] Received 3713 item types from server
+20.7.2025 20:01:07 [Notification] Loaded 12823 block types from server
+20.7.2025 20:01:08 [Notification] Reloaded sounds, now with mod assets
+20.7.2025 20:01:12 [Notification] Server launched
+20.7.2025 20:01:13 [Notification] Composed 1 4096x4096 entities texture atlases from 570 textures
+20.7.2025 20:01:18 [Notification] Collected 2698 shapes to tesselate.
+20.7.2025 20:01:24 [Notification] Composed 1 4096x4096 items texture atlases from 1943 textures
+20.7.2025 20:01:53 [Notification] Composed 1 4096x4096 blocks texture atlases from 5947 textures
+20.7.2025 20:01:54 [Notification] Server assets loaded
+20.7.2025 20:01:55 [Notification] Blocks tesselated
+20.7.2025 20:02:20 [Notification] Finished fully loading sounds (async)
+20.7.2025 20:04:02 [Notification] Destroying game session, waiting up to 200ms for client threads to exit
+20.7.2025 20:04:07 [Notification] Exiting game now. Server running=False. Exit reason: Main screen quit button was pressed

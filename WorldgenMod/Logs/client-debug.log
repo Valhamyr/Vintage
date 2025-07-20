@@ -1,0 +1,98 @@
+20.7.2025 20:00:12 [Debug] Creating game window with window mode Maximized
+20.7.2025 20:00:12.615 [VerboseDebug] Loadsounds, found 49 sounds
+20.7.2025 20:00:13.782 [VerboseDebug] [VSCreativeMod.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSCreativeMod.dll
+20.7.2025 20:00:13.853 [VerboseDebug] [VSCreativeMod.dll] Selected assembly D:\Vintagestory\Mods\VSCreativeMod.dll
+20.7.2025 20:00:13.871 [VerboseDebug] [VSEssentials.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSEssentials.dll
+20.7.2025 20:00:13.880 [VerboseDebug] [VSEssentials.dll] Selected assembly D:\Vintagestory\Mods\VSEssentials.dll
+20.7.2025 20:00:13.883 [VerboseDebug] [VSSurvivalMod.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSSurvivalMod.dll
+20.7.2025 20:00:13.892 [VerboseDebug] [VSSurvivalMod.dll] Selected assembly D:\Vintagestory\Mods\VSSurvivalMod.dll
+20.7.2025 20:00:14.126 [VerboseDebug] Left bottom main menu text is at 19.5/2023.0515625 w/h 450,64.9484375
+20.7.2025 20:00:57 [Debug] GuiScreenConnectingToServer constructed
+20.7.2025 20:01:05.753 [VerboseDebug] Received server assets packet; waiting on light levels packet before decoding.
+20.7.2025 20:01:05.768 [VerboseDebug] Handling ServerIdentification packet; requires remapping is False
+20.7.2025 20:01:05.772 [VerboseDebug] Received world meta data
+20.7.2025 20:01:05.784 [VerboseDebug] Received server assets
+20.7.2025 20:01:05.803 [VerboseDebug] [VSCreativeMod.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSCreativeMod.dll
+20.7.2025 20:01:05.809 [VerboseDebug] [VSCreativeMod.dll] Selected assembly D:\Vintagestory\Mods\VSCreativeMod.dll
+20.7.2025 20:01:05.811 [VerboseDebug] [VSEssentials.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSEssentials.dll
+20.7.2025 20:01:05.844 [VerboseDebug] [VSEssentials.dll] Selected assembly D:\Vintagestory\Mods\VSEssentials.dll
+20.7.2025 20:01:05.847 [VerboseDebug] [VSSurvivalMod.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSSurvivalMod.dll
+20.7.2025 20:01:05.852 [VerboseDebug] [VSSurvivalMod.dll] Selected assembly D:\Vintagestory\Mods\VSSurvivalMod.dll
+20.7.2025 20:01:05.859 [VerboseDebug] 4 assemblies loaded
+20.7.2025 20:01:05.859 [VerboseDebug] Instantiate mod systems for game
+20.7.2025 20:01:05.859 [VerboseDebug] Instantiate mod systems for selectedlandforms
+20.7.2025 20:01:05.859 [VerboseDebug] Instantiate mod systems for creative
+20.7.2025 20:01:05.859 [VerboseDebug] Instantiate mod systems for survival
+20.7.2025 20:01:05.954 [VerboseDebug] Single player game - starting mods on the client-side
+20.7.2025 20:01:05.961 [VerboseDebug] Server assets - done step 1, next steps off-thread
+20.7.2025 20:01:05.962 [VerboseDebug] Searching file system (including mods) for asset files
+20.7.2025 20:01:06.072 [VerboseDebug] Populated 679 EntityTypes from server
+20.7.2025 20:01:06.235 [VerboseDebug] Populated 3713 ItemTypes from server, highest ItemID is 3712
+20.7.2025 20:01:06.809 [VerboseDebug] Finished the search for asset files
+20.7.2025 20:01:06.876 [VerboseDebug] Loaded lang file: en
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 0: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 1: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 2: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 3: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 4: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 5: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 6: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 7: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 8: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 9: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.901 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 10: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 0: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 1: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 2: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 3: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 4: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 5: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 6: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 7: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 8: Unmet IsValue condition (false!=True)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/playertemporalstability.json, patch 0: Unmet IsValue condition (true!=False)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/playertemporalstability.json, patch 1: Unmet IsValue condition (true!=False)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/unbucket.json, patch 0: Unmet IsValue condition (true!=False)
+20.7.2025 20:01:06.902 [VerboseDebug] Patch file game:patches/unbucket.json, patch 1: Unmet IsValue condition (true!=False)
+20.7.2025 20:01:06.902 [VerboseDebug] Patchloader finished
+20.7.2025 20:01:06.953 [VerboseDebug] All client-side assets loaded and patched; configs, shapes, textures and sounds are now available for loading
+20.7.2025 20:01:06.957 [VerboseDebug] Starting to load entity shapes
+20.7.2025 20:01:06.958 [VerboseDebug] Starting to load item shapes
+20.7.2025 20:01:06.959 [VerboseDebug] Entity shape loading starting ...
+20.7.2025 20:01:06.966 [VerboseDebug] [LoadShapes] Searched through items...
+20.7.2025 20:01:07.238 [VerboseDebug] Populated 12823 BlockTypes from server, highest BlockID is 12822
+20.7.2025 20:01:07.238 [VerboseDebug] Starting to load block shapes
+20.7.2025 20:01:07.257 [VerboseDebug] Resolved blocks and items stacks and drops
+20.7.2025 20:01:07.259 [VerboseDebug] [LoadShapes] Searching through blocks...
+20.7.2025 20:01:08.096 [VerboseDebug] Entity shape loading completed
+20.7.2025 20:01:08.385 [VerboseDebug] Loaded 24 ColorMap textures
+20.7.2025 20:01:08.385 [VerboseDebug] Loadsounds, found 596 sounds
+20.7.2025 20:01:12.996 [VerboseDebug] [LoadShapes] Searched through 12823 blocks
+20.7.2025 20:01:12.997 [VerboseDebug] [LoadShapes] Starting to parse block shapes...
+20.7.2025 20:01:13.010 [VerboseDebug] [LoadShapes] loaded 1 block shapes in obj and gltf formats
+20.7.2025 20:01:13.383 [VerboseDebug] --- Server started ---
+20.7.2025 20:01:13.928 [VerboseDebug] Server assets - composing entity texture atlas on main thread
+20.7.2025 20:01:13.972 [VerboseDebug] Server assets - done entity textures composition
+20.7.2025 20:01:13.976 [VerboseDebug] Server assets - done entity textures mipmap creation
+20.7.2025 20:01:13.978 [VerboseDebug] Server assets - done entity textures random and average color collection
+20.7.2025 20:01:17.558 [VerboseDebug] [LoadShapes] parsed 781 shapes from JSON for 12823 blocks, some others done offthread
+20.7.2025 20:01:17.563 [VerboseDebug] [LoadShapes] parsed 742 shapes from JSON (2nd block loading thread)
+20.7.2025 20:01:18.487 [VerboseDebug] [LoadShapes] parsed 1176 shapes from JSON for items
+20.7.2025 20:01:18.494 [VerboseDebug] BlockTextureAtlas start collecting textures (already holds 24 colormap textures)
+20.7.2025 20:01:24.086 [VerboseDebug] Server assets - composing item texture atlas on main thread
+20.7.2025 20:01:24.124 [VerboseDebug] Server assets - done item textures composition
+20.7.2025 20:01:24.132 [VerboseDebug] Server assets - done item textures random and average color collection
+20.7.2025 20:01:24.135 [VerboseDebug] Server assets - done item textures mipmap creation
+20.7.2025 20:01:25.165 [VerboseDebug] Server assets - done item tesselation spread over 8 frames
+20.7.2025 20:01:53.615 [VerboseDebug] Starting to load sounds fully
+20.7.2025 20:01:53.633 [VerboseDebug] Server assets - composing block texture atlas on main thread
+20.7.2025 20:01:53.677 [VerboseDebug] Server assets - done block textures composition
+20.7.2025 20:01:53.686 [VerboseDebug] Server assets - done block textures mipmap creation
+20.7.2025 20:01:53.704 [VerboseDebug] Server assets - done block textures random and average color collection
+20.7.2025 20:01:53.803 [VerboseDebug] Server assets - done step 9
+20.7.2025 20:01:53.908 [VerboseDebug] Server assets - done texture atlas frame buffer
+20.7.2025 20:01:55.364 [VerboseDebug] Server assets - done block tesselation
+20.7.2025 20:01:56.790 [VerboseDebug] Loaded highest priority sound assets
+20.7.2025 20:04:03 [Debug] GuiScreenConnectingToServer constructed
+20.7.2025 20:04:03.351 [VerboseDebug] Left bottom main menu text is at 19.5/2023.0515625 w/h 450,64.9484375
+20.7.2025 20:04:07 [Debug] After gamewindow.Run()

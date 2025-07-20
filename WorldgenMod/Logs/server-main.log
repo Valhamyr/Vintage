@@ -1,277 +1,278 @@
-19.6.2025 22:21:22 [Notification] Server logger started.
-19.6.2025 22:21:22 [Notification] Game Version: v1.20.12 (Stable)
-19.6.2025 22:21:22 [Event] It begins...
-19.6.2025 22:21:22 [Event] Launching server...
-19.6.2025 22:21:22 [Event] It senses...
-19.6.2025 22:21:22 [Event] Server v1.20.12, network v1.20.8, api v1.20.0
-19.6.2025 22:21:22 [Notification] Entering runphase Initialization
-19.6.2025 22:21:22 [Event] Loading configuration...
-19.6.2025 22:21:22 [Notification] Entering runphase Configuration
-19.6.2025 22:21:23 [Notification] Loading savegame
-19.6.2025 22:21:23 [Notification] Create new save game data. Playstyle: exploration
-19.6.2025 22:21:23 [Notification] Default spawn was set in serverconfig, resetting for safety.
-19.6.2025 22:21:23 [Notification] Savegame C:\Users\Shadow\AppData\Roaming\VintagestoryData\Saves\foggy cave tales.vcdbs loaded
-19.6.2025 22:21:23 [Notification] World size = 1024000 256 1024000
-19.6.2025 22:21:23 [Notification] Start discovering assets
-19.6.2025 22:21:23 [Notification] Found 1 base assets in category blocktypes
-19.6.2025 22:21:23 [Notification] Found 0 base assets in category itemtypes
-19.6.2025 22:21:23 [Notification] Found 29 base assets in category lang
-19.6.2025 22:21:23 [Notification] Found 0 base assets in category patches
-19.6.2025 22:21:23 [Notification] Found 24 base assets in category config
-19.6.2025 22:21:23 [Notification] Found 0 base assets in category worldproperties
-19.6.2025 22:21:23 [Notification] Found 49 base assets in category sounds
-19.6.2025 22:21:23 [Notification] Found 95 base assets in category shapes
-19.6.2025 22:21:23 [Notification] Found 140 base assets in category textures
-19.6.2025 22:21:23 [Notification] Found 0 base assets in category recipes
-19.6.2025 22:21:23 [Notification] Found 0 base assets in category worldgen
-19.6.2025 22:21:23 [Notification] Found 3 base assets in category entities
-19.6.2025 22:21:23 [Notification] Found 341 base assets in total
-19.6.2025 22:21:23 [Event] Building assets...
-19.6.2025 22:21:23 [Notification] Entering runphase LoadAssets
-19.6.2025 22:21:23 [Notification] Will search the following paths for mods:
-19.6.2025 22:21:23 [Notification]     D:\Vintagestory\Mods
-19.6.2025 22:21:23 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
-19.6.2025 22:21:23 [Notification] Found 6 mods (2 disabled)
-19.6.2025 22:21:23 [Notification] Mods, sorted by dependency: game, fixedcliffs, creative, survival
-19.6.2025 22:21:24 [Error] [fixedcliffs] CS0117: 'FastNoiseLite' does not contain a definition for 'Frequency'
-19.6.2025 22:21:24 [Notification] [fixedcliffs] Successfully compiled 2 source files
-19.6.2025 22:21:24 [Notification] Instantiated 128 mod systems from 4 enabled mods
-19.6.2025 22:21:24 [Notification] External Origins in load order: modorigin@D:\Vintagestory\assets\creative\, modorigin@D:\Vintagestory\assets\survival\, mod@FixedCliffs.zip
-19.6.2025 22:21:24 [Notification] Found 478 external assets in category blocktypes
-19.6.2025 22:21:24 [Notification] Found 273 external assets in category itemtypes
-19.6.2025 22:21:24 [Notification] Found 0 external assets in category lang
-19.6.2025 22:21:24 [Notification] Found 13 external assets in category patches
-19.6.2025 22:21:24 [Notification] Found 109 external assets in category config
-19.6.2025 22:21:24 [Notification] Found 25 external assets in category worldproperties
-19.6.2025 22:21:24 [Notification] Found 547 external assets in category sounds
-19.6.2025 22:21:24 [Notification] Found 5140 external assets in category shapes
-19.6.2025 22:21:25 [Notification] Found 7066 external assets in category textures
-19.6.2025 22:21:25 [Notification] Found 385 external assets in category recipes
-19.6.2025 22:21:25 [Notification] Found 580 external assets in category worldgen
-19.6.2025 22:21:25 [Notification] Found 75 external assets in category entities
-19.6.2025 22:21:25 [Notification] Found 0 external assets in category compatibility
-19.6.2025 22:21:25 [Notification] Reloaded lang file with mod assets
-19.6.2025 22:21:25 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
-19.6.2025 22:21:25 [Notification] JsonPatch Loader: 28 patches total, successfully applied 23 patches, missing files on 5 patches, unmet conditions on 24 patches, no errors
-19.6.2025 22:21:25 [Event] It remembers...
-19.6.2025 22:21:26 [Notification] Loaded 3712 unique items
-19.6.2025 22:21:26 [Event] All that came before...
-19.6.2025 22:21:28 [Notification] Loaded 12821 unique blocks
-19.6.2025 22:21:29 [Notification] Loaded 679 unique entities
-19.6.2025 22:21:29 [Notification] BlockLoader: Entities, Blocks and Items loaded
-19.6.2025 22:21:29 [Event] Remapping blocks and items...
-19.6.2025 22:21:29 [Event] 14 cooking recipes loaded
-19.6.2025 22:21:29 [Event] Taste and smell...
-19.6.2025 22:21:29 [Event] 903 crafting recipes loaded from 248 files
-19.6.2025 22:21:29 [Event] Grand inventions...
-19.6.2025 22:21:29 [Event] 9 metal alloys loaded
-19.6.2025 22:21:29 [Event] Glimmers in the soil...
-19.6.2025 22:21:29 [Event] 251 smithing recipes loaded
-19.6.2025 22:21:29 [Event] Burning sparks...
-19.6.2025 22:21:29 [Event] 82 clay forming recipes loaded
-19.6.2025 22:21:29 [Event] Molded forms...
-19.6.2025 22:21:29 [Event] 36 knapping recipes loaded
-19.6.2025 22:21:29 [Event] Simple tools...
-19.6.2025 22:21:29 [Event] 176 barrel recipes loaded
-19.6.2025 22:21:29 [Notification] Entering runphase AssetsFinalize
-19.6.2025 22:21:30 [Event] Server assets loaded, parsed, registered and finalized
-19.6.2025 22:21:30 [Event] Initialising systems...
-19.6.2025 22:21:30 [Notification] Entering runphase LoadGamePre
-19.6.2025 22:21:30 [Notification] Reloaded 19 weather patterns, 5 wind patterns and 5 weather events
-19.6.2025 22:21:30 [Notification] Started 108 systems on Server:
-19.6.2025 22:21:30 [Notification]     Mod 'VSEssentials.dll' (game):
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.Core
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.EntityPartitioning
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ErrorReporter
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.ModCompatiblityUtil
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.NoObf.ModJsonPatchLoader
-19.6.2025 22:21:30 [Notification]         Vintagestory.Essentials.PathfindSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.Essentials.PathFindDebug
-19.6.2025 22:21:30 [Notification]         Vintagestory.Essentials.PathfindingAsync
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.JsonExport
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.ModBasicBlocksLoader
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemDormancyStateChecker
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.AiRuntimeConfig
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemSyncHarvestableDropsToClient
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemEmotes
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.LeafBlockDecay
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.POIRegistry
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.RoomRegistry
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.WeatherSystemCommands
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.WeatherSystemServer
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.WorldMapManager
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.NoObf.ModRegistryObjectTypeLoader
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.LoadColorMaps
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ClothManager
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GridRecipeLoader
-19.6.2025 22:21:30 [Notification]     Mod 'VSSurvivalMod.dll' (survival):
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenTerra
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenSnowLayer
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemControlPoints
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.SurvivalCoreSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenTerraPostProcess
-19.6.2025 22:21:30 [Notification]         Vintagestory.Client.NoObf.StoryGenFailedSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.UpgradeTasks
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.ChiselBlockBulkSetMaterial
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.ModSystemDetailModeSync
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.NpcControl
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.ModSystemTiledDungeonGenerator
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenFromHeightmap
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenMaps
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenRockStrataNew
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenHotSprings
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenCreatures
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.WgenCommands
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemExplosionAffectedStability
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.MyceliumSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModsystemButterflySpawnCondsExtra
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemCatchCreature
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemGliding
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemSwoopDev
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.Timeswitch
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ClutterBookshelfUtil
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ScreenshakeToClientModSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemResoArchiveCommands
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.StoryStructureProtection
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.StoryStructuresSpawnConditions
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemVillagerDebug
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemAuction
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemBlockReinforcement
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.Core
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.CharacterSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.VariablesModSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModsystemElevator
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ActivityModSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ActivityEditorSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.FruitingSystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemCommandHandbook
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemTutorial
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemCorpseReturnTeleporter
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemNightVision
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.TobiasTeleporter
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModJournal
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.LiquidItemStackRenderer
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemStructureLocator
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModLootRandomizer
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemEntityOwnership
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemRifts
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemRiftWeather
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSleeping
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemSupportBeamPlacer
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.TeleporterManager
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModTemperature
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.SystemTemporalStability
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.TemporalStabilityEffects
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemWearableStats
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemEditableBook
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.Mechanics.MechanicalPowerMod
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenDungeons
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenDeposits
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.GenStoryStructures
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenCaves
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenStructures
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenDevastationLayer
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenBlockLayers
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenPonds
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenStructuresPosPass
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenVegetationAndPatches
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.RecipeRegistrySystem
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenRivulets
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenLightSurvival
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.RecipeLoader
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemFireFromLightning
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemOreMap
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemSnowballs
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.HumanoidOutfits
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.ModSystemDevastationEffects
-19.6.2025 22:21:30 [Notification]         Vintagestory.GameContent.DisableRecipeRegisteringSystem
-19.6.2025 22:21:30 [Notification]     Mod 'VSCreativeMod.dll' (creative):
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.Core
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.WorldEdit.WorldEdit
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenBlockLayersFlat
-19.6.2025 22:21:30 [Notification]         Vintagestory.ServerMods.GenLightCreative
-19.6.2025 22:21:31 [Notification] Server map set
-19.6.2025 22:21:31 [Event] A world unbroken...
-19.6.2025 22:21:31 [Notification] Entering runphase LoadGame
-19.6.2025 22:21:31 [Notification] Entering runphase WorldReady
-19.6.2025 22:21:31 [Event] The center unfolding...
-19.6.2025 22:21:31 [Event] Starting world generators...
-19.6.2025 22:21:32 [Notification] Sending server identification with remap False.  Server control privilege is True
-19.6.2025 22:21:33 [Notification] Reloaded 35 tree generators
-19.6.2025 22:21:33 [Event] Loading 7x7x8 spawn chunks...
-19.6.2025 22:21:33 [Event] 0% (49 in queue)
-19.6.2025 22:21:33 [Event] The carved mountains...
-19.6.2025 22:21:41 [Event] 0% (49 in queue)
-19.6.2025 22:21:41 [Event] The rolling hills...
-19.6.2025 22:21:45 [Event] 0% (81 in queue)
-19.6.2025 22:21:45 [Event] The sheer cliffs...
-19.6.2025 22:21:46 [Event] 0% (113 in queue)
-19.6.2025 22:21:46 [Event] The endless plains...
-19.6.2025 22:21:48 [Event] 0% (163 in queue)
-19.6.2025 22:21:48 [Event] The winter snows...
-19.6.2025 22:21:49 [Event] Begin game ticking...
-19.6.2025 22:21:49 [Event] ... it calls to you
-19.6.2025 22:21:49 [Notification] Entering runphase RunGame
-19.6.2025 22:21:49 [Notification] Starting server threads
-19.6.2025 22:21:49 [Event] Singleplayer Server now running!
-19.6.2025 22:21:49 [Event] Return again.
-19.6.2025 22:21:49 [Notification] Please be aware that as of 1.20, servers default configurations have changed - servers no longer register themselves to the public servers list and are invite-only (whitelisted) out of the box. If you desire so, you can enable server advertising with '/serverconfig advertise on' and disable the whitelist mode with '/serverconfig whitelistmode off'
-19.6.2025 22:21:49 [Notification] All clients disconnected, pausing game calendar.
-19.6.2025 22:21:49 [Notification] A Client attempts connecting via Dummy connection on 127.0.0.1:0, assigning client id 1
-19.6.2025 22:21:49 [Notification] Client 1 uid MFdMf04c0KtP+43tPbhkJagw attempting identification. Name: Valhamyr
-19.6.2025 22:21:49 [Notification] Upped server view distance because player is locally connected
-19.6.2025 22:21:49 [Notification] Delayed join, attempt random spawn position.
-19.6.2025 22:21:50 [Notification] Placing Valhamyr at 512022.5 119 512010.5
-19.6.2025 22:21:50 [Notification] UDP: Client 1 connected via: 0.0.0.0:0
-19.6.2025 22:21:52 [Event] Valhamyr 127.0.0.1:0 joins.
-19.6.2025 22:21:53 [Error] [fixedcliffs] CS0117: 'FastNoiseLite' does not contain a definition for 'Frequency'
-19.6.2025 22:21:53 [Notification] Server ticking has been suspended
-19.6.2025 22:22:04 [Notification] Server ticking has been resumed
-19.6.2025 22:22:04 [Notification] A client reconnected, resuming game calendar.
-19.6.2025 22:22:10 [Notification] Server ticking has been suspended
-19.6.2025 22:22:11 [Notification] Client 1 disconnected: Server shutting down - Exit request by client
-19.6.2025 22:22:11 [Notification] Last player disconnected, compacting large object heap...
-19.6.2025 22:22:12 [Notification] UDP: client disconnected Valhamyr
-19.6.2025 22:22:12 [Event] Player Valhamyr got removed. Reason: Server shutting down - Exit request by client
-19.6.2025 22:22:12 [Notification] Server stop requested, begin shutdown sequence. Stop reason: Exit request by client
-19.6.2025 22:22:12 [Notification] Entering runphase Shutdown
-19.6.2025 22:22:12 [Event] Mods and systems notified, now saving everything...
-19.6.2025 22:22:12 [Event] It pauses.
-19.6.2025 22:22:12 [Event] One last gaze...
-19.6.2025 22:22:12 [Event] Saved player world data...
-19.6.2025 22:22:12 [Event] Saved map regions...
-19.6.2025 22:22:12 [Event] Then all goes quiet...
-19.6.2025 22:22:13 [Event] Saved map chunks...
-19.6.2025 22:22:13 [Event] The waters recede...
-19.6.2025 22:22:13 [Event] Saved 300 chunks...
-19.6.2025 22:22:13 [Event] Saved 600 chunks...
-19.6.2025 22:22:13 [Event] Saved 900 chunks...
-19.6.2025 22:22:13 [Event] Saved 1200 chunks...
-19.6.2025 22:22:13 [Event] Saved loaded chunks...
-19.6.2025 22:22:13 [Event] The mountains fade...
-19.6.2025 22:22:13 [Event] The dark settles in.
-19.6.2025 22:22:13 [Event] Saved 300 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved 600 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved 900 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved 1200 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved 1500 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved 1800 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved 2100 generating chunks...
-19.6.2025 22:22:13 [Event] ...
-19.6.2025 22:22:13 [Event] Saved generating chunks...
-19.6.2025 22:22:13 [Event] Saved savegamedata...2
-19.6.2025 22:22:13 [Event] World saved! Saved 3528 chunks, 441 mapchunks, 16 mapregions.
-19.6.2025 22:22:13 [Event] It sighs...
-19.6.2025 22:22:13 [Event] Shutting down 10 server threads... 
-19.6.2025 22:22:13 [Event] Killed console thread
-19.6.2025 22:22:13 [Event] Alone again...
-19.6.2025 22:22:13 [Event] All threads gracefully shut down
-19.6.2025 22:22:13 [Event] Time to rest.
-19.6.2025 22:22:13 [Event] Doing last tick...
-19.6.2025 22:22:13 [Event] Stopped the server!
+20.7.2025 20:00:57 [Notification] Server logger started.
+20.7.2025 20:00:57 [Notification] Game Version: v1.20.12 (Stable)
+20.7.2025 20:00:57 [Event] It begins...
+20.7.2025 20:00:57 [Event] Launching server...
+20.7.2025 20:00:57 [Event] It senses...
+20.7.2025 20:00:57 [Event] Server v1.20.12, network v1.20.8, api v1.20.0
+20.7.2025 20:00:57 [Notification] Entering runphase Initialization
+20.7.2025 20:00:57 [Event] Loading configuration...
+20.7.2025 20:00:57 [Notification] Entering runphase Configuration
+20.7.2025 20:00:57 [Notification] Loading savegame
+20.7.2025 20:00:57 [Notification] Create new save game data. Playstyle: exploration
+20.7.2025 20:00:57 [Notification] Default spawn was set in serverconfig, resetting for safety.
+20.7.2025 20:00:57 [Notification] Savegame C:\Users\Shadow\AppData\Roaming\VintagestoryData\Saves\vintage adventure valley.vcdbs loaded
+20.7.2025 20:00:57 [Notification] World size = 1024000 256 1024000
+20.7.2025 20:00:57 [Notification] Start discovering assets
+20.7.2025 20:00:57 [Notification] Found 1 base assets in category blocktypes
+20.7.2025 20:00:57 [Notification] Found 0 base assets in category itemtypes
+20.7.2025 20:00:57 [Notification] Found 29 base assets in category lang
+20.7.2025 20:00:57 [Notification] Found 0 base assets in category patches
+20.7.2025 20:00:57 [Notification] Found 24 base assets in category config
+20.7.2025 20:00:57 [Notification] Found 0 base assets in category worldproperties
+20.7.2025 20:00:57 [Notification] Found 49 base assets in category sounds
+20.7.2025 20:00:57 [Notification] Found 95 base assets in category shapes
+20.7.2025 20:00:57 [Notification] Found 140 base assets in category textures
+20.7.2025 20:00:57 [Notification] Found 0 base assets in category recipes
+20.7.2025 20:00:57 [Notification] Found 0 base assets in category worldgen
+20.7.2025 20:00:57 [Notification] Found 3 base assets in category entities
+20.7.2025 20:00:57 [Notification] Found 341 base assets in total
+20.7.2025 20:00:57 [Event] Building assets...
+20.7.2025 20:00:57 [Notification] Entering runphase LoadAssets
+20.7.2025 20:00:57 [Notification] Will search the following paths for mods:
+20.7.2025 20:00:57 [Notification]     D:\Vintagestory\Mods
+20.7.2025 20:00:57 [Notification]     C:\Users\Shadow\AppData\Roaming\VintagestoryData\Mods
+20.7.2025 20:00:57 [Notification] Found 6 mods (2 disabled)
+20.7.2025 20:00:57 [Notification] Mods, sorted by dependency: game, selectedlandforms, creative, survival
+20.7.2025 20:00:57 [Notification] Instantiated 128 mod systems from 4 enabled mods
+20.7.2025 20:00:57 [Notification] External Origins in load order: modorigin@D:\Vintagestory\assets\creative\, modorigin@D:\Vintagestory\assets\survival\, mod@SelectedLandforms.zip
+20.7.2025 20:00:57 [Notification] Found 478 external assets in category blocktypes
+20.7.2025 20:00:57 [Notification] Found 273 external assets in category itemtypes
+20.7.2025 20:00:57 [Notification] Found 0 external assets in category lang
+20.7.2025 20:00:57 [Notification] Found 12 external assets in category patches
+20.7.2025 20:00:57 [Notification] Found 109 external assets in category config
+20.7.2025 20:00:57 [Notification] Found 25 external assets in category worldproperties
+20.7.2025 20:00:57 [Notification] Found 547 external assets in category sounds
+20.7.2025 20:00:58 [Notification] Found 5140 external assets in category shapes
+20.7.2025 20:00:58 [Notification] Found 7066 external assets in category textures
+20.7.2025 20:00:58 [Notification] Found 385 external assets in category recipes
+20.7.2025 20:00:58 [Notification] Found 579 external assets in category worldgen
+20.7.2025 20:00:58 [Notification] Found 75 external assets in category entities
+20.7.2025 20:00:58 [Notification] Found 0 external assets in category compatibility
+20.7.2025 20:00:58 [Notification] Reloaded lang file with mod assets
+20.7.2025 20:00:58 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
+20.7.2025 20:00:58 [Error] Patch 0 (target: game:worldgen/landforms.json) in selectedlandforms:patches/landformWeights.json failed because supplied path /variants/*/weight is invalid: The json path /variants/*/weight was not found. Could traverse until /variants, but then '*' does not exist. Full json at this path: []
+20.7.2025 20:00:58 [Error] Patch 1 (target: game:worldgen/landforms.json) in selectedlandforms:patches/landformWeights.json failed because supplied path /variants/*[code='steppedsinkholes']/weight is invalid: The json path /variants/*[code='steppedsinkholes']/weight was not found. Could traverse until /variants, but then '*[code='steppedsinkholes']' does not exist. Full json at this path: []
+20.7.2025 20:00:58 [Error] Patch 2 (target: game:worldgen/landforms.json) in selectedlandforms:patches/landformWeights.json failed because supplied path /variants/*[code='sinkholeplateaus']/weight is invalid: The json path /variants/*[code='sinkholeplateaus']/weight was not found. Could traverse until /variants, but then '*[code='sinkholeplateaus']' does not exist. Full json at this path: []
+20.7.2025 20:00:58 [Error] Patch 3 (target: game:worldgen/landforms.json) in selectedlandforms:patches/landformWeights.json failed because supplied path /variants/*[code='realisticmountains-ledged']/weight is invalid: The json path /variants/*[code='realisticmountains-ledged']/weight was not found. Could traverse until /variants, but then '*[code='realisticmountains-ledged']' does not exist. Full json at this path: []
+20.7.2025 20:00:58 [Error] Patch 4 (target: game:worldgen/landforms.json) in selectedlandforms:patches/landformWeights.json failed because supplied path /variants/*[code='realisticmountains-quintupleledged']/weight is invalid: The json path /variants/*[code='realisticmountains-quintupleledged']/weight was not found. Could traverse until /variants, but then '*[code='realisticmountains-quintupleledged']' does not exist. Full json at this path: []
+20.7.2025 20:00:58 [Notification] JsonPatch Loader: 23 patches total, successfully applied 13 patches, missing files on 5 patches, unmet conditions on 24 patches, had errors on 5 patches
+20.7.2025 20:00:59 [Event] It remembers...
+20.7.2025 20:00:59 [Notification] Loaded 3712 unique items
+20.7.2025 20:00:59 [Event] All that came before...
+20.7.2025 20:01:01 [Notification] Loaded 12821 unique blocks
+20.7.2025 20:01:02 [Notification] Loaded 679 unique entities
+20.7.2025 20:01:02 [Notification] BlockLoader: Entities, Blocks and Items loaded
+20.7.2025 20:01:02 [Event] Remapping blocks and items...
+20.7.2025 20:01:02 [Event] 14 cooking recipes loaded
+20.7.2025 20:01:02 [Event] Taste and smell...
+20.7.2025 20:01:03 [Event] 903 crafting recipes loaded from 248 files
+20.7.2025 20:01:03 [Event] Grand inventions...
+20.7.2025 20:01:03 [Event] 9 metal alloys loaded
+20.7.2025 20:01:03 [Event] Glimmers in the soil...
+20.7.2025 20:01:03 [Event] 251 smithing recipes loaded
+20.7.2025 20:01:03 [Event] Burning sparks...
+20.7.2025 20:01:03 [Event] 82 clay forming recipes loaded
+20.7.2025 20:01:03 [Event] Molded forms...
+20.7.2025 20:01:03 [Event] 36 knapping recipes loaded
+20.7.2025 20:01:03 [Event] Simple tools...
+20.7.2025 20:01:03 [Event] 176 barrel recipes loaded
+20.7.2025 20:01:03 [Notification] Entering runphase AssetsFinalize
+20.7.2025 20:01:03 [Event] Server assets loaded, parsed, registered and finalized
+20.7.2025 20:01:03 [Event] Initialising systems...
+20.7.2025 20:01:03 [Notification] Entering runphase LoadGamePre
+20.7.2025 20:01:03 [Notification] Reloaded 19 weather patterns, 5 wind patterns and 5 weather events
+20.7.2025 20:01:03 [Notification] Started 108 systems on Server:
+20.7.2025 20:01:03 [Notification]     Mod 'VSEssentials.dll' (game):
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.Core
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.EntityPartitioning
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ErrorReporter
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.ModCompatiblityUtil
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.NoObf.ModJsonPatchLoader
+20.7.2025 20:01:03 [Notification]         Vintagestory.Essentials.PathfindSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.Essentials.PathFindDebug
+20.7.2025 20:01:03 [Notification]         Vintagestory.Essentials.PathfindingAsync
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.JsonExport
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.ModBasicBlocksLoader
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemDormancyStateChecker
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.AiRuntimeConfig
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemSyncHarvestableDropsToClient
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemEmotes
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.LeafBlockDecay
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.POIRegistry
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.RoomRegistry
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.WeatherSystemCommands
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.WeatherSystemServer
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.WorldMapManager
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.NoObf.ModRegistryObjectTypeLoader
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.LoadColorMaps
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ClothManager
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GridRecipeLoader
+20.7.2025 20:01:03 [Notification]     Mod 'VSSurvivalMod.dll' (survival):
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenTerra
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenSnowLayer
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemControlPoints
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.SurvivalCoreSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenTerraPostProcess
+20.7.2025 20:01:03 [Notification]         Vintagestory.Client.NoObf.StoryGenFailedSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.UpgradeTasks
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.ChiselBlockBulkSetMaterial
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.ModSystemDetailModeSync
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.NpcControl
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.ModSystemTiledDungeonGenerator
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenFromHeightmap
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenMaps
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenRockStrataNew
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenHotSprings
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenCreatures
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.WgenCommands
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemExplosionAffectedStability
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.MyceliumSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModsystemButterflySpawnCondsExtra
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemCatchCreature
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemGliding
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemSwoopDev
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.Timeswitch
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ClutterBookshelfUtil
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ScreenshakeToClientModSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemResoArchiveCommands
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.StoryStructureProtection
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.StoryStructuresSpawnConditions
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemVillagerDebug
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemAuction
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemBlockReinforcement
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.Core
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.CharacterSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.VariablesModSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModsystemElevator
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ActivityModSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ActivityEditorSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.FruitingSystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemCommandHandbook
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemTutorial
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemCorpseReturnTeleporter
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemNightVision
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.TobiasTeleporter
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModJournal
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.LiquidItemStackRenderer
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemStructureLocator
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModLootRandomizer
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemEntityOwnership
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemRifts
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemRiftWeather
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSleeping
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemSupportBeamPlacer
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.TeleporterManager
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModTemperature
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.SystemTemporalStability
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.TemporalStabilityEffects
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemWearableStats
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemEditableBook
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.Mechanics.MechanicalPowerMod
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenDungeons
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenDeposits
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.GenStoryStructures
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenCaves
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenStructures
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenDevastationLayer
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenBlockLayers
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenPonds
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenStructuresPosPass
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenVegetationAndPatches
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.RecipeRegistrySystem
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenRivulets
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenLightSurvival
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.RecipeLoader
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemFireFromLightning
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemOreMap
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemSnowballs
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.HumanoidOutfits
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.ModSystemDevastationEffects
+20.7.2025 20:01:03 [Notification]         Vintagestory.GameContent.DisableRecipeRegisteringSystem
+20.7.2025 20:01:03 [Notification]     Mod 'VSCreativeMod.dll' (creative):
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.Core
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.WorldEdit.WorldEdit
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenBlockLayersFlat
+20.7.2025 20:01:03 [Notification]         Vintagestory.ServerMods.GenLightCreative
+20.7.2025 20:01:04 [Notification] Server map set
+20.7.2025 20:01:04 [Event] A world unbroken...
+20.7.2025 20:01:04 [Notification] Entering runphase LoadGame
+20.7.2025 20:01:05 [Notification] Entering runphase WorldReady
+20.7.2025 20:01:05 [Event] The center unfolding...
+20.7.2025 20:01:05 [Event] Starting world generators...
+20.7.2025 20:01:05 [Notification] Sending server identification with remap False.  Server control privilege is True
+20.7.2025 20:01:09 [Error] Error during Init worldgen for Vintagestory.GameContent.GenStoryStructures
+20.7.2025 20:01:09 [Error] Exception: No landform with code hillplateu found.
+   at Vintagestory.ServerMods.GenMaps.ForceLandformAt(ForceLandform landform) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\GenMaps.cs:line 110
+   at Vintagestory.GameContent.GenStoryStructures.SetupForceLandform() in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\6.GenStructures\Story\GenStoryStructures.cs:line 555
+   at Vintagestory.GameContent.GenStoryStructures.DetermineStoryStructures() in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\6.GenStructures\Story\GenStoryStructures.cs:line 384
+   at Vintagestory.GameContent.GenStoryStructures.InitWorldGen() in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\6.GenStructures\Story\GenStoryStructures.cs:line 262
+   at Vintagestory.Server.ServerEventAPI.TriggerInitWorldGen() in VintagestoryLib\Server\API\ServerEventAPI.cs:line 249
+20.7.2025 20:01:12 [Notification] Reloaded 35 tree generators
+20.7.2025 20:01:12 [Event] Loading 7x7x8 spawn chunks...
+20.7.2025 20:01:12 [Event] 0% (49 in queue)
+20.7.2025 20:01:12 [Event] The carved mountains...
+20.7.2025 20:01:12 [Error] Mod exception during event OnWorldgenStartup. Will skip to next event
+20.7.2025 20:01:12 [Error] Exception: Index was outside the bounds of the array.
+   at Vintagestory.ServerMods.NoiseLandforms.GetParentLandformIndexAt(Int32 xpos, Int32 zpos, Int32 temp, Int32 rain) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\NoiseLandform.cs:line 126
+   at Vintagestory.ServerMods.NoiseLandforms.GetLandformIndexAt(Int32 unscaledXpos, Int32 unscaledZpos, Int32 temp, Int32 rain) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\NoiseLandform.cs:line 92
+   at Vintagestory.ServerMods.MapLayerLandforms.GenLayer(Int32 xCoord, Int32 zCoord, Int32 sizeX, Int32 sizeZ) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\MapLayer\MapLayerLandforms.cs:line 56
+   at Vintagestory.ServerMods.GenMaps.OnMapRegionGen(IMapRegion mapRegion, Int32 regionX, Int32 regionZ, ITreeAttribute chunkGenParams) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\GenMaps.cs:line 391
+   at Vintagestory.Server.ServerSystemSupplyChunks.CreateMapRegion(Int32 regionX, Int32 regionZ, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1179
+   at Vintagestory.Server.ServerSystemSupplyChunks.GetOrCreateMapRegion(Int32 chunkX, Int32 chunkZ, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1158
+   at Vintagestory.Server.ServerSystemSupplyChunks.GetOrCreateMapRegionEnsureNeighbours(Int32 chunkX, Int32 chunkZ, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1102
+   at Vintagestory.Server.ServerSystemSupplyChunks.GetOrCreateMapChunk(ChunkColumnLoadRequest chunkRequest, Boolean forceCreate) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1208
+   at Vintagestory.Server.ServerSystemSupplyChunks.loadOrGenerateChunkColumn_OnChunkThread(ChunkColumnLoadRequest chunkRequest, Int32 stage) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 745
+   at Vintagestory.Server.ServerSystemSupplyChunks.loadChunkAreaBlocking(Int32 chunkX1, Int32 chunkZ1, Int32 chunkX2, Int32 chunkZ2, Boolean isStartupLoad, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1771
+   at Vintagestory.Server.ServerSystemSupplyChunks.InitWorldgenAndSpawnChunks() in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1538
+   at Vintagestory.Server.ServerSystemLoadAndSaveGame.OnWorldgenStartup() in VintagestoryLib\Server\Systems\World\LoadThread\LoadSaveGame.cs:line 199
+   at Vintagestory.Server.ServerEventManager.<>c.<TriggerWorldgenStartup>b__112_0(Action dele) in VintagestoryLib\Server\ServerEventManager.cs:line 448
+   at Vintagestory.Server.ServerEventManager.Trigger[T](Delegate[] delegates, String eventName, Action`1 onDele, Action onException) in VintagestoryLib\Server\ServerEventManager.cs:line 721
+20.7.2025 20:01:12 [Event] Begin game ticking...
+20.7.2025 20:01:12 [Event] ... it calls to you
+20.7.2025 20:01:12 [Notification] Entering runphase RunGame
+20.7.2025 20:01:12 [Notification] Starting server threads
+20.7.2025 20:01:12 [Event] Singleplayer Server now running!
+20.7.2025 20:01:12 [Event] Return again.
+20.7.2025 20:01:12 [Notification] Please be aware that as of 1.20, servers default configurations have changed - servers no longer register themselves to the public servers list and are invite-only (whitelisted) out of the box. If you desire so, you can enable server advertising with '/serverconfig advertise on' and disable the whitelist mode with '/serverconfig whitelistmode off'
+20.7.2025 20:01:12 [Fatal] Caught unhandled exception in thread 'chunkdbthread'. Shutting down server.
+20.7.2025 20:01:12 [Error] Exception: Index was outside the bounds of the array.
+   at Vintagestory.ServerMods.NoiseLandforms.GetParentLandformIndexAt(Int32 xpos, Int32 zpos, Int32 temp, Int32 rain) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\NoiseLandform.cs:line 126
+   at Vintagestory.ServerMods.NoiseLandforms.GetLandformIndexAt(Int32 unscaledXpos, Int32 unscaledZpos, Int32 temp, Int32 rain) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\NoiseLandform.cs:line 92
+   at Vintagestory.ServerMods.MapLayerLandforms.GenLayer(Int32 xCoord, Int32 zCoord, Int32 sizeX, Int32 sizeZ) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\MapLayer\MapLayerLandforms.cs:line 56
+   at Vintagestory.ServerMods.GenMaps.OnMapRegionGen(IMapRegion mapRegion, Int32 regionX, Int32 regionZ, ITreeAttribute chunkGenParams) in VSSurvivalMod\Systems\WorldGen\Standard\ChunkGen\0.GenMaps\GenMaps.cs:line 391
+   at Vintagestory.Server.ServerSystemSupplyChunks.CreateMapRegion(Int32 regionX, Int32 regionZ, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1179
+   at Vintagestory.Server.ServerSystemSupplyChunks.GetOrCreateMapRegion(Int32 chunkX, Int32 chunkZ, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1158
+   at Vintagestory.Server.ServerSystemSupplyChunks.GetOrCreateMapRegionEnsureNeighbours(Int32 chunkX, Int32 chunkZ, ITreeAttribute chunkGenParams) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1102
+   at Vintagestory.Server.ServerSystemSupplyChunks.GetOrCreateMapChunk(ChunkColumnLoadRequest chunkRequest, Boolean forceCreate) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 1208
+   at Vintagestory.Server.ServerSystemSupplyChunks.loadOrGenerateChunkColumn_OnChunkThread(ChunkColumnLoadRequest chunkRequest, Int32 stage) in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 745
+   at Vintagestory.Server.ServerSystemSupplyChunks.tryLoadOrGenerateChunkColumnsInQueue() in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 671
+   at Vintagestory.Server.ServerSystemSupplyChunks.OnSeparateThreadTick() in VintagestoryLib\Server\Systems\World\LoadThread\SupplyChunks.cs:line 513
+   at Vintagestory.Server.ServerThread.Update() in VintagestoryLib\Server\ServerThread.cs:line 123
+   at Vintagestory.Server.ServerThread.Process() in VintagestoryLib\Server\ServerThread.cs:line 53
+20.7.2025 20:01:12 [Notification] All clients disconnected, pausing game calendar.
+20.7.2025 20:01:12 [Notification] Server stop requested, begin shutdown sequence. Stop reason: Exception during Process
+20.7.2025 20:01:12 [Event] Something went awry...please check the program logs... (Exception during Process)
+20.7.2025 20:01:12 [Notification] Server ticking has been suspended
+20.7.2025 20:01:12 [Notification] Entering runphase Shutdown
+20.7.2025 20:01:12 [Event] Mods and systems notified, now saving everything...
+20.7.2025 20:01:12 [Event] It pauses.
+20.7.2025 20:01:12 [Event] One last gaze...
+20.7.2025 20:01:12 [Event] Saved player world data...
+20.7.2025 20:01:12 [Event] Saved map regions...
+20.7.2025 20:01:12 [Event] Then all goes quiet...
+20.7.2025 20:01:12 [Event] Saved map chunks...
+20.7.2025 20:01:12 [Event] The waters recede...
+20.7.2025 20:01:12 [Event] Saved loaded chunks...
+20.7.2025 20:01:12 [Event] The mountains fade...
+20.7.2025 20:01:12 [Event] The dark settles in.
+20.7.2025 20:01:12 [Event] Saved generating chunks...
+20.7.2025 20:01:12 [Event] Saved savegamedata...0
+20.7.2025 20:01:12 [Event] World saved! Saved 0 chunks, 0 mapchunks, 0 mapregions.
+20.7.2025 20:01:12 [Event] It sighs...
+20.7.2025 20:01:12 [Event] Shutting down 10 server threads... 
+20.7.2025 20:01:12 [Event] Killed console thread
+20.7.2025 20:01:12 [Event] Alone again...
+20.7.2025 20:01:13 [Event] All threads gracefully shut down
+20.7.2025 20:01:13 [Event] Time to rest.
+20.7.2025 20:01:13 [Event] Doing last tick...
+20.7.2025 20:01:13 [Event] Stopped the server!

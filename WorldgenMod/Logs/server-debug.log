@@ -1,0 +1,216 @@
+20.7.2025 20:00:57.547 [VerboseDebug] Entering runphase Initialization
+20.7.2025 20:00:57.551 [VerboseDebug] Entering runphase Configuration
+20.7.2025 20:00:57.674 [VerboseDebug] Entering runphase LoadAssets
+20.7.2025 20:00:57.689 [VerboseDebug] [VSCreativeMod.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSCreativeMod.dll
+20.7.2025 20:00:57.722 [VerboseDebug] [VSCreativeMod.dll] Selected assembly D:\Vintagestory\Mods\VSCreativeMod.dll
+20.7.2025 20:00:57.724 [VerboseDebug] [VSEssentials.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSEssentials.dll
+20.7.2025 20:00:57.733 [VerboseDebug] [VSEssentials.dll] Selected assembly D:\Vintagestory\Mods\VSEssentials.dll
+20.7.2025 20:00:57.735 [VerboseDebug] [VSSurvivalMod.dll] Check for mod systems in mod D:\Vintagestory\Mods\VSSurvivalMod.dll
+20.7.2025 20:00:57.744 [VerboseDebug] [VSSurvivalMod.dll] Selected assembly D:\Vintagestory\Mods\VSSurvivalMod.dll
+20.7.2025 20:00:57.762 [VerboseDebug] 4 assemblies loaded
+20.7.2025 20:00:57.763 [VerboseDebug] Instantiate mod systems for game
+20.7.2025 20:00:57.773 [VerboseDebug] Instantiate mod systems for selectedlandforms
+20.7.2025 20:00:57.773 [VerboseDebug] Instantiate mod systems for creative
+20.7.2025 20:00:57.774 [VerboseDebug] Instantiate mod systems for survival
+20.7.2025 20:00:57.823 [VerboseDebug] Searching file system (including mods) for asset files
+20.7.2025 20:00:58.298 [VerboseDebug] Finished building index of asset files
+20.7.2025 20:00:58.321 [VerboseDebug] Reloaded lang file with mod assets
+20.7.2025 20:00:58.352 [VerboseDebug] Started mods
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 0: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 1: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 2: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 3: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 4: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 5: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 6: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 7: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 8: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.367 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 9: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.368 [VerboseDebug] Patch file game:patches/fallingblocks.json, patch 10: Unmet IsValue condition (sandgravelsoil!=sandgravel)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 0: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 1: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 2: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 3: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 4: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 5: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 6: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 7: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.376 [VerboseDebug] Patch file game:patches/homosapiens.json, patch 8: Unmet IsValue condition (false!=True)
+20.7.2025 20:00:58.399 [VerboseDebug] Patch file game:patches/playertemporalstability.json, patch 0: Unmet IsValue condition (true!=False)
+20.7.2025 20:00:58.399 [VerboseDebug] Patch file game:patches/playertemporalstability.json, patch 1: Unmet IsValue condition (true!=False)
+20.7.2025 20:00:58.400 [VerboseDebug] Patch file game:patches/unbucket.json, patch 0: Unmet IsValue condition (true!=False)
+20.7.2025 20:00:58.400 [VerboseDebug] Patch file game:patches/unbucket.json, patch 1: Unmet IsValue condition (true!=False)
+20.7.2025 20:00:58.402 [VerboseDebug] Patch 0 in selectedlandforms:patches/worldgen/landformConfig.json: File game:worldgen/landformconfig.json not found
+20.7.2025 20:00:58.402 [VerboseDebug] Patch 1 in selectedlandforms:patches/worldgen/landformConfig.json: File game:worldgen/landformconfig.json not found
+20.7.2025 20:00:58.402 [VerboseDebug] Patch 2 in selectedlandforms:patches/worldgen/landformConfig.json: File game:worldgen/landformconfig.json not found
+20.7.2025 20:00:58.402 [VerboseDebug] Patch 3 in selectedlandforms:patches/worldgen/landformConfig.json: File game:worldgen/landformconfig.json not found
+20.7.2025 20:00:58.402 [VerboseDebug] Patch 4 in selectedlandforms:patches/worldgen/landformConfig.json: File game:worldgen/landformconfig.json not found
+20.7.2025 20:00:58.404 [VerboseDebug] Patchloader finished
+20.7.2025 20:00:58.405 [VerboseDebug] Starting to gather blocktypes, itemtypes and entities
+20.7.2025 20:00:58.562 [VerboseDebug] Starting parsing ItemTypes in 2 threads
+20.7.2025 20:00:59.194 [VerboseDebug] Gathered all types, starting to load items
+20.7.2025 20:00:59.672 [VerboseDebug] Parsed and loaded items
+20.7.2025 20:01:01.930 [VerboseDebug] Parsed and loaded blocks
+20.7.2025 20:01:02.391 [VerboseDebug] Parsed and loaded entities
+20.7.2025 20:01:02.393 [VerboseDebug] BlockID Remapper: Begin
+20.7.2025 20:01:02 [Debug] Block IDs not found in savegame.
+20.7.2025 20:01:02.403 [VerboseDebug] Max BlockID is 12822
+20.7.2025 20:01:02.404 [VerboseDebug] Found 0 blocks requiring remapping and 12823 new blocks
+20.7.2025 20:01:02 [Debug] Found 0 missing blocks
+20.7.2025 20:01:02 [Debug] Added 12823 new blocks to the mapping
+20.7.2025 20:01:02 [Debug] Block IDs have been written to savegame. Saved max BlockID was 12822
+20.7.2025 20:01:02 [Debug] ItemID Remapper: Begin
+20.7.2025 20:01:02 [Debug] Item IDs not found in savegame.
+20.7.2025 20:01:02 [Debug] Found 0 Item requiring remapping
+20.7.2025 20:01:02 [Debug] Found 0 missing Items
+20.7.2025 20:01:02 [Debug] Added 3712 new Items to the mapping
+20.7.2025 20:01:02 [Debug] Item IDs have been written to savegame
+20.7.2025 20:01:03.131 [VerboseDebug] Block simulation resolving collectibles
+20.7.2025 20:01:03.162 [VerboseDebug] Resolved blocks stacks
+20.7.2025 20:01:03.164 [VerboseDebug] Resolved items stacks
+20.7.2025 20:01:03.166 [VerboseDebug] Entering runphase AssetsFinalize
+20.7.2025 20:01:03.426 [VerboseDebug] Entering runphase LoadGamePre
+20.7.2025 20:01:03.426 [VerboseDebug] Starting system: Core
+20.7.2025 20:01:03.426 [VerboseDebug] Starting system: EntityPartitioning
+20.7.2025 20:01:03.427 [VerboseDebug] Starting system: ErrorReporter
+20.7.2025 20:01:03.427 [VerboseDebug] Starting system: GenTerra
+20.7.2025 20:01:03.429 [VerboseDebug] Starting system: GenSnowLayer
+20.7.2025 20:01:03.429 [VerboseDebug] Starting system: ModSystemControlPoints
+20.7.2025 20:01:03.429 [VerboseDebug] Starting system: Core
+20.7.2025 20:01:03.430 [VerboseDebug] Starting system: SurvivalCoreSystem
+20.7.2025 20:01:03.433 [VerboseDebug] Starting system: GenTerraPostProcess
+20.7.2025 20:01:03.433 [VerboseDebug] Starting system: ModCompatiblityUtil
+20.7.2025 20:01:03.433 [VerboseDebug] Starting system: ModJsonPatchLoader
+20.7.2025 20:01:03.433 [VerboseDebug] Starting system: PathfindSystem
+20.7.2025 20:01:03.434 [VerboseDebug] Starting system: PathFindDebug
+20.7.2025 20:01:03.434 [VerboseDebug] Starting system: PathfindingAsync
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: JsonExport
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: ModBasicBlocksLoader
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: ModSystemDormancyStateChecker
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: AiRuntimeConfig
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: ModSystemSyncHarvestableDropsToClient
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: ModSystemEmotes
+20.7.2025 20:01:03.435 [VerboseDebug] Starting system: LeafBlockDecay
+20.7.2025 20:01:03.436 [VerboseDebug] Starting system: POIRegistry
+20.7.2025 20:01:03.436 [VerboseDebug] Starting system: RoomRegistry
+20.7.2025 20:01:03.436 [VerboseDebug] Starting system: WeatherSystemCommands
+20.7.2025 20:01:03.436 [VerboseDebug] Starting system: WeatherSystemServer
+20.7.2025 20:01:03.477 [VerboseDebug] Starting system: WorldMapManager
+20.7.2025 20:01:03.478 [VerboseDebug] Starting system: WorldEdit
+20.7.2025 20:01:03.484 [VerboseDebug] Starting system: StoryGenFailedSystem
+20.7.2025 20:01:03.484 [VerboseDebug] Starting system: UpgradeTasks
+20.7.2025 20:01:03.484 [VerboseDebug] Starting system: ChiselBlockBulkSetMaterial
+20.7.2025 20:01:03.484 [VerboseDebug] Starting system: ModSystemDetailModeSync
+20.7.2025 20:01:03.485 [VerboseDebug] Starting system: NpcControl
+20.7.2025 20:01:03.487 [VerboseDebug] Starting system: ModSystemTiledDungeonGenerator
+20.7.2025 20:01:03.487 [VerboseDebug] Starting system: GenFromHeightmap
+20.7.2025 20:01:03.487 [VerboseDebug] Starting system: GenMaps
+20.7.2025 20:01:03.487 [VerboseDebug] Starting system: GenRockStrataNew
+20.7.2025 20:01:03.487 [VerboseDebug] Starting system: GenHotSprings
+20.7.2025 20:01:03.488 [VerboseDebug] Starting system: GenCreatures
+20.7.2025 20:01:03.488 [VerboseDebug] Starting system: WgenCommands
+20.7.2025 20:01:03.491 [VerboseDebug] Starting system: ModSystemExplosionAffectedStability
+20.7.2025 20:01:03.491 [VerboseDebug] Starting system: MyceliumSystem
+20.7.2025 20:01:03.491 [VerboseDebug] Starting system: ModsystemButterflySpawnCondsExtra
+20.7.2025 20:01:03.492 [VerboseDebug] Starting system: ModSystemCatchCreature
+20.7.2025 20:01:03.492 [VerboseDebug] Starting system: ModSystemGliding
+20.7.2025 20:01:03.492 [VerboseDebug] Starting system: ModSystemSwoopDev
+20.7.2025 20:01:03.492 [VerboseDebug] Starting system: Timeswitch
+20.7.2025 20:01:03.493 [VerboseDebug] Starting system: ClutterBookshelfUtil
+20.7.2025 20:01:03.493 [VerboseDebug] Starting system: ScreenshakeToClientModSystem
+20.7.2025 20:01:03.493 [VerboseDebug] Starting system: ModSystemResoArchiveCommands
+20.7.2025 20:01:03.494 [VerboseDebug] Starting system: StoryStructureProtection
+20.7.2025 20:01:03.494 [VerboseDebug] Starting system: StoryStructuresSpawnConditions
+20.7.2025 20:01:03.494 [VerboseDebug] Starting system: ModSystemVillagerDebug
+20.7.2025 20:01:03.495 [VerboseDebug] Starting system: ModSystemAuction
+20.7.2025 20:01:03.495 [VerboseDebug] Starting system: ModSystemBlockReinforcement
+20.7.2025 20:01:03.496 [VerboseDebug] Starting system: Core
+20.7.2025 20:01:03.496 [VerboseDebug] Starting system: CharacterSystem
+20.7.2025 20:01:03.496 [VerboseDebug] Starting system: VariablesModSystem
+20.7.2025 20:01:03.496 [VerboseDebug] Starting system: ModsystemElevator
+20.7.2025 20:01:03.496 [VerboseDebug] Starting system: ActivityModSystem
+20.7.2025 20:01:03.497 [VerboseDebug] Starting system: ActivityEditorSystem
+20.7.2025 20:01:03.497 [VerboseDebug] Starting system: FruitingSystem
+20.7.2025 20:01:03.497 [VerboseDebug] Starting system: ModSystemCommandHandbook
+20.7.2025 20:01:03.498 [VerboseDebug] Starting system: ModSystemTutorial
+20.7.2025 20:01:03.498 [VerboseDebug] Starting system: ModSystemCorpseReturnTeleporter
+20.7.2025 20:01:03.498 [VerboseDebug] Starting system: ModSystemNightVision
+20.7.2025 20:01:03.498 [VerboseDebug] Starting system: TobiasTeleporter
+20.7.2025 20:01:03.499 [VerboseDebug] Starting system: ModJournal
+20.7.2025 20:01:03.499 [VerboseDebug] Starting system: LiquidItemStackRenderer
+20.7.2025 20:01:03.499 [VerboseDebug] Starting system: ModSystemStructureLocator
+20.7.2025 20:01:03.499 [VerboseDebug] Starting system: ModLootRandomizer
+20.7.2025 20:01:03.499 [VerboseDebug] Starting system: ModSystemEntityOwnership
+20.7.2025 20:01:03.499 [VerboseDebug] Starting system: ModSystemRifts
+20.7.2025 20:01:03.500 [VerboseDebug] Starting system: ModSystemRiftWeather
+20.7.2025 20:01:03.503 [VerboseDebug] Starting system: ModSleeping
+20.7.2025 20:01:03.503 [VerboseDebug] Starting system: ModSystemSupportBeamPlacer
+20.7.2025 20:01:03.503 [VerboseDebug] Starting system: TeleporterManager
+20.7.2025 20:01:03.503 [VerboseDebug] Starting system: ModTemperature
+20.7.2025 20:01:03.504 [VerboseDebug] Starting system: SystemTemporalStability
+20.7.2025 20:01:03.504 [VerboseDebug] Starting system: TemporalStabilityEffects
+20.7.2025 20:01:03.504 [VerboseDebug] Starting system: ModSystemWearableStats
+20.7.2025 20:01:03.504 [VerboseDebug] Starting system: ModSystemEditableBook
+20.7.2025 20:01:03.504 [VerboseDebug] Starting system: MechanicalPowerMod
+20.7.2025 20:01:03.505 [VerboseDebug] Starting system: GenDungeons
+20.7.2025 20:01:03.567 [VerboseDebug] Starting system: ModRegistryObjectTypeLoader
+20.7.2025 20:01:03.567 [VerboseDebug] Starting system: GenDeposits
+20.7.2025 20:01:03.567 [VerboseDebug] Starting system: GenStoryStructures
+20.7.2025 20:01:03.568 [VerboseDebug] Starting system: LoadColorMaps
+20.7.2025 20:01:03.568 [VerboseDebug] Starting system: GenCaves
+20.7.2025 20:01:03.568 [VerboseDebug] Starting system: GenStructures
+20.7.2025 20:01:03.569 [VerboseDebug] Starting system: GenDevastationLayer
+20.7.2025 20:01:03.569 [VerboseDebug] Starting system: ClothManager
+20.7.2025 20:01:03.570 [VerboseDebug] Starting system: GenBlockLayersFlat
+20.7.2025 20:01:03.570 [VerboseDebug] Starting system: GenBlockLayers
+20.7.2025 20:01:03.571 [VerboseDebug] Starting system: GenPonds
+20.7.2025 20:01:03.571 [VerboseDebug] Starting system: GenStructuresPosPass
+20.7.2025 20:01:03.571 [VerboseDebug] Starting system: GenVegetationAndPatches
+20.7.2025 20:01:03.571 [VerboseDebug] Starting system: RecipeRegistrySystem
+20.7.2025 20:01:03.571 [VerboseDebug] Starting system: GenRivulets
+20.7.2025 20:01:03.571 [VerboseDebug] Starting system: GenLightCreative
+20.7.2025 20:01:03.572 [VerboseDebug] Starting system: GenLightSurvival
+20.7.2025 20:01:03.572 [VerboseDebug] Starting system: GridRecipeLoader
+20.7.2025 20:01:03.572 [VerboseDebug] Starting system: RecipeLoader
+20.7.2025 20:01:03.572 [VerboseDebug] Starting system: ModSystemFireFromLightning
+20.7.2025 20:01:03.572 [VerboseDebug] Starting system: ModSystemOreMap
+20.7.2025 20:01:03.572 [VerboseDebug] Starting system: ModSystemSnowballs
+20.7.2025 20:01:03.573 [VerboseDebug] Starting system: HumanoidOutfits
+20.7.2025 20:01:03.573 [VerboseDebug] Starting system: ModSystemDevastationEffects
+20.7.2025 20:01:03.573 [VerboseDebug] Starting system: DisableRecipeRegisteringSystem
+20.7.2025 20:01:03.589 [VerboseDebug] Entity shape loading starting ...
+20.7.2025 20:01:04.513 [VerboseDebug] Entity shape loading completed
+20.7.2025 20:01:04 [Debug] Loading leaf block decay system
+20.7.2025 20:01:04 [Debug] Finished loading leaf block decay system
+20.7.2025 20:01:04 [Debug] Block simulation loaded blocks
+20.7.2025 20:01:04.952 [VerboseDebug] Initialised GenRockStrata
+20.7.2025 20:01:04 [Debug] Block simulation loaded items
+20.7.2025 20:01:04.990 [VerboseDebug] Entering runphase LoadGame
+20.7.2025 20:01:05.015 [VerboseDebug] Entering runphase WorldReady
+20.7.2025 20:01:05.022 [VerboseDebug] Starting to build server assets packet
+20.7.2025 20:01:05.024 [VerboseDebug] Init worldgen for GenTerra
+20.7.2025 20:01:05.027 [VerboseDebug] Init worldgen for GenSnowLayer
+20.7.2025 20:01:05.027 [VerboseDebug] Init worldgen for GenMaps
+20.7.2025 20:01:05.046 [VerboseDebug] Init worldgen for GenRockStrataNew
+20.7.2025 20:01:05.046 [VerboseDebug] Initialised GenRockStrata
+20.7.2025 20:01:05.046 [VerboseDebug] Init worldgen for GenHotSprings
+20.7.2025 20:01:05.047 [VerboseDebug] Init worldgen for GenCreatures
+20.7.2025 20:01:05.050 [VerboseDebug] Init worldgen for WgenCommands
+20.7.2025 20:01:05.143 [VerboseDebug] Initialised GenDeposits
+20.7.2025 20:01:05.750 [VerboseDebug] Finished building server assets packet
+20.7.2025 20:01:05.753 [VerboseDebug] Single player: sent server assets packet to client
+20.7.2025 20:01:08.906 [VerboseDebug] Init worldgen for GenDeposits
+20.7.2025 20:01:08.906 [VerboseDebug] Initialised GenDeposits
+20.7.2025 20:01:08.906 [VerboseDebug] Init worldgen for GenStoryStructures
+20.7.2025 20:01:09.838 [VerboseDebug] Init worldgen for GenCaves
+20.7.2025 20:01:09.839 [VerboseDebug] Init worldgen for GenStructures
+20.7.2025 20:01:11.665 [VerboseDebug] Init worldgen for GenDevastationLayer
+20.7.2025 20:01:11.666 [VerboseDebug] Setup dim2 483552, 519904
+20.7.2025 20:01:11.764 [VerboseDebug] Init worldgen for GenBlockLayers
+20.7.2025 20:01:11.764 [VerboseDebug] Init worldgen for GenPonds
+20.7.2025 20:01:11.764 [VerboseDebug] Init worldgen for GenVegetationAndPatches
+20.7.2025 20:01:12.323 [VerboseDebug] Init worldgen for GenRivulets
+20.7.2025 20:01:12.324 [VerboseDebug] Done all worldgens
+20.7.2025 20:01:12.329 [VerboseDebug] Starting area loading/generation: columns 49, total queue length 49
+20.7.2025 20:01:12.351 [VerboseDebug] Entering runphase RunGame
+20.7.2025 20:01:12.817 [VerboseDebug] Entering runphase Shutdown
