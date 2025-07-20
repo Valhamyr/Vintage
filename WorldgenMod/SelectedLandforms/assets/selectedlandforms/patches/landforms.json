@@ -34,16 +34,6 @@
         "terrainYKeyThresholds": [1.000, 0.829, 0.776, 0.720, 0.622, 0.512, 0.404, 0.227, 0.000]
       },
       {
-        "code": "p&vRealistic mountains",
-        "comment": "Very large scale mountains",
-        "hexcolor": "#84A878",
-        "weight": 140,
-        "terrainOctaves": [0.1, 0.1, 1, 0.5, 0.5, 0.1, 0.1, 0.1, 0.1, 0.05],
-        "terrainOctaveThresholds": [0, 0, 0, 0, 0, 0, 0, 0.03, 0.03, 0.05],
-        "terrainYKeyPositions": [0.450, 0.535, 0.630, 0.805, 0.963, 1.000],
-        "terrainYKeyThresholds": [1.000, 0.596, 0.304, 0.160, 0.045, 0.000]
-      },
-      {
         "code": "p&vsteppedsinkholes",
         "comment": "Stepped sink holes",
         "hexcolor": "#AAAA00",
