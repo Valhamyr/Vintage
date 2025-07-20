@@ -1,36 +1,36 @@
 [
   {
-    "op": "add",
-    "path": "/landforms/p&vsteppedsinkholes",
-    "value": {"weight": 40},
+    "op": "replace",
+    "path": "/landforms/*/weight",
+    "value": 1,
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   },
   {
     "op": "add",
-    "path": "/landforms/p&vflat lowlands",
-    "value": {"weight": 5},
+    "path": "/landforms/steppedsinkholes",
+    "value": {"weight": 1000},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   },
   {
     "op": "add",
-    "path": "/landforms/p&vflat midlands",
-    "value": {"weight": 5},
+    "path": "/landforms/sinkholeplateaus",
+    "value": {"weight": 1000},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   },
   {
     "op": "add",
-    "path": "/landforms/p&vflat highlands",
-    "value": {"weight": 5},
+    "path": "/landforms/realisticmountains-ledged",
+    "value": {"weight": 1000},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   },
   {
     "op": "add",
-    "path": "/landforms/p&vcliffislands",
-    "value": {"weight": 44},
+    "path": "/landforms/realisticmountains-quintupleledged",
+    "value": {"weight": 1000},
     "file": "game:worldgen/landformConfig.json",
     "side": "Server"
   }
