@@ -5,17 +5,13 @@ from opensimplex import OpenSimplex
 from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# The SelectedLandforms mod only ships a minimal
-# ``assets/game/worldgen/landforms.json`` file.  The previous
-# default pointed at ``assets/selectedlandforms/patches/landforms.json``
-# which does not exist and caused a ``FileNotFoundError`` when running
-# this script.  Update the path so the script works out of the box.
+# By default this script loads the full landforms definition from the
+# SelectedLandforms mod.  To avoid interfering with game assets, the
+# reference file now lives outside the `assets` directory.
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "SelectedLandforms",
-    "assets",
-    "game",
-    "worldgen",
+    "data",
     "landforms.json",
 )
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
