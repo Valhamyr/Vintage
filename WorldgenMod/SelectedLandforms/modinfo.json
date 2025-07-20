@@ -3,7 +3,7 @@
   "modid": "selectedlandforms",
   "name": "Selected Landforms",
   "description": "Worldgen with a curated subset of plains and valleys landforms.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": ["Unknown"],
   "dependencies": {
     "game": "1.20.12"
