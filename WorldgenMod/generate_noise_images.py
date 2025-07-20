@@ -7,10 +7,10 @@ from PIL import Image
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
-    "FixedCliffs",
+    "SelectedLandforms",
     "assets",
-    "fixedcliffs",
-    "worldgen",
+    "selectedlandforms",
+    "patches",
     "landforms.json",
 )
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")

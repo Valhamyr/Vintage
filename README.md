@@ -8,10 +8,10 @@ When starting a new mod from scratch, first create a dedicated folder inside thi
 
 
 ## Example mods
-- **Fixed Cliffs Landforms** (`WorldgenMod/FixedCliffs`)
+- **Selected Landforms** (`WorldgenMod/SelectedLandforms`)
 - **Landform Teleport** (`TeleportLandformMod`)
-The fixed-cliffs example now includes richer parameters like `terrainOctaves`
-and `terrainYKeyPositions` that control the resulting landform shapes.
+The Selected Landforms mod focuses on stepped sinkhole terrain using the
+custom landforms defined under `assets/selectedlandforms`.
 ## Supported Vintage Story version
 
 According to the [Vintage Story wiki main page](https://wiki.vintagestory.at/Main_Page), the latest stable release is **version 1.20.12** (June 8, 2025) `Purely stable performance`.
