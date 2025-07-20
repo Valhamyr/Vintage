@@ -14,7 +14,7 @@ This document summarizes how to use Perlin noise parameters to replicate the lan
 - **terrainYKeyThresholds**: Blending values for the Y key positions. When used with the helper script these shape plateaus, cliffs and other vertical transitions.
 - **mutations**: Optional variations with their own octave/height settings. The `chance` field indicates how frequently the mutation appears.
 
-The `generate_noise_images.py` script reads these fields from a `landforms.json` file (by default `WorldgenMod/FixedCliffs/assets/fixedcliffs/worldgen/landforms.json`). You can pass a custom path using the `--landforms-file` option to preview other terrain setups.
+The `generate_noise_images.py` script reads these fields from a `landforms.json` file (by default `WorldgenMod/SelectedLandforms/assets/selectedlandforms/patches/landforms.json`). You can pass a custom path using the `--landforms-file` option to preview other terrain setups.
 
 ## Example Landforms
 
@@ -27,7 +27,7 @@ From the README in `WorldgenMod`, six primary landforms are now used:
 - **Land Step Mountains** – smaller step mountains on land.
 - **Terrace Plateaus** – many stacked terraces creating flat shelves.
 
-The table below lists representative parameter choices from `FixedCliffs/landforms.json` that influence these shapes.
+The table below lists representative parameter choices from `SelectedLandforms/patches/landforms.json` that influence these shapes.
 
 | Code                | noiseScale | threshold | Example notes |
 |--------------------|-----------|----------|---------------|
