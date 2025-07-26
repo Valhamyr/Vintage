@@ -1,0 +1,37 @@
+[
+  {
+    "op": "replace",
+    "path": "/structures/0/requireLandform",
+    "value": "p&vhillplateu",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/1/requireLandform",
+    "value": "p&vcoastal flatlands",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/2/requireLandform",
+    "value": "p&vcoastal flatlands",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/3/requireLandform",
+    "value": "p&vcoastal flatlands",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/structures/4/requireLandform",
+    "value": "p&vcoastal flatlands",
+    "file": "game:worldgen/storystructures.json",
+    "side": "Server"
+  }
+]
