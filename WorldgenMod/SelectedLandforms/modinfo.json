@@ -1,10 +1,10 @@
 {
   "type": "content",
   "modid": "selectedlandforms",
-  "name": "Selected Landforms",
-  "version": "0.3.1",
-  "authors": ["Unknown"],
-  "description": "Worldgen that overwhelmingly favors sinkhole and realistic mountain landforms.",
+  "name": "Plains and Valleys",
+  "description": "Changes world gen to a more natural world that favors open plains and valleys between mountains and hills.",
+  "version": "1.0.11",
+  "authors": ["Tenth Architect"],
   "dependencies": {
     "game": "1.20.12"
   }
