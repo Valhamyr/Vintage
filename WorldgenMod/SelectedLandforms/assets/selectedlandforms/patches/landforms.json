@@ -701,10 +701,10 @@
                     0.688,
                     0.0
                 ],
-                "mutations": [
-                    {
-                        "code": "p&vsteppedsinkhold-cavemut",
-                        "comment": "Cave mutation",
+        "mutations": [
+            {
+                "code": "p&vsteppedsinkhold-cavemut",
+                "comment": "Cave mutation",
                         "chance": 0.05,
                         "hexcolor": "#AAAA00",
                         "terrainYKeyPositions": [
@@ -720,22 +720,181 @@
                             0.518,
                             0.525
                         ],
-                        "terrainYKeyThresholds": [
-                            1.0,
-                            0.816,
-                            0.035,
-                            0.808,
-                            0.816,
-                            0.761,
-                            0.76,
-                            0.719,
-                            0.718,
-                            0.688,
-                            0.0
-                        ]
-                    }
+                "terrainYKeyThresholds": [
+                    1.0,
+                    0.816,
+                    0.035,
+                    0.808,
+                    0.816,
+                    0.761,
+                    0.76,
+                    0.719,
+                    0.718,
+                    0.688,
+                    0.0
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "code": "p&vsteppedsinkholesflat",
+        "comment": "Stepped sink holes with wide flat terraces",
+        "hexcolor": "#AAAA00",
+        "weight": 400,
+        "noiseScale": 0.0002,
+        "threshold": 0.3,
+        "heightOffset": 1.0,
+        "terrainOctaves": [
+            0.15,
+            0.15,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+        ],
+        "terrainOctaveThresholds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "terrainYKeyPositions": [
+            0.40,
+            0.44,
+            0.48,
+            0.52,
+            0.56,
+            0.60,
+            0.64,
+            0.68,
+            0.72
+        ],
+        "terrainYKeyThresholds": [
+            1.0,
+            0.82,
+            0.82,
+            0.78,
+            0.74,
+            0.72,
+            0.71,
+            0.70,
+            0.0
+        ]
+    },
+    {
+        "code": "p&vsteppedsinkholesbroad",
+        "comment": "Broader stepped sink holes",
+        "hexcolor": "#AAAA00",
+        "weight": 400,
+        "noiseScale": 0.00015,
+        "threshold": 0.35,
+        "heightOffset": 1.0,
+        "terrainOctaves": [
+            0.15,
+            0.15,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+        ],
+        "terrainOctaveThresholds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "terrainYKeyPositions": [
+            0.38,
+            0.42,
+            0.46,
+            0.50,
+            0.54,
+            0.58,
+            0.62,
+            0.66,
+            0.70
+        ],
+        "terrainYKeyThresholds": [
+            1.0,
+            0.82,
+            0.82,
+            0.80,
+            0.76,
+            0.72,
+            0.71,
+            0.69,
+            0.0
+        ]
+    },
+    {
+        "code": "p&vsteppedsinkholesmassive",
+        "comment": "Massive stepped sink holes",
+        "hexcolor": "#AAAA00",
+        "weight": 400,
+        "noiseScale": 0.00012,
+        "threshold": 0.4,
+        "heightOffset": 1.0,
+        "terrainOctaves": [
+            0.2,
+            0.2,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+        ],
+        "terrainOctaveThresholds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "terrainYKeyPositions": [
+            0.36,
+            0.40,
+            0.44,
+            0.48,
+            0.52,
+            0.56,
+            0.60,
+            0.64,
+            0.68
+        ],
+        "terrainYKeyThresholds": [
+            1.0,
+            0.85,
+            0.85,
+            0.82,
+            0.78,
+            0.75,
+            0.72,
+            0.70,
+            0.0
+        ]
+    },
             {
                 "code": "p&vshallowmillionstepmountains",
                 "comment": "More shallow Million steps mountain",

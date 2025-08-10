@@ -5,13 +5,14 @@ from opensimplex import OpenSimplex
 from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# By default this script loads the full landforms definition from the
-# SelectedLandforms mod.  To avoid interfering with game assets, the
-# reference file now lives outside the `assets` directory.
+# By default this script loads the landform definition from the
+# SelectedLandforms mod's patch file.
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "SelectedLandforms",
-    "data",
+    "assets",
+    "selectedlandforms",
+    "patches",
     "landforms.json",
 )
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
@@ -82,7 +83,7 @@ def sample_height(params, x, z):
     ykeys = params.get("terrainYKeyPositions", [])
     ythresh = params.get("terrainYKeyThresholds", [])
     base_height = params.get("baseHeight", 0.0)
-    height_offset = params.get("heightOffset", 0.0)
+    height_offset = params.get("heightOffset", 1.0)
     threshold = params.get("threshold", 0.0)
 
     plateau_count = params.get("plateauCount", 0)
