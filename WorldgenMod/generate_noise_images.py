@@ -82,60 +82,15 @@ landforms = [lf for lf in landforms if lf.get("code") in CUSTOM_LANDFORMS]
 
 import copy
 
-# Programmatic variants to explore parameter tweaks of the base landform.
-VARIANT_NAMES = [
-    "scalehalf",
-    "scaledouble",
-    "ampboost",
-    "heightoffset",
-    "threshold",
-    "plateau3",
-    "plateau5",
-    "radiusnoise",
-    "yshift",
-    "ythresh",
-]
-
-def build_variant(base, name):
+# Generate variants that isolate individual octaves to show their influence
+def build_variant(base, octave_index):
+    """Return a copy of *base* with only the specified octave enabled."""
     params = copy.deepcopy(base)
-    ns = params.get("noiseScale", 0.001)
-    if name == "scalehalf":
-        params["noiseScale"] = ns * 0.5
-    elif name == "scaledouble":
-        params["noiseScale"] = ns * 2.0
-    elif name == "ampboost":
-        oct = params.get("terrainOctaves", []).copy()
-        if oct:
-            oct[0] = 0.2
-            params["terrainOctaves"] = oct
-    elif name == "heightoffset":
-        params["heightOffset"] = 1.5
-    elif name == "threshold":
-        params["threshold"] = 0.2
-    elif name == "plateau3":
-        params.update({"plateauCount": 3, "baseRadius": 60})
-    elif name == "plateau5":
-        params.update({"plateauCount": 5, "baseRadius": 80, "radiusStep": 0.5})
-    elif name == "radiusnoise":
-        params.update({
-            "plateauCount": 4,
-            "baseRadius": 70,
-            "radiusNoiseScale": 0.05,
-            "radiusNoiseAmplitude": 0.3,
-        })
-    elif name == "yshift":
-        pos = params.get("terrainYKeyPositions", []).copy()
-        if len(pos) > 1:
-            pos[1] += 0.02
-        for i in range(2, len(pos)):
-            pos[i] += 0.05
-        params["terrainYKeyPositions"] = pos
-    elif name == "ythresh":
-        thr = params.get("terrainYKeyThresholds", []).copy()
-        inc = [0, 0, 0.09, 0.1, 0.1, 0.1, 0.1, 0.02, 0.02, 0]
-        for i in range(min(len(thr), len(inc))):
-            thr[i] = min(1.0, thr[i] + inc[i])
-        params["terrainYKeyThresholds"] = thr
+    octaves = params.get("terrainOctaves", []).copy()
+    for i in range(len(octaves)):
+        if i != octave_index:
+            octaves[i] = 0
+    params["terrainOctaves"] = octaves
     return params
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -279,6 +234,8 @@ if __name__ == "__main__":
     if base:
         base_code = base.get("code", "landform")
         render_landform(base, base_code)
-        for vname in VARIANT_NAMES:
-            params = build_variant(base, vname)
-            render_landform(params, f"{base_code}_{vname}")
+        for i, amp in enumerate(base.get("terrainOctaves", [])):
+            params = build_variant(base, i)
+            variant_name = f"{base_code}_octave{i+1}"
+            print(f"Isolating octave {i+1} (amplitude {amp})")
+            render_landform(params, variant_name)
