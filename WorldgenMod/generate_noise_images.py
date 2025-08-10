@@ -76,19 +76,67 @@ else:
 
 CUSTOM_LANDFORMS = {
     "p&vstep mountains",
-    "stepmountains_scalehalf",
-    "stepmountains_scaledouble",
-    "stepmountains_ampboost",
-    "stepmountains_heightoffset",
-    "stepmountains_threshold",
-    "stepmountains_plateau3",
-    "stepmountains_plateau5",
-    "stepmountains_radiusnoise",
-    "stepmountains_yshift",
-    "stepmountains_ythresh",
 }
 
 landforms = [lf for lf in landforms if lf.get("code") in CUSTOM_LANDFORMS]
+
+import copy
+
+# Programmatic variants to explore parameter tweaks of the base landform.
+VARIANT_NAMES = [
+    "scalehalf",
+    "scaledouble",
+    "ampboost",
+    "heightoffset",
+    "threshold",
+    "plateau3",
+    "plateau5",
+    "radiusnoise",
+    "yshift",
+    "ythresh",
+]
+
+def build_variant(base, name):
+    params = copy.deepcopy(base)
+    ns = params.get("noiseScale", 0.001)
+    if name == "scalehalf":
+        params["noiseScale"] = ns * 0.5
+    elif name == "scaledouble":
+        params["noiseScale"] = ns * 2.0
+    elif name == "ampboost":
+        oct = params.get("terrainOctaves", []).copy()
+        if oct:
+            oct[0] = 0.2
+            params["terrainOctaves"] = oct
+    elif name == "heightoffset":
+        params["heightOffset"] = 1.5
+    elif name == "threshold":
+        params["threshold"] = 0.2
+    elif name == "plateau3":
+        params.update({"plateauCount": 3, "baseRadius": 60})
+    elif name == "plateau5":
+        params.update({"plateauCount": 5, "baseRadius": 80, "radiusStep": 0.5})
+    elif name == "radiusnoise":
+        params.update({
+            "plateauCount": 4,
+            "baseRadius": 70,
+            "radiusNoiseScale": 0.05,
+            "radiusNoiseAmplitude": 0.3,
+        })
+    elif name == "yshift":
+        pos = params.get("terrainYKeyPositions", []).copy()
+        if len(pos) > 1:
+            pos[1] += 0.02
+        for i in range(2, len(pos)):
+            pos[i] += 0.05
+        params["terrainYKeyPositions"] = pos
+    elif name == "ythresh":
+        thr = params.get("terrainYKeyThresholds", []).copy()
+        inc = [0, 0, 0.09, 0.1, 0.1, 0.1, 0.1, 0.02, 0.02, 0]
+        for i in range(min(len(thr), len(inc))):
+            thr[i] = min(1.0, thr[i] + inc[i])
+        params["terrainYKeyThresholds"] = thr
+    return params
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -227,14 +275,10 @@ def render_landform(params, name):
 
 
 if __name__ == "__main__":
-    for lf in landforms:
-        if not lf:
-            continue
-        base_code = lf.get("code", "landform")
-        render_landform(lf, base_code)
-        for mut in lf.get("mutations", []):
-            params = lf.copy()
-            params.update(mut)
-            params.pop("chance", None)
-            mcode = mut.get("code", "mut")
-            render_landform(params, f"{base_code}_{mcode}")
+    base = landforms[0] if landforms else None
+    if base:
+        base_code = base.get("code", "landform")
+        render_landform(base, base_code)
+        for vname in VARIANT_NAMES:
+            params = build_variant(base, vname)
+            render_landform(params, f"{base_code}_{vname}")
