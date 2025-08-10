@@ -61,7 +61,18 @@ ZOOM = args.zoom
 with open(LANDFORMS_FILE) as f:
     patch_data = json.load(f)
 
-landforms = patch_data.get("variants", [])
+# The SelectedLandforms patch file contains an array of operations instead of
+# a plain object. Extract the landform definitions regardless of format so this
+# script can render them without manual preprocessing.
+landforms = []
+if isinstance(patch_data, list):
+    for op in patch_data:
+        if op.get("path") == "/variants" and isinstance(op.get("value"), list):
+            landforms = op["value"]
+            break
+else:
+    landforms = patch_data.get("variants", [])
+
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Set up OpenSimplex noise generators similar to the mod's FastNoiseLite usage
