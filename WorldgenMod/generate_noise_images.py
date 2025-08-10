@@ -75,12 +75,17 @@ else:
     landforms = patch_data.get("variants", [])
 
 CUSTOM_LANDFORMS = {
-    "sinkholeplateaus",
-    "dryseapillars",
-    "widepillarcliffs",
-    "drydeepstepmountains",
-    "landstepmountains",
-    "terraceplateaus",
+    "p&vstep mountains",
+    "stepmountains_scalehalf",
+    "stepmountains_scaledouble",
+    "stepmountains_ampboost",
+    "stepmountains_heightoffset",
+    "stepmountains_threshold",
+    "stepmountains_plateau3",
+    "stepmountains_plateau5",
+    "stepmountains_radiusnoise",
+    "stepmountains_yshift",
+    "stepmountains_ythresh",
 }
 
 landforms = [lf for lf in landforms if lf.get("code") in CUSTOM_LANDFORMS]
