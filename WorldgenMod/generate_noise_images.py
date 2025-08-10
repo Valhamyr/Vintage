@@ -63,7 +63,8 @@ with open(LANDFORMS_FILE) as f:
 
 # The SelectedLandforms patch file contains an array of operations instead of
 # a plain object. Extract the landform definitions regardless of format so this
-# script can render them without manual preprocessing.
+# script can render them without manual preprocessing. Only keep the custom
+# landforms defined for this mod.
 landforms = []
 if isinstance(patch_data, list):
     for op in patch_data:
@@ -72,6 +73,17 @@ if isinstance(patch_data, list):
             break
 else:
     landforms = patch_data.get("variants", [])
+
+CUSTOM_LANDFORMS = {
+    "sinkholeplateaus",
+    "dryseapillars",
+    "widepillarcliffs",
+    "drydeepstepmountains",
+    "landstepmountains",
+    "terraceplateaus",
+}
+
+landforms = [lf for lf in landforms if lf.get("code") in CUSTOM_LANDFORMS]
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
