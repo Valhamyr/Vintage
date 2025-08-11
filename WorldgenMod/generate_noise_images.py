@@ -6,15 +6,14 @@ from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # By default this script loads the landform definition from the
-# SelectedLandforms mod's patch file.
+# SelectedLandforms data file.
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "SelectedLandforms",
-    "assets",
-    "selectedlandforms",
-    "patches",
+    "data",
     "landforms.json",
 )
+DEFAULT_LANDFORM_CODE = "step mountains 6-tier broad tall"
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
 WARP_SCALE = 0.01
 WARP_AMPLITUDE = 20.0
@@ -46,6 +45,11 @@ parser.add_argument(
     help="Path to landforms JSON (default: %(default)s)",
 )
 parser.add_argument(
+    "--code",
+    default=DEFAULT_LANDFORM_CODE,
+    help="Code of landform to render (default: %(default)s)",
+)
+parser.add_argument(
     "--zoom",
     type=float,
     default=1.0,
@@ -58,6 +62,7 @@ HEIGHTMAP = args.heightmap
 SEED = args.seed
 LANDFORMS_FILE = args.landforms_file
 ZOOM = args.zoom
+TARGET_CODE = args.code
 with open(LANDFORMS_FILE) as f:
     patch_data = json.load(f)
 
@@ -77,6 +82,9 @@ if isinstance(patch_data, list):
             landforms.append(value)
 else:
     landforms = patch_data.get("variants", [])
+
+if TARGET_CODE:
+    landforms = [lf for lf in landforms if lf.get("code") == TARGET_CODE]
 
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)

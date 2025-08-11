@@ -2,70 +2,13 @@
   "code": "landforms",
   "variants": [
     {
-      "code": "blend1",
-      "terrainOctaves": [0, 0.81, 0.50, 0.6561, 0, 0.531441, 0.30, 0.15, 0],
-      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.37, 0.42, 0.45, 0.50],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.205, 0.15, 0.15, 0.10, 0.10, 0.04, 0.04, 0.0]
-    },
-    {
-      "code": "blend2",
-      "terrainOctaves": [0, 0.81, 0.50, 0.6561, 0, 0.531441, 0.30, 0.15, 0],
-      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.37, 0.42, 0.45, 0.50],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.35, 0.30, 0.30, 0.25, 0.25, 0.20, 0.20, 0.15]
-    },
-    {
-      "code": "weddingcake",
-      "terrainOctaves": [0, 0.81, 0.50, 0.6561, 0, 0.531441, 0.30, 0.15, 0],
-      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.37, 0.42, 0.45, 0.50],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
-    },
-    {
-      "code": "supercliffweddingcake",
-      "terrainOctaves": [0, 0.81, 0.60, 0.6561, 0, 0.45, 0.25, 0.12, 0],
-      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.38, 0.44, 0.48, 0.53],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
-    },
-    {
-      "code": "stepmountainvariation",
-      "terrainOctaves": [0, 0.90, 0.70, 0.45, 0, 0, 0, 0, 0],
-      "terrainYKeyPositions": [0.00, 0.12, 0.22, 0.32, 0.41, 0.49, 0.56, 0.62, 0.67, 0.71],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
-    },
-    {
-      "code": "step mountains maxcliff",
-      "comment": "Tall, hard-snapped plateaus (no rounding)",
+      "code": "step mountains 6-tier broad tall",
+      "comment": "Broad plateaus, tall cliffs, max 6 tiers",
       "hexcolor": "#84A878",
       "weight": 1,
-      "terrainOctaves": [0, 0.90, 0.70, 0.50, 0, 0, 0, 0, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.50, 0.60, 0.62, 0.68, 0.70, 0.80, 0.84, 0.90],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
-    },
-    {
-      "code": "step mountains hybrid cliff",
-      "comment": "Tall plateaus, sheer cliffs, slight edge texture",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.10, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.50, 0.60, 0.62, 0.68, 0.70, 0.80, 0.84, 0.90],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
-    },
-    {
-      "code": "step mountains 6-tier hybrid crisp",
-      "comment": "6 tiers, sheer cliffs, slight edge texture (oct2 & oct7 halved)",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.10, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.55, 0.65, 0.75, 0.85, 0.90],
-      "terrainYKeyThresholds": [0.10, 0.08, 0.08, 0.06, 0.05, 0.04, 0.0]
-    },
-    {
-      "code": "step mountains 6-tier hybrid crisp broad",
-      "comment": "6 tiers, crisp cliffs, maximum plateau width",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.1825, 0.50, 0, 0.20, 0.25, 0.05, 0],
-      "terrainYKeyPositions": [0.00, 0.43, 0.55, 0.65, 0.75, 0.85, 0.90],
-      "terrainYKeyThresholds": [0.10, 0.08, 0.08, 0.06, 0.05, 0.04, 0.00]
+      "terrainOctaves": [0, 0.81, 0.72, 0.65, 0, 0.25, 0.15, 0.05, 0],
+      "terrainYKeyPositions": [0.00, 0.43, 0.55, 0.65, 0.75, 0.85, 0.93],
+      "terrainYKeyThresholds": [0.12, 0.10, 0.08, 0.06, 0.05, 0.04, 0.00]
     }
   ]
 }
