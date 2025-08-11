@@ -1924,6 +1924,88 @@
                 ]
             },
             {
+                "code": "p&vstep mountains ykeys double",
+                "comment": "terrainYKeyPositions/Thresholds doubled",
+                "hexcolor": "#84A878",
+                "weight": 200,
+                "terrainOctaves": [
+                    0,
+                    0.81,
+                    0.729,
+                    0.6561,
+                    0,
+                    0.531441,
+                    0.4,
+                    0.2,
+                    0
+                ],
+                "terrainYKeyPositions": [
+                    0,
+                    0.86,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "terrainYKeyThresholds": [
+                    1,
+                    1,
+                    0.82,
+                    0.6,
+                    0.6,
+                    0.4,
+                    0.4,
+                    0.16,
+                    0.16,
+                    0
+                ]
+            },
+            {
+                "code": "p&vstep mountains ykeys half",
+                "comment": "terrainYKeyPositions/Thresholds halved",
+                "hexcolor": "#84A878",
+                "weight": 200,
+                "terrainOctaves": [
+                    0,
+                    0.81,
+                    0.729,
+                    0.6561,
+                    0,
+                    0.531441,
+                    0.4,
+                    0.2,
+                    0
+                ],
+                "terrainYKeyPositions": [
+                    0,
+                    0.215,
+                    0.25,
+                    0.3,
+                    0.31,
+                    0.34,
+                    0.35,
+                    0.4,
+                    0.42,
+                    0.45
+                ],
+                "terrainYKeyThresholds": [
+                    0.5,
+                    0.5,
+                    0.205,
+                    0.15,
+                    0.15,
+                    0.1,
+                    0.1,
+                    0.04,
+                    0.04,
+                    0
+                ]
+            },
+            {
                 "code": "p&vsiberiansinkholes",
                 "comment": "Siberian sink holes",
                 "hexcolor": "#AAAA00",
