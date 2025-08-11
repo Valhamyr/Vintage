@@ -13,7 +13,7 @@ DEFAULT_LANDFORMS_FILE = os.path.join(
     "data",
     "landforms.json",
 )
-DEFAULT_LANDFORM_CODE = "step mountains 6-tier broad tall"
+DEFAULT_LANDFORM_CODE = ""
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
 WARP_SCALE = 0.01
 WARP_AMPLITUDE = 20.0
@@ -47,7 +47,7 @@ parser.add_argument(
 parser.add_argument(
     "--code",
     default=DEFAULT_LANDFORM_CODE,
-    help="Code of landform to render (default: %(default)s)",
+    help="Code of landform to render (default: all)",
 )
 parser.add_argument(
     "--zoom",
