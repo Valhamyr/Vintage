@@ -6,11 +6,13 @@ from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # By default this script loads the landform definition from the
-# SelectedLandforms data file.
+# SelectedLandforms patch file so previews match the in-game data.
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "SelectedLandforms",
-    "data",
+    "assets",
+    "selectedlandforms",
+    "patches",
     "landforms.json",
 )
 DEFAULT_LANDFORM_CODE = ""
