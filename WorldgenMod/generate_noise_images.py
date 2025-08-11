@@ -1,6 +1,7 @@
 import json
 import os
 import argparse
+import re
 from opensimplex import OpenSimplex
 from PIL import Image
 
@@ -229,5 +230,5 @@ def render_landform(params, name):
 if __name__ == "__main__":
     for lf in landforms:
         code = lf.get("code", "landform")
-        safe_code = code.replace(" ", "_")
+        safe_code = re.sub(r"[^0-9A-Za-z_-]", "_", code)
         render_landform(lf, safe_code)
