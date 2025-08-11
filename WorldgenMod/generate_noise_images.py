@@ -212,4 +212,5 @@ def render_landform(params, name):
 if __name__ == "__main__":
     for lf in landforms:
         code = lf.get("code", "landform")
-        render_landform(lf, code)
+        safe_code = code.replace(" ", "_")
+        render_landform(lf, safe_code)
