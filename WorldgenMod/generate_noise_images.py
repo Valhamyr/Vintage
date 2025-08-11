@@ -5,14 +5,12 @@ from opensimplex import OpenSimplex
 from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# By default this script loads the landform definition from the
-# SelectedLandforms patch file so previews match the in-game data.
+# By default this script loads the landform definitions from the
+# SelectedLandforms data file so previews match the in-game data.
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "SelectedLandforms",
-    "assets",
-    "selectedlandforms",
-    "patches",
+    "data",
     "landforms.json",
 )
 DEFAULT_LANDFORM_CODE = ""
