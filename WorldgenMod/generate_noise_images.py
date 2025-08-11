@@ -63,8 +63,6 @@ with open(LANDFORMS_FILE) as f:
 
 # The SelectedLandforms patch file contains an array of operations instead of
 # a plain object. Extract the landform definitions regardless of format so this
-# script can render them without manual preprocessing. Only keep the custom
-# landforms defined for this mod.
 landforms = []
 if isinstance(patch_data, list):
     for op in patch_data:
@@ -74,24 +72,11 @@ if isinstance(patch_data, list):
 else:
     landforms = patch_data.get("variants", [])
 
-CUSTOM_LANDFORMS = {
-    "p&vstep mountains",
-}
+BASE_LANDFORM = "p&vstep mountains"
 
-landforms = [lf for lf in landforms if lf.get("code") in CUSTOM_LANDFORMS]
-
-import copy
-
-# Generate variants that isolate individual octaves to show their influence
-def build_variant(base, octave_index):
-    """Return a copy of *base* with only the specified octave enabled."""
-    params = copy.deepcopy(base)
-    octaves = params.get("terrainOctaves", []).copy()
-    for i in range(len(octaves)):
-        if i != octave_index:
-            octaves[i] = 0
-    params["terrainOctaves"] = octaves
-    return params
+landforms = [
+    lf for lf in landforms if lf.get("code", "").startswith(BASE_LANDFORM)
+]
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -230,12 +215,6 @@ def render_landform(params, name):
 
 
 if __name__ == "__main__":
-    base = landforms[0] if landforms else None
-    if base:
-        base_code = base.get("code", "landform")
-        render_landform(base, base_code)
-        for i, amp in enumerate(base.get("terrainOctaves", [])):
-            params = build_variant(base, i)
-            variant_name = f"{base_code}_octave{i+1}"
-            print(f"Isolating octave {i+1} (amplitude {amp})")
-            render_landform(params, variant_name)
+    for lf in landforms:
+        code = lf.get("code", "landform")
+        render_landform(lf, code)
