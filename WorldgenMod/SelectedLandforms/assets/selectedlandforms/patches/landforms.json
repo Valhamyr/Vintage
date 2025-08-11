@@ -1143,14 +1143,13 @@
                 ]
             },
             {
-                "code": "stepmountains_scalehalf",
-                "comment": "Noise scale 0.0005 for larger features",
+                "code": "p&vstep mountains octave2 double",
+                "comment": "Octave 2 amplitude double",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "noiseScale": 0.0005,
                 "terrainOctaves": [
                     0,
-                    0.81,
+                    1.62,
                     0.729,
                     0.6561,
                     0,
@@ -1181,18 +1180,17 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_scaledouble",
-                "comment": "Noise scale 0.002 for smaller features",
+                "code": "p&vstep mountains octave2 half",
+                "comment": "Octave 2 amplitude half",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "noiseScale": 0.002,
                 "terrainOctaves": [
                     0,
-                    0.81,
+                    0.405,
                     0.729,
                     0.6561,
                     0,
@@ -1223,18 +1221,18 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_ampboost",
-                "comment": "First octave amplitude increased to 0.2",
+                "code": "p&vstep mountains octave3 double",
+                "comment": "Octave 3 amplitude double",
                 "hexcolor": "#84A878",
                 "weight": 200,
                 "terrainOctaves": [
-                    0.2,
+                    0,
                     0.81,
-                    0.729,
+                    1.458,
                     0.6561,
                     0,
                     0.531441,
@@ -1264,19 +1262,18 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_heightoffset",
-                "comment": "Height offset increased to 1.5",
+                "code": "p&vstep mountains octave3 half",
+                "comment": "Octave 3 amplitude half",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "heightOffset": 1.5,
                 "terrainOctaves": [
                     0,
                     0.81,
-                    0.729,
+                    0.3645,
                     0.6561,
                     0,
                     0.531441,
@@ -1306,20 +1303,19 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_threshold",
-                "comment": "Raised generation threshold to 0.2",
+                "code": "p&vstep mountains octave4 double",
+                "comment": "Octave 4 amplitude double",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "threshold": 0.2,
                 "terrainOctaves": [
                     0,
                     0.81,
                     0.729,
-                    0.6561,
+                    1.3122,
                     0,
                     0.531441,
                     0.4,
@@ -1348,21 +1344,19 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_plateau3",
-                "comment": "Add three radial plateaus with base radius 60",
+                "code": "p&vstep mountains octave4 half",
+                "comment": "Octave 4 amplitude half",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "plateauCount": 3,
-                "baseRadius": 60,
                 "terrainOctaves": [
                     0,
                     0.81,
                     0.729,
-                    0.6561,
+                    0.32805,
                     0,
                     0.531441,
                     0.4,
@@ -1391,24 +1385,21 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_plateau5",
-                "comment": "Five plateaus with base radius 80 and radius step 0.5",
+                "code": "p&vstep mountains octave6 double",
+                "comment": "Octave 6 amplitude double",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "plateauCount": 5,
-                "baseRadius": 80,
-                "radiusStep": 0.5,
                 "terrainOctaves": [
                     0,
                     0.81,
                     0.729,
                     0.6561,
                     0,
-                    0.531441,
+                    1.062882,
                     0.4,
                     0.2,
                     0
@@ -1435,25 +1426,21 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
+                    0
                 ]
             },
             {
-                "code": "stepmountains_radiusnoise",
-                "comment": "Plateaus with noisy radius",
+                "code": "p&vstep mountains octave6 half",
+                "comment": "Octave 6 amplitude half",
                 "hexcolor": "#84A878",
                 "weight": 200,
-                "plateauCount": 4,
-                "baseRadius": 70,
-                "radiusNoiseScale": 0.05,
-                "radiusNoiseAmplitude": 0.3,
                 "terrainOctaves": [
                     0,
                     0.81,
                     0.729,
                     0.6561,
                     0,
-                    0.531441,
+                    0.265721,
                     0.4,
                     0.2,
                     0
@@ -1480,53 +1467,12 @@
                     0.2,
                     0.08,
                     0.08,
-                    0.0
-                ]
-            },
-            {
-                "code": "stepmountains_yshift",
-                "comment": "Y key positions shifted upward",
-                "hexcolor": "#84A878",
-                "weight": 200,
-                "terrainOctaves": [
-                    0,
-                    0.81,
-                    0.729,
-                    0.6561,
-                    0,
-                    0.531441,
-                    0.4,
-                    0.2,
                     0
-                ],
-                "terrainYKeyPositions": [
-                    0,
-                    0.45,
-                    0.55,
-                    0.65,
-                    0.67,
-                    0.73,
-                    0.75,
-                    0.85,
-                    0.89,
-                    0.95
-                ],
-                "terrainYKeyThresholds": [
-                    1,
-                    1,
-                    0.41,
-                    0.3,
-                    0.3,
-                    0.2,
-                    0.2,
-                    0.08,
-                    0.08,
-                    0.0
                 ]
             },
             {
-                "code": "stepmountains_ythresh",
-                "comment": "Raised mid-level thresholds",
+                "code": "p&vstep mountains octave7 double",
+                "comment": "Octave 7 amplitude double",
                 "hexcolor": "#84A878",
                 "weight": 200,
                 "terrainOctaves": [
@@ -1536,7 +1482,7 @@
                     0.6561,
                     0,
                     0.531441,
-                    0.4,
+                    0.8,
                     0.2,
                     0
                 ],
@@ -1555,14 +1501,137 @@
                 "terrainYKeyThresholds": [
                     1,
                     1,
+                    0.41,
+                    0.3,
+                    0.3,
+                    0.2,
+                    0.2,
+                    0.08,
+                    0.08,
+                    0
+                ]
+            },
+            {
+                "code": "p&vstep mountains octave7 half",
+                "comment": "Octave 7 amplitude half",
+                "hexcolor": "#84A878",
+                "weight": 200,
+                "terrainOctaves": [
+                    0,
+                    0.81,
+                    0.729,
+                    0.6561,
+                    0,
+                    0.531441,
+                    0.2,
+                    0.2,
+                    0
+                ],
+                "terrainYKeyPositions": [
+                    0,
+                    0.43,
                     0.5,
-                    0.4,
-                    0.4,
+                    0.6,
+                    0.62,
+                    0.68,
+                    0.7,
+                    0.8,
+                    0.84,
+                    0.9
+                ],
+                "terrainYKeyThresholds": [
+                    1,
+                    1,
+                    0.41,
                     0.3,
                     0.3,
+                    0.2,
+                    0.2,
+                    0.08,
+                    0.08,
+                    0
+                ]
+            },
+            {
+                "code": "p&vstep mountains octave8 double",
+                "comment": "Octave 8 amplitude double",
+                "hexcolor": "#84A878",
+                "weight": 200,
+                "terrainOctaves": [
+                    0,
+                    0.81,
+                    0.729,
+                    0.6561,
+                    0,
+                    0.531441,
+                    0.4,
+                    0.4,
+                    0
+                ],
+                "terrainYKeyPositions": [
+                    0,
+                    0.43,
+                    0.5,
+                    0.6,
+                    0.62,
+                    0.68,
+                    0.7,
+                    0.8,
+                    0.84,
+                    0.9
+                ],
+                "terrainYKeyThresholds": [
+                    1,
+                    1,
+                    0.41,
+                    0.3,
+                    0.3,
+                    0.2,
+                    0.2,
+                    0.08,
+                    0.08,
+                    0
+                ]
+            },
+            {
+                "code": "p&vstep mountains octave8 half",
+                "comment": "Octave 8 amplitude half",
+                "hexcolor": "#84A878",
+                "weight": 200,
+                "terrainOctaves": [
+                    0,
+                    0.81,
+                    0.729,
+                    0.6561,
+                    0,
+                    0.531441,
+                    0.4,
                     0.1,
-                    0.1,
-                    0.0
+                    0
+                ],
+                "terrainYKeyPositions": [
+                    0,
+                    0.43,
+                    0.5,
+                    0.6,
+                    0.62,
+                    0.68,
+                    0.7,
+                    0.8,
+                    0.84,
+                    0.9
+                ],
+                "terrainYKeyThresholds": [
+                    1,
+                    1,
+                    0.41,
+                    0.3,
+                    0.3,
+                    0.2,
+                    0.2,
+                    0.08,
+                    0.08,
+                    0
                 ]
             },
             {
