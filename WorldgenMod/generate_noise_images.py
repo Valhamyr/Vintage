@@ -61,14 +61,20 @@ ZOOM = args.zoom
 with open(LANDFORMS_FILE) as f:
     patch_data = json.load(f)
 
-# The SelectedLandforms patch file contains an array of operations instead of
-# a plain object. Extract the landform definitions regardless of format so this
+# The SelectedLandforms patch file may contain an array of operations instead
+# of a plain object. Extract the landform definitions regardless of format so
+# every variation gets rendered.
 landforms = []
 if isinstance(patch_data, list):
     for op in patch_data:
-        if op.get("path") == "/variants" and isinstance(op.get("value"), list):
-            landforms = op["value"]
-            break
+        path = op.get("path", "")
+        if not path.startswith("/variants"):
+            continue
+        value = op.get("value")
+        if isinstance(value, list):
+            landforms.extend(value)
+        elif isinstance(value, dict):
+            landforms.append(value)
 else:
     landforms = patch_data.get("variants", [])
 
