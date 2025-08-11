@@ -16,7 +16,7 @@ DEFAULT_LANDFORMS_FILE = os.path.join(
     "patches",
     "landforms.json",
 )
-DEFAULT_LANDFORM_CODE = "step mountains y key sym"
+DEFAULT_LANDFORM_CODE = ""
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
 WARP_SCALE = 0.01
 WARP_AMPLITUDE = 20.0
