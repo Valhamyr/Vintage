@@ -2,119 +2,13 @@
   "code": "landforms",
   "variants": [
     {
-      "code": "step mountains 6-tier (vanilla-like)",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.729, 0.6561, 0, 0.531441, 0.4, 0.20, 0],
-      "terrainYKeyPositions": [0.00, 0.43, 0.55, 0.65, 0.75, 0.85, 0.90],
-      "terrainYKeyThresholds": [0.12, 0.10, 0.08, 0.06, 0.05, 0.04, 0.00]
-    },
-    {
-      "code": "step mountains 6-tier (hybrid)",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.10, 0],
-      "terrainYKeyPositions": [0.00, 0.43, 0.55, 0.65, 0.75, 0.85, 0.90],
-      "terrainYKeyThresholds": [0.12, 0.10, 0.08, 0.06, 0.05, 0.04, 0.00]
-    },
-    {
-      "code": "step mountains self test",
+      "code": "step mountains y key sym",
       "comment": "Raised terrain with mountains that have several steps in them",
       "hexcolor": "#84A878",
       "weight": 1,
       "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
       "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [1, 0.75, 0.5, 0.30, 0.20, 0.08, 0.0]
-    },
-    {
-      "code": "step mountains y key test",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [1, 1, 1, 1, 1, 1, 1]
-    },
-    {
-      "code": "step mountains y key test 0.9",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9]
-    },
-    {
-      "code": "step mountains y key test 0.8",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
-    },
-    {
-      "code": "step mountains y key test 0.7",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7]
-    },
-    {
-      "code": "step mountains y key test 0.6",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6]
-    },
-    {
-      "code": "step mountains y key test 0.5",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
-    },
-    {
-      "code": "step mountains y key test 0.4",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4]
-    },
-    {
-      "code": "step mountains y key test 0.3",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3]
-    },
-    {
-      "code": "step mountains y key test 0.2",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
-    },
-    {
-      "code": "step mountains y key test 0.1",
-      "comment": "Raised terrain with mountains that have several steps in them",
-      "hexcolor": "#84A878",
-      "weight": 1,
-      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.1, 0],
-      "terrainYKeyPositions": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9],
-      "terrainYKeyThresholds": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+      "terrainYKeyThresholds": [0, 0.43, 0.5, 0.62, 0.7, 0.84, 0.9]
     }
   ]
 }

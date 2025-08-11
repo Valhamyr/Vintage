@@ -7,14 +7,16 @@ from PIL import Image
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # By default this script loads the landform definitions from the
-# SelectedLandforms data file so previews match the in-game data.
+# SelectedLandforms patch file so previews match the in-game data.
 DEFAULT_LANDFORMS_FILE = os.path.join(
     SCRIPT_DIR,
     "SelectedLandforms",
-    "data",
+    "assets",
+    "selectedlandforms",
+    "patches",
     "landforms.json",
 )
-DEFAULT_LANDFORM_CODE = ""
+DEFAULT_LANDFORM_CODE = "step mountains y key sym"
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "noise_samples")
 WARP_SCALE = 0.01
 WARP_AMPLITUDE = 20.0
