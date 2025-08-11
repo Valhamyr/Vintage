@@ -1,6 +1,29 @@
 {
-	"code": "landforms",
-	"variants": 
-	[	
-	]
+  "code": "landforms",
+  "variants": [
+    {
+      "code": "blend1",
+      "terrainOctaves": [0, 0.81, 0.50, 0.6561, 0, 0.531441, 0.30, 0.15, 0],
+      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.37, 0.42, 0.45, 0.50],
+      "terrainYKeyThresholds": [0.5, 0.5, 0.205, 0.15, 0.15, 0.10, 0.10, 0.04, 0.04, 0.0]
+    },
+    {
+      "code": "blend2",
+      "terrainOctaves": [0, 0.81, 0.50, 0.6561, 0, 0.531441, 0.30, 0.15, 0],
+      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.37, 0.42, 0.45, 0.50],
+      "terrainYKeyThresholds": [0.5, 0.5, 0.35, 0.30, 0.30, 0.25, 0.25, 0.20, 0.20, 0.15]
+    },
+    {
+      "code": "weddingcake",
+      "terrainOctaves": [0, 0.81, 0.50, 0.6561, 0, 0.531441, 0.30, 0.15, 0],
+      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.37, 0.42, 0.45, 0.50],
+      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "code": "supercliffweddingcake",
+      "terrainOctaves": [0, 0.81, 0.60, 0.6561, 0, 0.45, 0.25, 0.12, 0],
+      "terrainYKeyPositions": [0, 0.215, 0.25, 0.30, 0.31, 0.34, 0.38, 0.44, 0.48, 0.53],
+      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    }
+  ]
 }
