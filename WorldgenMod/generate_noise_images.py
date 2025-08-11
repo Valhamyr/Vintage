@@ -53,6 +53,10 @@ parser.add_argument(
     help="Code of landform to render (default: all)",
 )
 parser.add_argument(
+    "--definition",
+    help="Inline landform JSON definition for quick testing (overrides file and code)",
+)
+parser.add_argument(
     "--zoom",
     type=float,
     default=1.0,
@@ -66,28 +70,33 @@ SEED = args.seed
 LANDFORMS_FILE = args.landforms_file
 ZOOM = args.zoom
 TARGET_CODE = args.code
-with open(LANDFORMS_FILE) as f:
-    patch_data = json.load(f)
-
-# The SelectedLandforms patch file may contain an array of operations instead
-# of a plain object. Extract the landform definitions regardless of format so
-# every variation gets rendered.
-landforms = []
-if isinstance(patch_data, list):
-    for op in patch_data:
-        path = op.get("path", "")
-        if not path.startswith("/variants"):
-            continue
-        value = op.get("value")
-        if isinstance(value, list):
-            landforms.extend(value)
-        elif isinstance(value, dict):
-            landforms.append(value)
+definition_json = args.definition
+if definition_json:
+    # Directly render the provided definition when given via the command line
+    landforms = [json.loads(definition_json)]
 else:
-    landforms = patch_data.get("variants", [])
+    with open(LANDFORMS_FILE) as f:
+        patch_data = json.load(f)
 
-if TARGET_CODE:
-    landforms = [lf for lf in landforms if lf.get("code") == TARGET_CODE]
+    # The SelectedLandforms patch file may contain an array of operations instead
+    # of a plain object. Extract the landform definitions regardless of format so
+    # every variation gets rendered.
+    landforms = []
+    if isinstance(patch_data, list):
+        for op in patch_data:
+            path = op.get("path", "")
+            if not path.startswith("/variants"):
+                continue
+            value = op.get("value")
+            if isinstance(value, list):
+                landforms.extend(value)
+            elif isinstance(value, dict):
+                landforms.append(value)
+    else:
+        landforms = patch_data.get("variants", [])
+
+    if TARGET_CODE:
+        landforms = [lf for lf in landforms if lf.get("code") == TARGET_CODE]
 
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
