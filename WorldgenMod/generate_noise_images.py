@@ -188,6 +188,9 @@ def sample_height(params, x, z):
                 yfactor = t1 + (t2 - t1) * ratio
                 break
 
+    # Clamp to sane range so increased y-key variations do not overflow
+    yfactor = max(0.0, min(yfactor, 1.0))
+
     total = max(0.0, min(total * yfactor * step_factor, 1.0))
     return base_height + height_offset * total
 
