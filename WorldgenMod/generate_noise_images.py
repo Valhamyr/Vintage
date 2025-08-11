@@ -72,11 +72,6 @@ if isinstance(patch_data, list):
 else:
     landforms = patch_data.get("variants", [])
 
-BASE_LANDFORM = "p&vstep mountains"
-
-landforms = [
-    lf for lf in landforms if lf.get("code", "").startswith(BASE_LANDFORM)
-]
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
