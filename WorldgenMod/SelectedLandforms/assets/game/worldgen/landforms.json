@@ -30,6 +30,24 @@
       "terrainOctaves": [0, 0.90, 0.70, 0.45, 0, 0, 0, 0, 0],
       "terrainYKeyPositions": [0.00, 0.12, 0.22, 0.32, 0.41, 0.49, 0.56, 0.62, 0.67, 0.71],
       "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "code": "step mountains maxcliff",
+      "comment": "Tall, hard-snapped plateaus (no rounding)",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0, 0.90, 0.70, 0.50, 0, 0, 0, 0, 0],
+      "terrainYKeyPositions": [0, 0.43, 0.50, 0.60, 0.62, 0.68, 0.70, 0.80, 0.84, 0.90],
+      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "code": "step mountains hybrid cliff",
+      "comment": "Tall plateaus, sheer cliffs, slight edge texture",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.10, 0],
+      "terrainYKeyPositions": [0, 0.43, 0.50, 0.60, 0.62, 0.68, 0.70, 0.80, 0.84, 0.90],
+      "terrainYKeyThresholds": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
     }
   ]
 }
