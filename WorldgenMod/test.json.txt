@@ -1,0 +1,13 @@
+'
+{
+  "code": "step mountains 6-tier hybrid top-lock",
+  "comment": "Octave 2 & 7 halved; crisp tiers with strong attraction to top bands",
+  "hexcolor": "#84A878",
+  "weight": 1,
+
+  "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.10, 0],
+
+  "terrainYKeyPositions": [0.00, 0.43, 0.50, 0.62, 0.70, 0.84, 0.90],
+  "terrainYKeyThresholds": [0.12, 0.05, 0.04, 0.04, 0.04, 0.10, 0.00]
+}
+'
