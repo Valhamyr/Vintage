@@ -2,62 +2,45 @@
   "code": "landforms",
   "variants": [
     {
-      "code": "step_mountains_4changes_compact_irregular",
+      "code": "step_mountains_6tier_bestof_balanced",
+      "comment": "6 crisp plateaus with added detail; shelves not paper-thin",
       "hexcolor": "#84A878",
-      "weight": 4,
-      "terrainOctaves": [
-        0.3,
-        0.22,
-        0.16,
-        0.12,
-        0.08,
-        0.18,
-        0.12,
-        0.05,
-        0.0,
-        0.0
-      ],
-      "terrainOctaveThresholds": [
-        0.0,
-        0.0,
-        0.0,
-        0.22,
-        0.3,
-        0.52,
-        0.68,
-        0.82,
-        0.0,
-        0.0
-      ],
+      "weight": 7.916666666666667,
+      "terrainOctaves": [0.00, 0.81, 0.28, 0.58, 0.00, 0.30, 0.22, 0.05, 0.00, 0.00],
+      "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.10, 0.25, 0.58, 0.72, 0.84, 0.00, 0.00],
       "terrainYKeyPositions": [
-        0.43,
-        0.436,
-        0.596,
-        0.6,
-        0.717,
-        0.721,
-        0.816,
-        0.818,
-        0.9,
-        0.901
+        0.430, 0.442,   0.565, 0.575,
+        0.680, 0.688,   0.790, 0.796,
+        0.885, 0.889,   0.945, 0.947
       ],
       "terrainYKeyThresholds": [
-        1.0,
-        0.73,
-        0.729,
-        0.56,
-        0.559,
-        0.41,
-        0.409,
-        0.3,
-        0.299,
-        0.0
+        1.00, 0.72,   0.715, 0.52,
+        0.515, 0.39,  0.385, 0.27,
+        0.265, 0.16,  0.155, 0.00
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_bestof_xdetail",
+      "comment": "6 plateaus with more micro-variation, still preserving shelf width",
+      "hexcolor": "#84A878",
+      "weight": 7.916666666666667,
+      "terrainOctaves": [0.00, 0.81, 0.30, 0.60, 0.00, 0.36, 0.28, 0.08, 0.02, 0.00],
+      "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.12, 0.26, 0.62, 0.76, 0.86, 0.90, 0.00],
+      "terrainYKeyPositions": [
+        0.430, 0.442,   0.565, 0.575,
+        0.680, 0.688,   0.790, 0.796,
+        0.885, 0.889,   0.945, 0.947
+      ],
+      "terrainYKeyThresholds": [
+        1.00, 0.72,   0.715, 0.52,
+        0.515, 0.39,  0.385, 0.27,
+        0.265, 0.16,  0.155, 0.00
       ]
     },
     {
       "code": "steppedsinkholes_4changes_compact_irregular",
       "hexcolor": "#AAAA00",
-      "weight": 5,
+      "weight": 39.583333333333336,
       "terrainOctaves": [
         0.28,
         0.2,
@@ -110,7 +93,7 @@
     {
       "code": "canyons_4changes_compact_irregular",
       "hexcolor": "#C28E52",
-      "weight": 5,
+      "weight": 39.583333333333336,
       "terrainOctaves": [
         0.4,
         0.3,
