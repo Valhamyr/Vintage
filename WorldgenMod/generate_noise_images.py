@@ -96,7 +96,8 @@ else:
         landforms = patch_data.get("variants", [])
 
     allowed_codes = {
-        "step_mountains_4changes_compact_irregular",
+        "step_mountains_6tier_bestof_balanced",
+        "step_mountains_6tier_bestof_xdetail",
         "steppedsinkholes_4changes_compact_irregular",
         "canyons_4changes_compact_irregular",
     }
