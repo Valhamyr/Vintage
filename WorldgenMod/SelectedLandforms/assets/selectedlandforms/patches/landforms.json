@@ -2,118 +2,54 @@
   "code": "landforms",
   "variants": [
     {
-      "code": "step_mountains_6tier_plateaus_crisp",
-      "comment": "Six flat plateaus with sheer cliffs; minimal smoothing",
+      "code": "step_mountains_6tier_o2o7half_wide",
+      "comment": "Six flat, wider plateaus with sheer cliffs (octave 2 & 7 halved)",
       "hexcolor": "#84A878",
-      "weight": 75,
-      "terrainOctaves": [
-        0,
-        0.81,
-        0.5,
-        0.55,
-        0,
-        0.25,
-        0.2,
-        0.06,
-        0
-      ],
+      "weight": 31.6667,
+      "terrainOctaves": [0, 0.81, 0.365, 0.6561, 0, 0.531441, 0.4, 0.10, 0],
       "terrainYKeyPositions": [
-        0.43,
-        0.435,
-        0.55,
-        0.553,
-        0.65,
-        0.653,
-        0.75,
-        0.753,
-        0.85,
-        0.853,
-        0.93,
-        0.933
+        0.430, 0.439,   0.560, 0.569,
+        0.675, 0.684,   0.790, 0.799,
+        0.895, 0.904,   0.955, 0.964
       ],
       "terrainYKeyThresholds": [
-        1.0,
-        0.72,
-        0.7,
-        0.52,
-        0.5,
-        0.38,
-        0.36,
-        0.26,
-        0.24,
-        0.14,
-        0.13,
-        0.0
+        1.00, 0.70,   0.69, 0.52,
+        0.51, 0.38,   0.37, 0.26,
+        0.25, 0.14,   0.13, 0.00
       ]
     },
     {
-      "code": "steppedsinkholes_with_risers",
-      "comment": "Stepped sinkholes plus matching upward terraces (mesas/risers)",
+      "code": "steppedsinkholes_with_risers_o2o7half_wide",
+      "comment": "Stepped pits AND mesas; wider shelves, sheer walls (octave 2 & 7 halved)",
       "hexcolor": "#AAAA00",
-      "weight": 20,
-      "terrainOctaves": [
-        0,
-        0.22,
-        0.18,
-        0.1,
-        0,
-        1.0,
-        1.0,
-        0.85,
-        0
-      ],
-      "terrainOctaveThresholds": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
+      "weight": 31.6667,
+      "terrainOctaves": [0, 0.22, 0.09, 0.10, 0, 1.00, 1.00, 0.425, 0],
+      "terrainOctaveThresholds": [0,0,0,0,0,0.60,0.55,0,0],
       "terrainYKeyPositions": [
-        0.431,
-        0.436,
-        0.457,
-        0.462,
-        0.484,
-        0.489,
-        0.513,
-        0.518,
-        0.525,
-        0.543,
-        0.548,
-        0.571,
-        0.576,
-        0.601,
-        0.606,
-        0.631,
-        0.636,
-        0.66,
-        0.663
+        0.430, 0.439,  0.459, 0.468,  0.489, 0.498,  0.519, 0.528,
+        0.548, 0.557,  0.577, 0.586,  0.607, 0.616,  0.636, 0.645
       ],
       "terrainYKeyThresholds": [
-        0.999,
-        0.72,
-        0.7,
-        0.56,
-        0.54,
-        0.43,
-        0.41,
-        0.33,
-        0.31,
-        0.25,
-        0.19,
-        0.18,
-        0.14,
-        0.13,
-        0.1,
-        0.095,
-        0.07,
-        0.05,
-        0.0
+        0.98, 0.72,  0.71, 0.56,  0.55, 0.43,  0.42, 0.33,
+        0.32, 0.24,  0.23, 0.18,  0.17, 0.12,  0.11, 0.00
+      ]
+    },
+    {
+      "code": "canyons_mesas_o2o7half_wide",
+      "comment": "Broad mesas with deep canyons; wider shelves, sheer walls (octave 2 & 7 halved)",
+      "hexcolor": "#C28E52",
+      "weight": 31.6667,
+      "terrainOctaves": [0, 0.82, 0.30, 0.48, 0, 0.35, 0.30, 0.04, 0],
+      "terrainOctaveThresholds": [0,0,0,0,0,0.60,0.55,0,0],
+      "terrainYKeyPositions": [
+        0.430, 0.439,   0.570, 0.579,
+        0.700, 0.709,   0.840, 0.849,
+        0.960, 0.969
+      ],
+      "terrainYKeyThresholds": [
+        1.00, 0.72,   0.71, 0.52,
+        0.51, 0.36,   0.35, 0.20,
+        0.19, 0.00
       ]
     },
     {
