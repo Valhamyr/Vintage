@@ -2,11 +2,11 @@
   "code": "landforms",
   "variants": [
       {
-        "code": "step_mountains_6tier_smoothbase_taper",
+        "code": "step_mountains_6tier_smoothbase_taper_tuned",
         "hexcolor": "#84A878",
         "weight": 3.392857,
-        "terrainOctaves":          [1.00, 0.75, 0.55, 0.00, 0.00, 0.10, 0.06, 0.04, 0.00, 0.00],
-        "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.35, 0.65, 0.80, 0.85, 0.00, 0.00],
+        "terrainOctaves":          [0.50, 0.375, 0.275, 0.08, 0.05, 0.10, 0.05, 0.03, 0.00, 0.00],
+        "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.30, 0.55, 0.75, 0.85, 0.00, 0.00],
         "terrainYKeyPositions": [
           0.430, 0.450,   0.580, 0.592,
           0.695, 0.705,   0.800, 0.806,
@@ -19,11 +19,11 @@
         ]
       },
       {
-        "code": "steppedsinkholes_risers_smoothbase_wide",
+        "code": "steppedsinkholes_risers_smoothbase_tuned",
         "hexcolor": "#AAAA00",
         "weight": 50.892857,
-        "terrainOctaves":          [0.95, 0.70, 0.50, 0.00, 0.00, 0.95, 0.80, 0.06, 0.00, 0.00],
-        "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.35, 0.62, 0.78, 0.85, 0.00, 0.00],
+        "terrainOctaves":          [0.475, 0.35, 0.25, 0.08, 0.05, 0.85, 0.70, 0.05, 0.00, 0.00],
+        "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.30, 0.62, 0.78, 0.85, 0.00, 0.00],
         "terrainYKeyPositions": [
           0.430, 0.448,  0.468, 0.480,  0.498, 0.508,  0.524, 0.532,
           0.548, 0.560,  0.578, 0.586,  0.606, 0.612,  0.636, 0.640
@@ -34,11 +34,11 @@
         ]
       },
       {
-        "code": "canyons_mesas_smoothbase_wide",
+        "code": "canyons_mesas_smoothbase_tuned",
         "hexcolor": "#C28E52",
         "weight": 40.714286,
-        "terrainOctaves":          [1.00, 0.72, 0.50, 0.00, 0.00, 0.32, 0.22, 0.05, 0.00, 0.00],
-        "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.35, 0.60, 0.80, 0.85, 0.00, 0.00],
+        "terrainOctaves":          [0.50, 0.36, 0.25, 0.08, 0.06, 0.32, 0.18, 0.05, 0.00, 0.00],
+        "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.30, 0.60, 0.80, 0.85, 0.00, 0.00],
         "terrainYKeyPositions": [
           0.430, 0.450,   0.580, 0.593,
           0.705, 0.715,   0.845, 0.851,
