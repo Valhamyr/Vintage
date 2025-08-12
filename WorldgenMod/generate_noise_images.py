@@ -96,9 +96,9 @@ else:
         landforms = patch_data.get("variants", [])
 
     allowed_codes = {
-        "step_mountains_4changes_taper_25pct",
-        "steppedsinkholes_4changes_taper_25pct",
-        "canyons_4changes_taper_25pct",
+        "step_mountains_4changes_compact_irregular",
+        "steppedsinkholes_4changes_compact_irregular",
+        "canyons_4changes_compact_irregular",
     }
     landforms = [lf for lf in landforms if lf.get("code") in allowed_codes]
 
