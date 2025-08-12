@@ -103,6 +103,12 @@ else:
         "step_mountains_6tier_test_large_123",
         "step_mountains_6tier_test_largemid_456",
         "step_mountains_6tier_test_smallall",
+        "step_mountains_6tier_test_4all",
+        "step_mountains_6tier_med2",
+        "step_mountains_6tier_test_4_123",
+        "step_mountains_6tier_test_4_456",
+        "step_mountains_6tier_test_4_789",
+        "step_mountains_6tier_test_4_23_2_5_2_7",
     }
     landforms = [lf for lf in landforms if lf.get("code") in allowed_codes]
 
