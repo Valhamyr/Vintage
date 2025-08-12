@@ -2,19 +2,19 @@
   "code": "landforms",
   "variants": [
     {
-      "code": "step_mountains_6tier_test_4_456",
+      "code": "step_mountains_6tier_test_control",
       "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
       "hexcolor": "#84A878",
-      "weight": 95,
+      "weight": 1,
       "terrainOctaves": [
         0,
+        0.81,
+        0.25,
+        0.55,
         0,
-        0,
-        0.4,
-        0.4,
-        0.4,
-        0,
-        0,
+        0.25,
+        0.2,
+        0.03,
         0
       ],
       "terrainYKeyPositions": [
@@ -47,108 +47,268 @@
       ]
     },
     {
-      "code": "steppedsinkholes_4changes_compact_irregular",
-      "hexcolor": "#AAAA00",
-      "weight": 2.3514851485148514,
+      "code": "step_mountains_4tiera",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
       "terrainOctaves": [
-        0.28,
+        0,
+        0.81,
+        0.25,
+        0.25,
+        0,
+        0.25,
         0.2,
-        0.15,
-        0.1,
-        0.06,
-        0.9,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.65,
+        0.653,
         0.75,
-        0.05,
-        0.0,
-        0.0
-      ],
-      "terrainOctaveThresholds": [
-        0.0,
-        0.0,
-        0.0,
-        0.22,
-        0.3,
-        0.62,
-        0.72,
-        0.84,
-        0.0,
-        0.0
-      ],
-      "terrainYKeyPositions": [
-        0.43,
-        0.437,
-        0.47,
-        0.475,
-        0.505,
-        0.509,
-        0.543,
-        0.546,
-        0.586,
-        0.588
-      ],
-      "terrainYKeyThresholds": [
-        0.98,
-        0.73,
-        0.729,
-        0.58,
-        0.579,
-        0.46,
-        0.459,
-        0.36,
-        0.359,
-        0.0
-      ]
-    },
-    {
-      "code": "canyons_4changes_compact_irregular",
-      "hexcolor": "#C28E52",
-      "weight": 2.3514851485148514,
-      "terrainOctaves": [
-        0.4,
-        0.3,
-        0.22,
-        0.12,
-        0.08,
-        0.28,
-        0.2,
-        0.06,
-        0.0,
-        0.0
-      ],
-      "terrainOctaveThresholds": [
-        0.0,
-        0.0,
-        0.0,
-        0.22,
-        0.3,
-        0.58,
-        0.7,
-        0.82,
-        0.0,
-        0.0
-      ],
-      "terrainYKeyPositions": [
-        0.43,
-        0.441,
-        0.618,
-        0.624,
-        0.76,
-        0.764,
-        0.866,
-        0.869,
-        0.948,
-        0.949
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
       ],
       "terrainYKeyThresholds": [
         1.0,
         0.72,
-        0.719,
-        0.52,
-        0.519,
-        0.37,
-        0.369,
+        0.7,
+        0.38,
+        0.36,
+        0.26,
         0.24,
-        0.239,
+        0.14,
+        0.13,
+        0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_small_2_big_789",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        0,
+        0.21,
+        0.25,
+        0.25,
+        0,
+        0.25,
+        0.8,
+        0.83,
+        0.8
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_Large All",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        8,
+        0.81,
+        0.8,
+        0.8,
+        8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_large_123",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        8,
+        0.81,
+        0.8,
+        0.25,
+        0,
+        0.25,
+        0.2,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_largemid_456",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        0,
+        0.21,
+        0.25,
+        0.85,
+        8,
+        0.85,
+        0.2,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_smallall",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        0,
+        0.21,
+        0.25,
+        0.25,
+        0,
+        0.25,
+        0.2,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
         0.0
       ]
     },
@@ -156,7 +316,7 @@
       "code": "largeislands",
       "comment": "lots of water, large island and a few tiny islands",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -200,7 +360,7 @@
       "code": "realisticflatlands",
       "comment": "Very large scale flat lands",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         1,
         1,
@@ -236,7 +396,7 @@
       "code": "realisticmountains-ledged",
       "comment": "Very large scale mountains with ledges",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         1,
         1,
@@ -288,7 +448,7 @@
       "code": "realisticmountains-quintupleledged",
       "comment": "Very large scale mountains with ledges",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         1,
         1,
@@ -354,7 +514,7 @@
       "code": "islandchess",
       "comment": "checkboard of land and water",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "minTemp": -4,
       "minRain": 120,
       "useClimateMap": true,
@@ -393,7 +553,7 @@
       "code": "needledflatlands",
       "comment": "Flat lands with very thin small hills",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -433,7 +593,7 @@
       "code": "Realistic mountains",
       "comment": "Very large scale mountains",
       "hexcolor": "#84A878",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         1,
         1,
@@ -471,7 +631,7 @@
       "code": "siberiansinkholes",
       "comment": "Siberian sink holes",
       "hexcolor": "#AAAA00",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -511,7 +671,7 @@
       "code": "shallowmillionstepmountains",
       "comment": "More shallow Million steps mountain",
       "hexcolor": "#333333",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -579,7 +739,7 @@
       "code": "mediummillionstepmountains",
       "comment": "More shallow Million steps mountain",
       "hexcolor": "#333333",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -647,7 +807,7 @@
       "code": "tallmillionstepmountains",
       "comment": "Million steps mountain",
       "hexcolor": "#333333",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -717,7 +877,7 @@
       "code": "roughflatlands",
       "comment": "Rough near sea level flat lands",
       "hexcolor": "#333333",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -755,7 +915,7 @@
       "code": "roughlabyrinth",
       "comment": "Rough labyrinth lands",
       "hexcolor": "#A9810F",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         1,
         1,
@@ -795,7 +955,7 @@
       "code": "supersmoothills",
       "comment": "Super Smooth hills",
       "hexcolor": "#333333",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -835,7 +995,7 @@
       "code": "largelake",
       "comment": "Just water :P",
       "hexcolor": "#0000FF",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "minTemp": 0,
       "maxTemp": 50,
       "useClimateMap": true,
@@ -878,7 +1038,7 @@
       "code": "cold glaciers",
       "comment": "",
       "hexcolor": "#000099",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "minTemp": -20,
       "maxTemp": -19.5,
       "useClimateMap": true,
@@ -923,7 +1083,7 @@
       "code": "cold mountain range",
       "comment": "",
       "hexcolor": "#000099",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "minTemp": -20,
       "maxTemp": -19.5,
       "useClimateMap": true,
@@ -964,7 +1124,7 @@
       "code": "humongous mountain",
       "comment": "humongous mountains with caverns in them",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1033,7 +1193,7 @@
       "code": "hillplateu",
       "comment": "high plateu with hills on top",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         1,
@@ -1075,7 +1235,7 @@
       "code": "smallshallowislands",
       "comment": "Small shallow islands with very small hills and lots of water",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1119,7 +1279,7 @@
       "code": "shallowislands",
       "comment": "Medium sized shallow islands with small bumps and lots of water",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1167,7 +1327,7 @@
       "code": "cliffy rolling hills",
       "comment": "cliffy rolling hills",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0.9,
         0.81,
@@ -1209,7 +1369,7 @@
       "code": "superflatrarebumps",
       "comment": "very flat lands with occasional bumps",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1251,7 +1411,7 @@
       "code": "veryflat",
       "comment": "Very flat lands near sea level",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1291,7 +1451,7 @@
       "code": "flatmanybumps",
       "comment": "Flat land with many bumps",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1350,7 +1510,7 @@
       "code": "veryflatmanybumps",
       "comment": "Very flat land with many bumps",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1409,7 +1569,7 @@
       "code": "above sealevel flat grasslands",
       "comment": "above sealevel flat grasslands with a single step",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         1,
         0.81,
@@ -1453,7 +1613,7 @@
       "code": "rollinghills",
       "comment": "near sealevel rolling hills",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0.9,
         0.81,
@@ -1495,7 +1655,7 @@
       "code": "lowrollinghills",
       "comment": "near sealevel low rolling hills",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0.9,
         0.81,
@@ -1554,7 +1714,7 @@
       "code": "cliffislands",
       "comment": "Islands with tall cliffs",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0.9,
         0.81,
@@ -1618,7 +1778,7 @@
       "code": "smallcliffislands",
       "comment": "Islands with many small cliffs",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1666,7 +1826,7 @@
       "code": "bumplands",
       "comment": "flat with small and big bumps",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1710,7 +1870,7 @@
       "code": "roundclifflandshilly",
       "comment": "round clifflands (more hilly, less easily traversable)",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1756,7 +1916,7 @@
       "code": "sparsecliffyswamplands",
       "comment": "Swamp lands with sparse short 2-stepped cliffs",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0.1,
@@ -1806,7 +1966,7 @@
       "code": "densecliffyswamplands",
       "comment": "Swamp lands with dense tall cliffs",
       "hexcolor": "#5BC184",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0.1,
@@ -1851,7 +2011,7 @@
       "code": "deep water step mountains",
       "comment": "Step mountains in deep water",
       "hexcolor": "#84A878",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0.81,
@@ -1886,7 +2046,7 @@
       "code": "step mountains",
       "comment": "Raised terrain with mountains that have several steps in them",
       "hexcolor": "#84A878",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0.81,
@@ -1927,7 +2087,7 @@
       "code": "flathillvalley",
       "comment": "Flat lands with occasional hills and valleys",
       "hexcolor": "#84A878",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -1980,7 +2140,7 @@
       "code": "hillsflatsandislands",
       "comment": "A colorful mix of flats, hillgroups and islands",
       "hexcolor": "#84A878",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0.81,
@@ -2031,7 +2191,7 @@
       "code": "smallsealevelplateus",
       "comment": "Small many near sea level plateus",
       "hexcolor": "#84A878",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2081,7 +2241,7 @@
       "code": "mediumseapillars",
       "comment": "medium stepped pillars in the sea",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2131,7 +2291,7 @@
       "code": "mediumlandpillars",
       "comment": "medium stepped pillars on flat land",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2183,7 +2343,7 @@
       "code": "marsh",
       "comment": "very flat lands with small rough hills",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2225,7 +2385,7 @@
       "code": "bumpy marsh",
       "comment": "Near sea lavel lakes with small round hills",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2267,7 +2427,7 @@
       "code": "flatmarsh",
       "comment": "very flat lands with rare small bumps",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2309,7 +2469,7 @@
       "code": "deathmarsh",
       "comment": "some strange pool here",
       "hexcolor": "#79E02E",
-      "weight": 0.006457167455876022,
+      "weight": 0.10869565217391304,
       "terrainOctaves": [
         0,
         0,
@@ -2400,6 +2560,192 @@
             0
           ]
         }
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_4all",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      "terrainYKeyPositions": [
+        0.43, 0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93, 0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0, 0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13, 0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_med2",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0, 0.45, 0.25, 0.25, 0, 0.25, 0.2, 0.03, 0],
+      "terrainYKeyPositions": [
+        0.43, 0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93, 0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0, 0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13, 0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_4_123",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0.4, 0.41, 0.45, 0, 0, 0, 0, 0, 0],
+      "terrainYKeyPositions": [
+        0.43, 0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93, 0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0, 0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13, 0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_4_456",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0, 0, 0, 0.4, 0.4, 0.4, 0, 0, 0],
+      "terrainYKeyPositions": [
+        0.43, 0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93, 0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0, 0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13, 0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_4_789",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0, 0, 0, 0, 0, 0, 0.4, 0.4, 0.4],
+      "terrainYKeyPositions": [
+        0.43, 0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93, 0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0, 0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13, 0.0
+      ]
+    },
+    {
+      "code": "step_mountains_6tier_test_4_23_2_5_2_7",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [0, 0.4, 0.4, 0, 0.2, 0, 0.2, 0, 0],
+      "terrainYKeyPositions": [
+        0.43, 0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93, 0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0, 0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13, 0.0
       ]
     }
   ]
