@@ -5,7 +5,7 @@
         "code": "step_mountains_4changes_narrow",
         "hexcolor": "#84A878",
         "weight": 3.392857,
-        "terrainOctaves":          [0.45, 0.33, 0.24, 0.10, 0.08, 0.16, 0.10, 0.05, 0.00, 0.00],
+        "terrainOctaves":          [0.225, 0.165, 0.12, 0.10, 0.08, 0.16, 0.10, 0.05, 0.00, 0.00],
         "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.18, 0.28, 0.45, 0.65, 0.80, 0.00, 0.00],
         "terrainYKeyPositions": [
           0.430, 0.439,   0.560, 0.566,
@@ -22,7 +22,7 @@
         "code": "steppedsinkholes_4changes_narrow",
         "hexcolor": "#AAAA00",
         "weight": 50.892857,
-        "terrainOctaves":          [0.40, 0.30, 0.22, 0.08, 0.05, 0.90, 0.78, 0.05, 0.00, 0.00],
+        "terrainOctaves":          [0.20, 0.15, 0.11, 0.08, 0.05, 0.90, 0.78, 0.05, 0.00, 0.00],
         "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.20, 0.30, 0.62, 0.78, 0.85, 0.00, 0.00],
         "terrainYKeyPositions": [
           0.430, 0.440,   0.470, 0.476,
@@ -39,7 +39,7 @@
         "code": "canyons_4changes_narrow",
         "hexcolor": "#C28E52",
         "weight": 40.714286,
-        "terrainOctaves":          [0.60, 0.45, 0.30, 0.10, 0.08, 0.26, 0.18, 0.06, 0.00, 0.00],
+        "terrainOctaves":          [0.30, 0.225, 0.15, 0.10, 0.08, 0.26, 0.18, 0.06, 0.00, 0.00],
         "terrainOctaveThresholds": [0.00, 0.00, 0.00, 0.18, 0.28, 0.55, 0.70, 0.82, 0.00, 0.00],
         "terrainYKeyPositions": [
           0.430, 0.445,   0.575, 0.583,

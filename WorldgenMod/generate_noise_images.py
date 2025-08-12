@@ -118,7 +118,7 @@ def sample_height(params, x, z):
     """Return normalized height value for a coordinate or ``None`` when below
     the landform threshold.
     """
-    scale = params.get("noiseScale", 0.001)
+    scale = params.get("noiseScale", 0.001) * 2
     octaves = params.get("terrainOctaves", []) or [1]
     octave_thresholds = params.get("terrainOctaveThresholds", [])
     if len(octave_thresholds) < len(octaves):
