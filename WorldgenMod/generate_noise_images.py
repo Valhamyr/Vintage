@@ -96,10 +96,13 @@ else:
         landforms = patch_data.get("variants", [])
 
     allowed_codes = {
-        "step_mountains_6tier_bestof_balanced",
-        "step_mountains_6tier_bestof_xdetail",
-        "steppedsinkholes_4changes_compact_irregular",
-        "canyons_4changes_compact_irregular",
+        "step_mountains_6tier_test_control",
+        "step_mountains_4tiera",
+        "step_mountains_6tier_test_small_2_big_789",
+        "step_mountains_6tier_test_Large All",
+        "step_mountains_6tier_test_large_123",
+        "step_mountains_6tier_test_largemid_456",
+        "step_mountains_6tier_test_smallall",
     }
     landforms = [lf for lf in landforms if lf.get("code") in allowed_codes]
 
