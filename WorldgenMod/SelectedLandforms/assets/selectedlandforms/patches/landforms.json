@@ -47,6 +47,137 @@
       ]
     },
 {
+      "code": "step_mountains_6tier_test_control",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        0,
+        0.81,
+        0.25,
+        0.55,
+        0,
+        0.25,
+        0.2,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.55,
+        0.553,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.52,
+        0.5,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.0
+      ]
+    },
+    {
+      "code": "step_mountains_4tiera",
+      "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        0,
+        0.81,
+        0.25,
+        0.25,
+        0,
+        0.25,
+        0.2,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933,
+	1.0
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.1,
+	0.0
+      ]
+    },
+	{
+      "code": "step_mountains_4tiera_broader",
+      "comment": "four flat plateaus with sheer cliffs; octave 2 & 7 halved",
+      "hexcolor": "#84A878",
+      "weight": 1,
+      "terrainOctaves": [
+        0,
+        0.61,
+        0.65,
+        0.65,
+        0,
+        0.25,
+        0.2,
+        0.03,
+        0
+      ],
+      "terrainYKeyPositions": [
+        0.43,
+        0.435,
+        0.65,
+        0.653,
+        0.75,
+        0.753,
+        0.85,
+        0.853,
+        0.93,
+        0.933,
+	1.0
+      ],
+      "terrainYKeyThresholds": [
+        1.0,
+        0.72,
+        0.7,
+        0.38,
+        0.36,
+        0.26,
+        0.24,
+        0.14,
+        0.13,
+        0.1,
+	0.0
+      ]
+    },
+{
       "code": "step_mountains_6tier_test_4_4567",
       "comment": "Six flat plateaus with sheer cliffs; octave 2 & 7 halved",
       "hexcolor": "#84A878",
